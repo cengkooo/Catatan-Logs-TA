@@ -1,0 +1,32 @@
+{
+  "daily": {
+    "enabled": true,
+    "format": "YYYY-MM-DD",
+    "template": "99-Templates/Template-Daily-Log",
+    "folder": "02-Daily-Logs"
+  },
+  "weekly": {
+    "enabled": false,
+    "format": "",
+    "template": "",
+    "folder": ""
+  },
+  "monthly": {
+    "enabled": false,
+    "format": "",
+    "template": "",
+    "folder": ""
+  },
+  "quarterly": {
+    "enabled": false,
+    "format": "",
+    "template": "",
+    "folder": ""
+  },
+  "yearly": {
+    "enabled": false,
+    "format": "",
+    "template": "",
+    "folder": ""
+  }
+}

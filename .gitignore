@@ -1,0 +1,27 @@
+# ==============================================================================
+# Obsidian Vault .gitignore — Catatan-Memori-Logs (Tugas Akhir IF ITERA)
+# ==============================================================================
+
+# 1. Workspace Layout & Active State
+# Sangat krusial di-ignore agar tidak memicu git conflict setiap kali membuka/menutup note atau tab
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# 2. Obsidian Internal Cache & Trash
+.obsidian/cache/
+.trash/
+
+# 3. Plugin-specific Temporary Files, Backups & Heavy Indices
+# Omnisearch SQLite/index database (bisa membesar hingga puluhan MB)
+.obsidian/plugins/omnisearch/index/
+.obsidian/plugins/omnisearch/*.db
+.obsidian/plugins/**/cache/
+.obsidian/plugins/**/data-backup*.json
+
+# 4. OS & Editor Junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.swp

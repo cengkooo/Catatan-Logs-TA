@@ -1,0 +1,51 @@
+{
+  "obsidian-shellcommands:shell-command-google-tasks-list": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "t"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-google-cal-today": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "c"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-google-sprint-status": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "s"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-google-sync-tomorrow": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "y"
+    }
+  ],
+  "obsidian-full-calendar:full-calendar-open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "k"
+    }
+  ],
+  "obsidian-full-calendar:full-calendar-open-sidebar": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "k"
+    }
+  ]
+}
