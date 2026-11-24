@@ -26,6 +26,7 @@ flowchart TD
     T0 --> T4["04: Manajemen Draf Bab & 2 Skenario"]
     T0 --> T5["05: Persiapan Bimbingan & TASYS"]
     T0 --> T6["06: Cheatsheet Hotkeys & Plugin"]
+    T0 --> T7["07: Framework Bedah Paper (11 Step)"]
 ```
 
 | Modul | Judul Panduan | Kapan Harus Membaca Modul Ini? |
@@ -36,6 +37,7 @@ flowchart TD
 | **[[04-Tutorial-Manajemen-Draf-dan-Skenario-Sempro]]** | **Manajemen Draf Naskah & 2 Skenario** | Saat menulis Bab 1–3: memilih antara Skenario 1 (Komputasional) vs Skenario 2 (User Study) serta cek Turnitin. |
 | **[[05-Tutorial-Persiapan-Bimbingan-dan-TASYS]]** | **Persiapan Bimbingan Dosen & Syarat TASYS** | Sebelum & sesudah bimbingan: mencatat notulensi, membawa lembar diskusi, dan mengawal syarat 4 pertemuan TASYS. |
 | **[[06-Tutorial-Hotkeys-dan-Cheatsheet-Plugin]]** | **Cheatsheet Tombol Pintas & Solusi Kendala** | Kartu contekan tombol cepat (`Alt+T`, `Alt+C`, `Alt+S`, `Alt+Y`, `Alt+K`) dan penanganan token expired. |
+| **[[07-Tutorial-Bedah-Paper]]** | **Framework Bedah Paper Ilmiah (11 Langkah)** | Saat membaca & mereview paper referensi: audit forensik klaim vs bukti, deteksi red flags, dan gap 3 lapis. |
 
 ---
 

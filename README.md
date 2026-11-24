@@ -65,7 +65,7 @@ Catatan-Memori-Logs/
 ├── 09-todolist/           ◄── Mission engine modular fase kerja (Phase 01–05 & Task Sprints 06–10)
 │   ├── 00-Index-Todolist.md
 │   ├── 01-Phase-01-Bab-1-Pendahuluan.md s.d. 05-Phase-05-Finalisasi-Sempro-Administrasi.md
-│   └── 06-Task-Baseline-KNN-Gaur.md s.d. 10-Task-Migrasi-Template-UNESCO-Bentuk1.md
+│   └── 06-Task-Baseline-KNN-Gaur.md s.d. 11-Task-Bedah-Paper-Referensi-Riset.md
 │
 ├── 10-Slides/             ◄── Blueprint slide sempro 10 menit & amunisi pertahanan 30 menit
 │   ├── 02-Master-Blueprint-Slide-Sempro.md (14 Slide presisi waktu)
@@ -78,12 +78,8 @@ Catatan-Memori-Logs/
 │
 ├── 12-tutorial-catatan/   ◄── Pusat panduan & tutorial cara pakai vault
 │   ├── 00-Index-Tutorial.md
-│   ├── 01-Tutorial-Alur-Kerja-Harian.md
-│   ├── 02-Tutorial-Otomatisasi-Backup-GitHub.md
-│   ├── 03-Tutorial-Review-Paper-dan-Matriks-Sintesis.md
-│   ├── 04-Tutorial-Manajemen-Draf-dan-Skenario-Sempro.md
-│   ├── 05-Tutorial-Persiapan-Bimbingan-dan-TASYS.md
-│   └── 06-Tutorial-Hotkeys-dan-Cheatsheet-Plugin.md
+│   ├── 01-Tutorial-Alur-Kerja-Harian.md s.d. 06-Tutorial-Hotkeys-dan-Cheatsheet-Plugin.md
+│   └── 07-Tutorial-Bedah-Paper.md (Framework Bedah Paper 11 Langkah)
 │
 └── 99-Templates/          ◄── Templat standar penulisan note baru (Daily Log, Konsep, Paper)
 ```

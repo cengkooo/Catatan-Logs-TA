@@ -41,6 +41,7 @@ flowchart TD
 | **[[08-Task-Setup-GDrive-dan-Backup]]** | Arsitektur GDrive, Naming SOP & Backup | Struktur GDrive 8-Folder + skrip backup 1-command | 1 Jam |
 | **[[09-Task-Audit-Pedoman-TA-Changelog-1-2-0]]** | Update Skills & Translasi Web Pedoman TA ke Obsidian | Koleksi Markdown 07-panduan-ta + Sinkronisasi SKILL/AGENTS/GEMINI | 1–2 Jam |
 | **[[10-Task-Migrasi-Template-UNESCO-Bentuk1]]** | Migrasi & Refaktor Templat UNESCO 2026 | Berkas config/, chapters/, thesis.tex 100% selaras Bentuk 1 | 2–3 Jam |
+| **[[11-Task-Bedah-Paper-Referensi-Riset]]** | Bedah Forensik 21 Paper Referensi (Framework 11 Langkah) | Review terstruktur Tier 1–3 + Matriks Sintesis + Gap 3 Lapis | 6–8 Jam |
 
 ---
 
