@@ -47,10 +47,9 @@ Catatan-Memori-Logs/
 │   └── Kamus-Notasi-Glosarium.md
 │
 ├── 05-Eksperimen/         ◄── Catatan teknis koding, analisis dataset DEAM, baseline Gaur
-│   ├── Replikasi-Baseline-KNN.md
-│   ├── Dataset-DEAM.md
-│   ├── Ekstraksi-Trajectory.md
-│   └── Peta-Kode-Code-Walkthrough.md (Persiapan bobot 10% sidang)
+│   ├── 01-baseline-gaur/ (Replikasi baseline KNN Gaur 2020 & log training)
+│   ├── 02-dynamic-trajectory-alignment/ (Dataset DEAM, Ekstraksi Trajectory, Peta Kode Walkthrough)
+│   └── README.md
 │
 ├── 06-Naskah-Draft/       ◄── Draf naskah proposal Bab I–III format UNESCO & pemantauan Turnitin
 │   ├── 01-Skenario-Murni-Komputasional/ (Bab I–III versi metrik matematis objektif)
