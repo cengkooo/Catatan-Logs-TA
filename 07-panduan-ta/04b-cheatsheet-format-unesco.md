@@ -1,11 +1,13 @@
 ---
-title: "Panduan Cepat: Format Penulisan Standar UNESCO (BAB 8)"
+title: "Cheat Sheet Visual: Spesifikasi Format Penulisan Naskah UNESCO (BAB 8)"
 tags:
   - panduan-ta
   - unesco
   - format-penulisan
+aliases:
+  - format-penulisan-unesco
+  - Cheat Sheet Format UNESCO
 ---
-
 # 📐 Format Penulisan UNESCO (BAB 8) — Cheat Sheet Praktis
 
 > **Aturan Wajib Perpustakaan & FTI ITERA:** Seluruh draf naskah LaTeX (`thesis.tex`) wajib mengikuti spesifikasi ukuran buku UNESCO.

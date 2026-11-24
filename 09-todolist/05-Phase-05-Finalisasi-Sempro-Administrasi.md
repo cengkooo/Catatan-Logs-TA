@@ -6,8 +6,10 @@ tags:
   - sempro
   - administrasi
 status: "TODO"
+aliases:
+  - Phase-05-Finalisasi-Sempro-Administrasi
+  - Finalisasi Sempro Todolist
 ---
-
 # 🎓 Fase 05: Finalisasi Sempro & Berkas Administrasi
 
 > **Tujuan Akhir:** Memastikan naskah proposal lulus syarat format UNESCO & Turnitin, berkas administrasi lengkap, dan materi presentasi 10 menit teruji prima.
@@ -74,7 +76,7 @@ status: "TODO"
 - [ ] **Langkah 5.4.2 — Latihan Timer Presentasi:**
   - Latihan presentasi mandiri: Target tepat 9 menit 30 detik (jangan pernah melewati 10 menit batas resmi ITERA).
 - [ ] **Langkah 5.4.3 — Persiapan Tanya Jawab (30 Menit):**
-  - Siapkan jawaban untuk bank pertanyaan dosen di [[Bank-Pertanyaan-Dosen]]:
+  - Siapkan jawaban untuk bank pertanyaan dosen di [[02-Bank-Pertanyaan-Dosen|Bank-Pertanyaan-Dosen]]:
     * *"Kenapa pakai DEAM bukan dataset Spotify atau DMDD?"*
     * *"Bagaimana jika lagu memiliki variasi tempo ekstrem?"*
     * *"Mengapa memilih KNN daripada Deep Reinforcement Learning?"*

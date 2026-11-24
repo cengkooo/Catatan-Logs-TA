@@ -57,6 +57,6 @@ flowchart TD
 ## 🔗 Navigasi & File Terkait
 - **Panduan Pra-Training & Pemrosesan DEAM:** [[04-Panduan-Pra-Training-DEAM-Baseline-Gaur|Panduan-Pra-Training-DEAM-Baseline-Gaur]]
 - **Profil Detail Dataset DEAM:** [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]]
-- **Checklist Todolist Eksekusi:** [[Experiment-Baseline-KNN-Gaur-Todolist]]
+- **Checklist Todolist Eksekusi:** [[06-Task-Baseline-KNN-Gaur|Experiment-Baseline-KNN-Gaur-Todolist]]
 - **Tutorial Eksekusi CUDA:** `EXPERIMENT/Code/baseline_gaur/TUTORIAL_RUN_CUDA.md`
 - **Kode Sumber Baseline:** `EXPERIMENT/Code/baseline_gaur/`

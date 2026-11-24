@@ -52,5 +52,5 @@ deadline: 2026-11-24
 
 ## 📝 Catatan Perkembangan Sprint
 - Format naskah: **Pedoman TA IF ITERA** (Format UNESCO Perpustakaan) + Mendeley.
-- Bimbingan: [[Notulensi-Bimbingan]] · Q&A: [[Bank-Pertanyaan-Dosen]]
+- Bimbingan: [[01-Notulensi-Bimbingan|Notulensi-Bimbingan]] · Q&A: [[02-Bank-Pertanyaan-Dosen|Bank-Pertanyaan-Dosen]]
 - **Plan B:** jika Go/No-Go Jumat 20 Nov gagal → tunda sempro ke Desember (lihat [[EMERGENCY-SEMPRO]] §7).

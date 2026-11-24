@@ -1,5 +1,5 @@
 ---
-title: "SOP & Panduan Arsitektur Google Drive, Naming Convention, dan Sinkronisasi Multi-Repo"
+title: "Task: Setup Google Drive & Prosedur Otomatisasi Backup"
 tags:
   - todolist
   - gdrive
@@ -9,8 +9,10 @@ tags:
   - tugas-akhir
 status: ACTIVE
 date: 2026-11-20
+aliases:
+  - fix_gdrive
+  - Task Setup GDrive Backup
 ---
-
 # 🌐 Panduan Arsitektur Google Drive, Naming Convention, & Sinkronisasi Terpadu (fix_gdrive.md)
 
 > **Tujuan Dokumen:** Menjadi cetak biru (*blueprint*) dan panduan eksekusi operasional penataan seluruh folder dan berkas pada Google Drive, standardisasi tata nama berkas (*naming convention*), serta integrasi alur kerja sinkronisasi antara **Obsidian Vault (`Catatan-Memori-Logs`)**, **Naskah Proposal LaTeX (`proposal-penelitian-andryano-123140205`)**, **Slide Presentasi Typst (`Slides`)**, dan **Kode Eksperimen (`EXPERIMENT/Code`)**.

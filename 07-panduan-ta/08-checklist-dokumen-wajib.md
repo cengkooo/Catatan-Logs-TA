@@ -1,12 +1,14 @@
 ---
-title: "Checklist Dokumen & Syarat Wajib Tugas Akhir IF ITERA"
+title: "Checklist Dokumen & Syarat Wajib Tugas Akhir (Sempro & Sidang Akhir)"
 tags:
   - panduan-ta
   - checklist
   - sempro
   - sidang
+aliases:
+  - dokumen-wajib
+  - Checklist Dokumen Wajib TA
 ---
-
 # 📋 Dokumen & Syarat Wajib Tugas Akhir (Sempro & Sidang)
 
 > **Gunakan checklist ini untuk melacak kelengkapan berkas Anda.** Tinggal centang `[x]` saat berkas sudah beres!

@@ -41,7 +41,7 @@ flowchart LR
 
 | # | Tanggal | Milestone | Bukti |
 | :--- | :--- | :--- | :--- |
-| 1 | **Rab 18 Nov 14:00** | Bimbingan 1 | Notulen di [[Notulensi-Bimbingan]] |
+| 1 | **Rab 18 Nov 14:00** | Bimbingan 1 | Notulen di [[01-Notulensi-Bimbingan|Notulensi-Bimbingan]] |
 | 2 | **Jum 20 Nov 21:45** | Naskah utuh v1 terkirim | PDF + link Docs |
 | 3 | **Sen 23 Nov 19:30** | ACC + TTD lembar pengesahan | TTD |
 | 4 | **Sel 24 Nov 13:00** | Berkas pendaftaran disubmit | Bukti submit |
@@ -118,5 +118,5 @@ flowchart LR
 
 - Sprint: [[Sprint-1-Bab1-EDA]] · [[Sprint-2-Bab2-Baseline]] · [[Sprint-3-Bab3-Metodologi]] · [[Sprint-4-Final-Sidang]]
 - Naskah: [[Bab-1-Pendahuluan]] · [[Bab-2-Tinjauan-Pustaka]] · [[Bab-3-Metodologi]]
-- Bimbingan: [[Notulensi-Bimbingan]] · [[Bank-Pertanyaan-Dosen]]
+- Bimbingan: [[01-Notulensi-Bimbingan|Notulensi-Bimbingan]] · [[02-Bank-Pertanyaan-Dosen|Bank-Pertanyaan-Dosen]]
 - Induk: [[EMERGENCY-SEMPRO]] · [[Master-Dashboard]]

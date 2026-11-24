@@ -21,11 +21,11 @@ Folder `03-Bimbingan/` dirancang untuk mengawal proses ini tanpa ada berkas yang
 
 ### Langkah 1: Buka Lembar Diskusi / Catatan Progres
 * Jika Anda ingin mendiskusikan rencana pengujian kuesioner pengguna, buka berkas:  
-  👉 **`03-Bimbingan/Lembar-Diskusi-Skenario-User-Study.md`**.
+  👉 **`03-Bimbingan/04-Lembar-Diskusi-Skenario-User-Study.md`**.
 * Berkas ini adalah dokumen ringkas 1 halaman yang membandingkan Skenario 1 (Murni Komputasional), Skenario 2 (Uji Klip 30s), dan Skenario 3 (Playlist Utuh 15 Menit). Anda bisa langsung menunjukkan tabel perbandingannya di HP atau laptop kepada Pak Hafiz.
 
 ### Langkah 2: Cek Kesiapan Prasyarat Sempro
-Buka berkas **`03-Bimbingan/Tracker-Prasyarat-Sempro.md`**:
+Buka berkas **`03-Bimbingan/03-Tracker-Prasyarat-Sempro.md`**:
 - [x] Pastikan SKS $\ge 100$, IPK $\ge 2.00$, dan tidak ada nilai E.
 - [ ] Pastikan Anda sudah mengantongi bukti hadir minimal **2 seminar proposal mahasiswa lain** (tanda tangan form fisik atau approval di TASYS).
 
@@ -33,7 +33,7 @@ Buka berkas **`03-Bimbingan/Tracker-Prasyarat-Sempro.md`**:
 
 ## ✍️ 2. Saat Bimbingan: Mencatat Notulensi & Arahan Revisi
 
-1. Buka berkas: **`03-Bimbingan/Notulensi-Bimbingan.md`**.
+1. Buka berkas: **`03-Bimbingan/01-Notulensi-Bimbingan.md`**.
 2. Tambahkan sesi pertemuan baru di bawah judul pertemuan terakhir:
    ```markdown
    ## Pertemuan #X — Tanggal: YYYY-MM-DD
@@ -61,7 +61,7 @@ Pedoman ITERA mewajibkan log bimbingan tercatat resmi di sistem informasi:
 
 ## 🛡️ 4. Menghadapi Pertanyaan Dosen Penguji (`Bank-Pertanyaan-Dosen.md`)
 
-Sebelum maju Sempro, latih mental Anda dengan membaca **`03-Bimbingan/Bank-Pertanyaan-Dosen.md`** dan **`10-Slides/03-Speaker-Notes-Dan-Antisipasi-QnA.md`**. 
+Sebelum maju Sempro, latih mental Anda dengan membaca **`03-Bimbingan/02-Bank-Pertanyaan-Dosen.md`** dan **`10-Slides/03-Speaker-Notes-Dan-Antisipasi-QnA.md`**. 
 
 Di sana sudah disiapkan strategi jawaban berbasis data (*data-driven defense*) untuk 4 pertanyaan paling kritis penguji:
 1. *Kenapa pakai DEAM bukan Spotify Web API?*

@@ -4,8 +4,10 @@ tags:
   - bimbingan
   - sempro
   - ujian
+aliases:
+  - Bank-Pertanyaan-Dosen
+  - Bank Pertanyaan Dosen Penguji
 ---
-
 # ❓ Bank Pertanyaan Dosen & Simulasi Sempro
 
 Kumpulan potensi pertanyaan dari dosen penguji beserta strategi argumentasi ilmiahnya.

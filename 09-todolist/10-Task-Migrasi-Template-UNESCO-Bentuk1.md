@@ -11,8 +11,10 @@ status: "COMPLETED"
 target_output: "Koleksi Berkas config/, chapters/, thesis.tex yang Selaras 100% dengan laporan-ta.tex dan panduan-kepenulisan-ta.md"
 last_updated: "2026-11-22"
 source_ref: "laporan-ta.tex, panduan-kepenulisan-ta.md, Pedoman TA IF ITERA [1.2.0]"
+aliases:
+  - Migrasi-dan-Refaktor-Template-TA-Bentuk1-UNESCO
+  - Migrasi Template UNESCO Bentuk 1
 ---
-
 # 📋 Todolist: Migrasi dan Refaktor Template TA Bentuk 1 (UNESCO 2026)
 
 > **Catatan Status Terkini (2026-11-23):** Seluruh isi naskah spesifik Tugas Akhir Andryano pada direktori `chapters/` dan `config/informations.tex` telah di-reset dan diselaraskan secara murni (*clean slate / 100% 1:1 exact template*) mengikuti berkas acuan `Templat_Laporan_TA_Bentuk1_Penelitian_Konvensional.docx` dan `laporan-ta.tex`. Seluruh bab kini memuat makro panduan resmi (`\petunjuk`), kotak centang, tabel kosong (Tabel 2.1 dan Matriks Lampiran), serta penanda teks abu-abu (`\placeholder{[...]}`). Berkas siap digunakan sebagai templat baku bersih.

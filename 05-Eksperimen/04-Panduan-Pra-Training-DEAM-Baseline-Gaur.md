@@ -239,6 +239,6 @@ Partisi telah dieksekusi dan disimpan permanen dalam direktori `EXPERIMENT/Code/
 ## 🔗 Navigasi & File Terkait di Vault
 - Dataset Utama: [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]]
 - Replikasi Baseline: [[03-Replikasi-Baseline-KNN-Gaur|Replikasi-Baseline-KNN]]
-- Todolist Eksperimen: [[Experiment-Baseline-KNN-Gaur-Todolist]]
+- Todolist Eksperimen: [[06-Task-Baseline-KNN-Gaur|Experiment-Baseline-KNN-Gaur-Todolist]]
 - Panduan Eksekusi CUDA: `EXPERIMENT/Code/baseline_gaur/TUTORIAL_RUN_CUDA.md`
 - Kode Implementasi Lengkap: `EXPERIMENT/Code/baseline_gaur/`

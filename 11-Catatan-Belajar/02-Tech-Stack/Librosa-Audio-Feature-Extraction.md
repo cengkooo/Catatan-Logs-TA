@@ -99,4 +99,4 @@ def extract_acoustic_features(y: np.ndarray, sr: int = 22050):
 
 ## 🔗 Referensi & Catatan Terkait
 - Dokumentasi Librosa: https://librosa.org/doc/latest/index.html
-- Terkait ke: [[02-Formulasi-Ekstraksi-Trajectory|Ekstraksi-Trajectory]] | [[06-Log-Training-Baseline-Gaur|1_TRAIN_BASELINE]] | [[Phase-04-Coding-Eksperimen-DEAM]] | [[00-Index-Catatan]]
+- Terkait ke: [[02-Formulasi-Ekstraksi-Trajectory|Ekstraksi-Trajectory]] | [[06-Log-Training-Baseline-Gaur|1_TRAIN_BASELINE]] | [[04-Phase-04-Coding-Eksperimen-DEAM|Phase-04-Coding-Eksperimen-DEAM]] | [[00-Index-Catatan]]

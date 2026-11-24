@@ -8,8 +8,10 @@ tags:
   - iterasi-ta1
 created: 2026-11-23
 updated: 2026-11-23
+aliases:
+  - Tracker-Prasyarat-Sempro
+  - Tracker TASYS Sempro
 ---
-
 # 📋 Tracker Prasyarat & Kelayakan Pendaftaran Sempro
 
 Dokumen ini memantau secara ketat seluruh pemenuhan syarat administratif pendaftaran **Seminar Proposal (Sempro - TA 1)** Program Studi Teknik Informatika FTI Institut Teknologi Sumatera (ITERA) Tahun Akademik 2025/2026 sesuai dengan **Pedoman TA ITERA [1.2.0] Subbab 5.2**.
@@ -45,7 +47,7 @@ Dokumen ini memantau secara ketat seluruh pemenuhan syarat administratif pendaft
 
 | Pertemuan | Tanggal | Media / Tempat | Topik Pembahasan & Arahan Dosen | Status TASYS | Tautan Dokumen Pendukung |
 | :-: | :---: | :--- | :--- | :---: | :--- |
-| **#1** | 2026-11-20 | Email / Google Drive | Validasi Latar Belakang, perumusan gap riset, dan pemilihan dataset DEAM | `[x] Diajukan` | [[Notulensi-Bimbingan]] · [[Sprint-1-Bab1-EDA]] |
+| **#1** | 2026-11-20 | Email / Google Drive | Validasi Latar Belakang, perumusan gap riset, dan pemilihan dataset DEAM | `[x] Diajukan` | [[01-Notulensi-Bimbingan|Notulensi-Bimbingan]] · [[Sprint-1-Bab1-EDA]] |
 | **#2** | 2026-11-21 | Luring / Ruang Dosen | Diskusi Tinjauan Pustaka, 21 Paper IEEE, & Replikasi Baseline Gaur (2020) | `[ ] Menunggu ACC` | [[Sprint-2-Bab2-Baseline]] · [[Matriks-Sintesis]] |
 | **#3** | 2026-11-22 | Luring / Ruang Dosen | Verifikasi Desain Metodologi, Trajectory Alignment, & Rumusan Metrik | `[ ] Menunggu ACC` | [[Sprint-3-Bab3-Metodologi]] · [[09-Peta-Kode-Code-Walkthrough|Peta-Kode-Code-Walkthrough]] |
 | **#4** | 2026-11-23 | Luring / TASYS | Review Final Draf Proposal (Format UNESCO), Uji Turnitin, & ACC Sempro | `[ ] ACC Sempro` | [[Turnitin-Similarity-Ledger]] · [[laporan-ta.pdf]] |
@@ -66,5 +68,5 @@ Dokumen ini memantau secara ketat seluruh pemenuhan syarat administratif pendaft
 
 ## 🔗 Tautan Terkait
 - 📜 **Pedoman Resmi:** [[02-alur-dan-syarat-sempro]]
-- 💬 **Catatan Dosen:** [[Notulensi-Bimbingan]] | [[Bank-Pertanyaan-Dosen]]
+- 💬 **Catatan Dosen:** [[01-Notulensi-Bimbingan|Notulensi-Bimbingan]] | [[02-Bank-Pertanyaan-Dosen|Bank-Pertanyaan-Dosen]]
 - 📊 **Roadmap:** [[Roadmap-Sempro]] | [[EMERGENCY-SEMPRO]]

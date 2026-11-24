@@ -6,8 +6,10 @@ tags:
   - bab2
   - naskah
 status: "TODO"
+aliases:
+  - Phase-02-Bab-2-Tinjauan-Pustaka
+  - Bab 2 Tinjauan Pustaka Todolist
 ---
-
 # 📚 Fase 02: Penulisan Bab 2 (Tinjauan Pustaka)
 
 > **Tujuan Akhir:** Menghasilkan draf naskah Bab 2 komprehensif pada [[Bab-2-Tinjauan-Pustaka]] berdasarkan 21 paper yang ada di [[Spreadsheet-Studi-Literatur]] dan [[Matriks-Sintesis]].

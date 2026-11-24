@@ -26,8 +26,10 @@ hardware_target: "NVIDIA GeForce RTX 3070 Ti (8GB GDDR6X, CUDA Compute 8.6)"
 python_manager: "uv (Astral)"
 framework: "PyTorch 2.x + CUDA 12.x / 11.8 (with NumPy/SciPy CPU Fallback)"
 repository_target: "GitHub Public/Private Repo (Open Data ITERA Bab 8)"
+aliases:
+  - Experiment-Baseline-KNN-Gaur-Todolist
+  - Task Baseline KNN Gaur
 ---
-
 # 🧪 Panduan & Todolist Eksperimen Baseline KNN (Gaur & Donnelly)
 ## 🎯 Dataset Utama: DEAM (Database for Emotion Analysis in Music)
 ### ⚡ Akselerasi PyTorch CUDA (NVIDIA RTX 3070 Ti) & Manajemen Environment `uv`

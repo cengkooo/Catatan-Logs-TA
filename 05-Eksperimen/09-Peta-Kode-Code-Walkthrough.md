@@ -67,5 +67,5 @@ python analyze_intra_song_dynamics.py
 
 ## 🔗 Tautan Terkait
 - 🔬 **Log Eksperimen:** [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[02-Formulasi-Ekstraksi-Trajectory|Ekstraksi-Trajectory]] | [[03-Replikasi-Baseline-KNN-Gaur|Replikasi-Baseline-KNN]]
-- 📝 **Metodologi Naskah:** [[Bab-3-Metodologi]] | [[Phase-03-Bab-3-Metodologi-Desain]]
-- 🛡️ **Tanya Jawab Ujian:** [[Bank-Pertanyaan-Dosen]] | [[03-Speaker-Notes-Dan-Antisipasi-QnA]]
+- 📝 **Metodologi Naskah:** [[Bab-3-Metodologi]] | [[03-Phase-03-Bab-3-Metodologi-Desain|Phase-03-Bab-3-Metodologi-Desain]]
+- 🛡️ **Tanya Jawab Ujian:** [[02-Bank-Pertanyaan-Dosen|Bank-Pertanyaan-Dosen]] | [[03-Speaker-Notes-Dan-Antisipasi-QnA]]

@@ -9,8 +9,10 @@ tags:
 date: 2026-11-24
 mahasiswa: "Andryano (123140205)"
 pembimbing: "Hafiz Budi Firmansyah, S.Kom., M.Sc."
+aliases:
+  - Lembar-Diskusi-Skenario-User-Study
+  - Lembar Konsultasi Skenario User Study
 ---
-
 # 📑 Lembar Konsultasi Pembimbing: 3 Skenario Pengujian Kuesioner Pengguna (*User Listening Study*)
 
 **Topik Tugas Akhir:**  

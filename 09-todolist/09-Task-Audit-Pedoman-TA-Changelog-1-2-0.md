@@ -11,8 +11,10 @@ status: "COMPLETED"
 target_output: "Koleksi Markdown Modular di 07-panduan-ta + Sinkronisasi Penuh SKILL.md, AGENTS.md, dan GEMINI.md"
 last_updated: "2026-11-21"
 source_ref: "https://informatika-itera.github.io/panduan-ta/changelog.html"
+aliases:
+  - Update-Skills-dan-Translasi-Pedoman-TA-Changelog-1-2-0
+  - Audit Pedoman TA Changelog 1.2.0
 ---
-
 # 📋 Todolist: Update Skills & Translasi Pedoman TA ITERA (Changelog 1.2.0) ke Obsidian
 
 > **Tujuan Dokumen:** Memandu eksekusi bertahap penyelarasan aturan akademik Tugas Akhir Program Studi Teknik Informatika ITERA versi terbaru (**Changelog [1.2.0] - 2026-11-02** dan **[1.1.0]**) ke dalam:

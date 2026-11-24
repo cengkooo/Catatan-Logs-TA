@@ -6,8 +6,10 @@ tags:
   - bab3
   - naskah
 status: "TODO"
+aliases:
+  - Phase-03-Bab-3-Metodologi-Desain
+  - Bab 3 Metodologi Todolist
 ---
-
 # 📐 Fase 03: Penulisan Bab 3 (Metodologi Penelitian)
 
 > **Tujuan Akhir:** Menyusun metodologi riset matematis dan arsitektur pipeline yang presisi pada [[Bab-3-Metodologi]] dan LaTeX `chapters/chapter-3.tex`.

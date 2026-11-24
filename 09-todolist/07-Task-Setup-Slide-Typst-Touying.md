@@ -12,8 +12,10 @@ status: "READY FOR EXECUTION"
 target_output: "PDF Vektor 16:9 Presentasi Sempro (10 Menit, 14 Slide)"
 compiler: "Typst CLI (Rust-based Typesetting Engine)"
 slide_framework: "@preview/touying:0.5.5 (Metropolis Theme)"
+aliases:
+  - Typst-Touying-Installation-and-Slide-Setup
+  - Setup Slide Typst Touying
 ---
-
 # 🚀 Panduan & Todolist Instalasi Typst + Touying untuk Slide Sempro
 
 > **Tujuan Dokumen:** Menjadi panduan operasional lengkap untuk menginstalasi ekosistem **Typst**, framework presentasi **Touying**, serta mengaktifkan ekstensi dan *skills* pendukung di VS Code, Obsidian, dan AI Agent guna mengotomasi pembuatan slide presentasi Seminar Proposal (Sempro IF ITERA).
@@ -238,7 +240,7 @@ $ D(A, B) = sum_(t=1)^(T) w_t dot sqrt((V_(A, t) - V_(B, t))^2 + (A_(A, t) - A_(
 ---
 
 ## 🔗 Rujukan Terkait
-- [[Phase-05-Finalisasi-Sempro-Administrasi]] — Syarat & durasi presentasi 10 menit Sempro ITERA.
-- [[Experiment-Baseline-KNN-Gaur-Todolist]] — Sumber metrik evaluasi dan dataset DEAM.
+- [[05-Phase-05-Finalisasi-Sempro-Administrasi|Phase-05-Finalisasi-Sempro-Administrasi]] — Syarat & durasi presentasi 10 menit Sempro ITERA.
+- [[06-Task-Baseline-KNN-Gaur|Experiment-Baseline-KNN-Gaur-Todolist]] — Sumber metrik evaluasi dan dataset DEAM.
 - Dokumentasi Resmi Touying: `https://touying-typ.github.io/`
 - Typst Universe: `https://typst.app/universe/package/touying/`

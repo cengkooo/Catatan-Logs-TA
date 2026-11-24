@@ -42,4 +42,4 @@ Folder ini menyediakan **dua versi draf lengkap Bab I s.d. Bab III** untuk memud
 ---
 
 ## 📑 Lembar Diskusi Siap Pakai untuk Pembimbing:
-- [[Lembar-Diskusi-Skenario-User-Study|Lembar Diskusi 3 Skenario Pengujian (03-Bimbingan)]]
+- [[04-Lembar-Diskusi-Skenario-User-Study|Lembar Diskusi 3 Skenario Pengujian (03-Bimbingan)]]

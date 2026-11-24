@@ -72,4 +72,4 @@ Gunakan bagian ini untuk mencatat kalimat/paragraf yang terdeteksi kecocokan tin
 ## 🔗 Tautan Terkait
 - 📜 **Regulasi Akademik:** [[01-kebijakan-ai-dan-integritas]]
 - 📝 **Naskah Draf:** [[Bab-1-Pendahuluan]] | [[Bab-2-Tinjauan-Pustaka]] | [[Bab-3-Metodologi]]
-- 📋 **Checklist Sempro:** [[Tracker-Prasyarat-Sempro]]
+- 📋 **Checklist Sempro:** [[03-Tracker-Prasyarat-Sempro|Tracker-Prasyarat-Sempro]]

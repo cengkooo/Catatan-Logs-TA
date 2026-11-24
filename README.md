@@ -37,10 +37,8 @@ Catatan-Memori-Logs/
 │   ├── 2026-11-16.md s.d. 2026-11-25.md
 │
 ├── 03-Bimbingan/          ◄── Catatan bimbingan dosen, bank Q&A, tracker prasyarat TASYS
-│   ├── Notulensi-Bimbingan.md
-│   ├── Tracker-Prasyarat-Sempro.md
-│   ├── Bank-Pertanyaan-Dosen.md
-│   └── Lembar-Diskusi-Skenario-User-Study.md
+│   ├── 01-Notulensi-Bimbingan.md s.d. 04-Lembar-Diskusi-Skenario-User-Study.md (Linier 01–04)
+│   └── README.md
 │
 ├── 04-Literatur-Review/   ◄── Matriks sintesis 21 paper IEEE/MIR, kamus notasi, spreadsheet
 │   ├── Matriks-Sintesis.md
@@ -58,15 +56,16 @@ Catatan-Memori-Logs/
 │
 ├── 07-panduan-ta/         ◄── Pengetahuan regulasi resmi Prodi IF ITERA (Changelog 1.2.0)
 │   ├── 00-index-panduan-ta.md
-│   ├── 01-kebijakan-ai-dan-integritas.md
-│   ├── 02-alur-dan-syarat-sempro.md
-│   ├── 04-format-penulisan-unesco.md (Tabel 8.4 Penomoran Halaman)
-│   └── pedoman-ta-itera-lengkap.md
+│   ├── 01-kebijakan-ai-dan-integritas.md s.d. 06-kebijakan-open-data.md
+│   ├── 07-format-isi-naskah-ta.md, 08-checklist-dokumen-wajib.md
+│   └── 09-pedoman-ta-itera-lengkap.md
 │
 ├── 08-Prompt-History/     ◄── Audit trail penggunaan AI (Lampiran 2 Pedoman TA)
 │
-├── 09-todolist/           ◄── Mission engine modular fase kerja (Phase 01 s.d. 05)
-│   └── 00-Index-Todolist.md
+├── 09-todolist/           ◄── Mission engine modular fase kerja (Phase 01–05 & Task Sprints 06–10)
+│   ├── 00-Index-Todolist.md
+│   ├── 01-Phase-01-Bab-1-Pendahuluan.md s.d. 05-Phase-05-Finalisasi-Sempro-Administrasi.md
+│   └── 06-Task-Baseline-KNN-Gaur.md s.d. 10-Task-Migrasi-Template-UNESCO-Bentuk1.md
 │
 ├── 10-Slides/             ◄── Blueprint slide sempro 10 menit & amunisi pertahanan 30 menit
 │   ├── 02-Master-Blueprint-Slide-Sempro.md (14 Slide presisi waktu)
@@ -162,6 +161,6 @@ git push -u origin master
 ## 🚀 Panduan Alur Kerja Harian Mahasiswa
 
 1. **Pagi (06:00–07:00):** Buka `02-Daily-Logs/YYYY-MM-DD.md`, cek target prioritas hari ini.
-2. **Bimbingan Dosen:** Buka `03-Bimbingan/Notulensi-Bimbingan.md` dan `Tracker-Prasyarat-Sempro.md` untuk mencatat arahan dan memantau status TASYS.
+2. **Bimbingan Dosen:** Buka `03-Bimbingan/01-Notulensi-Bimbingan.md` dan `Tracker-Prasyarat-Sempro.md` untuk mencatat arahan dan memantau status TASYS.
 3. **Eksperimen & Koding:** Rujuk ke `05-Eksperimen/09-Peta-Kode-Code-Walkthrough.md` saat menguji modul Python.
 4. **Malam (21:45):** Perbarui checklist deliverable harian dan catat kendala sebelum menutup hari.

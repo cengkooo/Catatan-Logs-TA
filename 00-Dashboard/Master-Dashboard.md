@@ -54,15 +54,15 @@ LIMIT 5
 ## 🔗 Pusat Kendali & Folder Penting
 - 🚨 **Rencana Aktif:** [[EMERGENCY-SEMPRO]] ← **baca ini dulu**
 - 📋 **Sistem Eksekusi Modular:** [[00-Index-Todolist|09-Todolist (Panduan 5 Fase)]]
-- 🌐 **Arsitektur Cloud Drive:** [[fix_gdrive|SOP & Struktur Google Drive]]
+- 🌐 **Arsitektur Cloud Drive:** [[08-Task-Setup-GDrive-dan-Backup|SOP & Struktur Google Drive]]
 - 📊 **Roadmap:** [[Roadmap-Sempro]]
-- 💬 **Bimbingan Dosen:** [[Notulensi-Bimbingan]] | [[Bank-Pertanyaan-Dosen]] | [[Tracker-Prasyarat-Sempro|Tracker Prasyarat Sempro & TASYS]]
+- 💬 **Bimbingan Dosen:** [[01-Notulensi-Bimbingan|Notulensi-Bimbingan]] | [[02-Bank-Pertanyaan-Dosen|Bank-Pertanyaan-Dosen]] | [[03-Tracker-Prasyarat-Sempro|Tracker Prasyarat Sempro & TASYS]]
 - 📖 **Literatur:** [[Matriks-Sintesis]] | [[Spreadsheet-Studi-Literatur]] | [[Spreadsheet-Penjelasan-Dataset]] | [[Kamus-Notasi-Glosarium]]
 - 💡 **Catatan Belajar & Tech Stack:** [[00-Index-Catatan|11-Catatan-Belajar (Konsep, Tools, & Sintesis)]]
 - 🔬 **Eksperimen:** [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[02-Formulasi-Ekstraksi-Trajectory|Ekstraksi-Trajectory]] | [[03-Replikasi-Baseline-KNN-Gaur|Replikasi-Baseline-KNN]] | [[06-Log-Training-Baseline-Gaur|Analisis Baseline Gaur]] | [[08-Blueprint-Arah-Penelitian-TA|Blueprint Arah TA]] | [[09-Peta-Kode-Code-Walkthrough|Peta Kode Walkthrough (Lampiran 4)]]
 - ✍️ **Draf Naskah:** [[Bab-1-Pendahuluan]] | [[Bab-2-Tinjauan-Pustaka]] | [[Bab-3-Metodologi]] | [[Turnitin-Similarity-Ledger|Turnitin Similarity & Parafrase]]
 - 💬 **Riwayat Prompt AI:** [[README|08-Prompt-History]] | [[Prompt-2026-11-23]]
-- 📜 **Pedoman Resmi IF ITERA:** [[pedoman-ta-itera-lengkap|Buku Pedoman Lengkap]] | [[format-isi-ta]] | [[format-penulisan-unesco]] | [[dokumen-wajib]]
+- 📜 **Pedoman Resmi IF ITERA:** [[09-pedoman-ta-itera-lengkap|Buku Pedoman Lengkap]] | [[07-format-isi-naskah-ta|format-isi-ta]] | [[04b-cheatsheet-format-unesco|format-penulisan-unesco]] | [[08-checklist-dokumen-wajib|dokumen-wajib]]
 - 📖 **Pusat Panduan & Tutorial:** [[00-Index-Tutorial|12-Tutorial-Catatan (Indeks Master Tutorial Vault)]]
 - 🛠️ **Panduan Sistem & Tooling:** [[tutorial-catatan|Panduan Vault & Hotkeys]] | [[obsidian-connect-google|Integrasi Google Workspace]]
 

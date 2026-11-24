@@ -204,5 +204,5 @@ Sumber: [Spreadsheet SEMPRO](https://docs.google.com/spreadsheets/d/1Iu5A5hGb0ZI
 
 - Sprint: [[Sprint-1-Bab1-EDA]] · [[Sprint-2-Bab2-Baseline]] · [[Sprint-3-Bab3-Metodologi]] · [[Sprint-4-Final-Sidang]]
 - Naskah: [[Bab-1-Pendahuluan]] · [[Bab-2-Tinjauan-Pustaka]] · [[Bab-3-Metodologi]]
-- Bimbingan: [[Notulensi-Bimbingan]] · [[Bank-Pertanyaan-Dosen]]
+- Bimbingan: [[01-Notulensi-Bimbingan|Notulensi-Bimbingan]] · [[02-Bank-Pertanyaan-Dosen|Bank-Pertanyaan-Dosen]]
 - Harian: [[2026-11-16]] · [[Roadmap-Sempro]]

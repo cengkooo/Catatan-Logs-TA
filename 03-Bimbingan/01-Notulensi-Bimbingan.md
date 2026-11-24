@@ -4,8 +4,10 @@ tags:
   - bimbingan
   - dosen
   - notulensi
+aliases:
+  - Notulensi-Bimbingan
+  - Notulensi Bimbingan Pak Hafiz
 ---
-
 # 💬 Notulensi Bimbingan Tugas Akhir
 
 > Dokumen ini mencatat seluruh arahan, masukan, dan revisi dari dosen pembimbing selama pengerjaan proposal dan skripsi.

@@ -21,7 +21,7 @@ tags:
 ```mermaid
 graph TD
     subgraph BRAIN["🧠 Catatan-Memori (Obsidian)"]
-        OB1["03-Bimbingan/Notulensi-Bimbingan.md"]
+        OB1["03-Bimbingan/01-Notulensi-Bimbingan.md"]
         OB2["05-Eksperimen/06-Log-Training-Baseline-Gaur.md"]
         OB3["05-Eksperimen/01-Dataset-DEAM-dan-Eksplorasi.md"]
     end

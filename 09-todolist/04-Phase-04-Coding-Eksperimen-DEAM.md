@@ -6,8 +6,10 @@ tags:
   - coding
   - eksperimen
 status: "TODO"
+aliases:
+  - Phase-04-Coding-Eksperimen-DEAM
+  - Coding DEAM Todolist
 ---
-
 # 💻 Fase 04: Implementasi Kode & Validasi Eksperimen
 
 > **Tujuan Akhir:** Menyiapkan seluruh modul kode Python yang bersih, modular, dapat direproduksi (*reproducible*), dan siap untuk sesi **Code Walkthrough (bobot 10% di sidang)**.

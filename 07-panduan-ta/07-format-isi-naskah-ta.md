@@ -1,11 +1,13 @@
 ---
-title: "Panduan Cepat: Format Isi Tugas Akhir (BAB 7)"
+title: "Panduan Standar Format Isi Naskah Tugas Akhir (BAB 7) IF ITERA"
 tags:
   - panduan-ta
   - format-isi
   - cheat-sheet
+aliases:
+  - format-isi-ta
+  - Format Isi TA
 ---
-
 # 📖 Format Isi Tugas Akhir (BAB 7) — Versi Ringkas & ADHD-Friendly
 
 > **Tujuan:** Panduan cepat struktur isi Bab I s/d Bab V tanpa bertele-tele. Langsung ke intinya!

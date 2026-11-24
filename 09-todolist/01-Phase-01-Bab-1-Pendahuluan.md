@@ -10,8 +10,10 @@ tags:
 status: "COMPLETED / READY TO COMPILE"
 opsi_terpilih: "Opsi A (Narasi Empiris dan Eliminasi Boundary Jump)"
 gaya_penulisan: "Standar UNESCO ITERA, Bahasa Indonesia Baku, Tanpa Huruf Tebal, Tanpa Emdash"
+aliases:
+  - Phase-01-Bab-1-Pendahuluan
+  - Bab 1 Pendahuluan Todolist
 ---
-
 # Fase 01: Penulisan dan Penguatan Bab 1 (Pendahuluan)
 
 Tujuan dokumen ini adalah memberikan panduan eksekusi mikro yang sangat mendetail, tahap demi tahap, untuk menyusun dan menyinkronkan naskah Bab 1 ke proposal-penelitian-andryano-123140205/chapters/chapter-1.tex.
