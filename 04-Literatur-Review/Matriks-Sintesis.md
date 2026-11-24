@@ -108,6 +108,8 @@ SORT file.name ASC
 | **11** | **Daikoku et al. (2022)** (`daikoku2022agreement`) | Menemukan korelasi sedang ($r = 0.42-0.58$) antara metrik otomatis dan persepsi manusia; menjadi landasan mutlak perlunya *User Listening Study*. |
 | **12** | **Tomasi et al. (2023)** (`tomasi2023automatic`) | Rekomendasi sekuensial RL Spotify; membuktikan pentingnya pengurutan lagu, namun kita memilih solusi geometris yang jauh lebih ringan dan transparan. |
 | **13** | **Cardoso & Voigt (2011)** (`cardoso2011moodetector`) | Pionir konsep lintasan mood; kita perbarui dengan dataset dinamis DEAM dan metrik modern. |
+| **22** | **Wang et al. (2024)** (`wang2024remast`) | Model *REMAST* (IEEE TAC 2024); membuktikan pembatasan lonjakan emosi (*soft transition*) mereduksi kekasaran transisi audio hingga 34,2%. |
+| **23** | **Belaref et al. (2024)** (`belaref2024datadriven`) | *Data-Driven Decoding* (2024); membuktikan secara empiris bahwa representasi deep learning audio secara alami merekonstruksi topologi model sirkumpleks Russell. |
 
 ---
 
