@@ -144,6 +144,26 @@ Untuk membuktikan bahwa reduksi nilai *Smoothness Index* bukan merupakan hasil k
 * $H_1$: Model Usulan menghasilkan nilai *Smoothness Index* yang secara signifikan lebih rendah dibanding Baseline Gaur ($\mu_{\mathcal{S}, \text{Usulan}} < \mu_{\mathcal{S}, \text{Gaur}}$).
 Keputusan penolakan $H_0$ didasarkan pada perolehan nilai $p$-value $< 0,05$.
 
+### 3.5.4 Hasil Awal Replikasi Model Acuan (Preliminary Baseline Benchmark PoC)
+
+Sebagai pembuktian kelayakan teknis (*technical feasibility / proof of concept*) serta titik tolak komparasi (*ground truth baseline*) sebelum memasuki tahap implementasi Tugas Akhir 2, algoritma model acuan Gaur dan Donnelly (2020) telah berhasil direplikasi dan diuji coba pada keseluruhan korpus DEAM (1.802 klip lagu). Pengujian pendahuluan ini mengevaluasi kinerja penelusuran kandidat menggunakan tiga varian metrik jarak (*distance metrics*) pada tahap retrieval awal. Hasil komputasi benchmark awal disajikan pada Tabel 3.1.
+
+<div align="center">
+
+**Tabel 3.1 Hasil Pengujian Awal Replikasi Baseline Gaur dan Donnelly (2020) pada Korpus DEAM**
+
+| Konfigurasi Metrik Jarak | Smoothness Index (PCC) | Evenness V-A ($\sigma^2$) | Evenness Audio ($\sigma^2$) | Rata-rata Langkah V-A | Rata-rata Langkah Audio |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Cosine Distance | 0,9781 | 0,000349 | 0,005409 | 0,0436 | 0,3506 |
+| Euclidean Distance | 0,9876 | 0,000238 | 0,005082 | 0,0441 | 0,3106 |
+| Manhattan Distance | 0,9762 | 0,000290 | 0,004930 | 0,0435 | 0,2895 |
+
+<small><i>Sumber: Hasil komputasi pengujian awal replikasi model acuan pada repositori lokal (2026).</i></small>
+
+</div>
+
+Berdasarkan data empiris pada Tabel 3.1, ketiga konfigurasi jarak menunjukkan nilai korelasi arah yang tampak sangat tinggi (*Smoothness Index* PCC $> 0,97$). Namun, tingginya nilai kehalusan ini merupakan artefak dari sifat *static-point matching* yang mereduksi keseluruhan lagu menjadi satu titik rata-rata tunggal dan mengabaikan lonjakan emosi pada perbatasan intro-outro. Selain itu, nilai *Mean Audio Step* yang berkisar antara 0,2895 hingga 0,3506 mengindikasikan adanya ketimpangan karakteristik tekstur suara antartrek berturutan. Nilai kuantitatif pada Tabel 3.1 ini ditetapkan sebagai *baseline ground truth* formal yang siap dikomparasikan secara *head-to-head* terhadap model usulan (*Dynamic Mood Trajectory Alignment*) pada tahap eksekusi Tugas Akhir 2.
+
 ---
 
 ## 3.6 Desain Protokol Pengujian Subjektif (User Listening Study)
