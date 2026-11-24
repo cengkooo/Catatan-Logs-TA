@@ -63,6 +63,7 @@ LIMIT 5
 - ✍️ **Draf Naskah:** [[Bab-1-Pendahuluan]] | [[Bab-2-Tinjauan-Pustaka]] | [[Bab-3-Metodologi]] | [[Turnitin-Similarity-Ledger|Turnitin Similarity & Parafrase]]
 - 💬 **Riwayat Prompt AI:** [[README|08-Prompt-History]] | [[Prompt-2026-11-23]]
 - 📜 **Pedoman Resmi IF ITERA:** [[pedoman-ta-itera-lengkap|Buku Pedoman Lengkap]] | [[format-isi-ta]] | [[format-penulisan-unesco]] | [[dokumen-wajib]]
+- 📖 **Pusat Panduan & Tutorial:** [[00-Index-Tutorial|12-Tutorial-Catatan (Indeks Master Tutorial Vault)]]
 - 🛠️ **Panduan Sistem & Tooling:** [[tutorial-catatan|Panduan Vault & Hotkeys]] | [[obsidian-connect-google|Integrasi Google Workspace]]
 
 ---

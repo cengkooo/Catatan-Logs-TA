@@ -79,6 +79,15 @@ Catatan-Memori-Logs/
 │   ├── Model-Emosi-Sirkumpleks-Russell-1980.md
 │   └── Librosa-Audio-Feature-Extraction.md
 │
+├── 12-tutorial-catatan/   ◄── Pusat panduan & tutorial cara pakai vault
+│   ├── 00-Index-Tutorial.md
+│   ├── 01-Tutorial-Alur-Kerja-Harian.md
+│   ├── 02-Tutorial-Otomatisasi-Backup-GitHub.md
+│   ├── 03-Tutorial-Review-Paper-dan-Matriks-Sintesis.md
+│   ├── 04-Tutorial-Manajemen-Draf-dan-Skenario-Sempro.md
+│   ├── 05-Tutorial-Persiapan-Bimbingan-dan-TASYS.md
+│   └── 06-Tutorial-Hotkeys-dan-Cheatsheet-Plugin.md
+│
 └── 99-Templates/          ◄── Templat standar penulisan note baru (Daily Log, Konsep, Paper)
 ```
 
