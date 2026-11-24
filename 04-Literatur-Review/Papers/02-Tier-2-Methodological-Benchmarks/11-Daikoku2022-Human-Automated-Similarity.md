@@ -1,4 +1,5 @@
----
+---tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
+
 title: "Bedah Kritis: Agreement Among Human and Automated Estimates of Similarity in a Global Music Sample"
 author: "Hideo Daikoku et al."
 year: 2022
@@ -15,8 +16,10 @@ tags:
   - user-study
   - mir-evaluation
 status: "audited"
+aliases:
+  - Daikoku2022-Human-Automated-Similarity
+  - Human Automated Similarity Daikoku
 ---
-
 # 📖 Bedah Kritis: Konsensus Manusia vs Algoritma (Daikoku et al., 2022)
 ## *Agreement Among Human and Automated Estimates of Similarity in a Global Music Sample*
 

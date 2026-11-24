@@ -1,4 +1,5 @@
----
+---tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
+
 title: "Bedah Kritis: Towards Unified Music Emotion Recognition across Dimensional and Categorical Models"
 author: "Huan Kang et al."
 year: 2025
@@ -15,8 +16,10 @@ tags:
   - dimensional-categorical
   - cross-corpus
 status: "audited"
+aliases:
+  - Kang2025-Unified-MER-Dimensional-Categorical
+  - Unified MER Kang
 ---
-
 # 📖 Bedah Kritis: Unifikasi Model Emosi Musik (Kang et al., 2025)
 ## *Towards Unified Music Emotion Recognition across Dimensional and Categorical Models*
 

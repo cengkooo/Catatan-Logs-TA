@@ -1,4 +1,5 @@
----
+---tier: "Tier 1: Core Foundation & Baseline Acuan"
+
 title: "Bedah Kritis: Mood-Dynamic Playlist Interpolating a Path of Emotions Using a KNN Algorithm"
 author: "Shaurya Gaur & Patrick Donnelly"
 year: 2023
@@ -16,8 +17,10 @@ tags:
   - knn
   - dmdd
 status: "audited"
+aliases:
+  - Gaur2023-Mood-Dynamic
+  - Mood-Dynamic Playlist Gaur
 ---
-
 # 📖 Bedah Kritis: Mood-Dynamic Playlist (Gaur & Donnelly, 2023)
 ## *Interpolating a Path of Emotions Using a KNN Algorithm*
 

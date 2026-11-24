@@ -1,4 +1,5 @@
----
+---tier: "Tier 1: Core Foundation & Baseline Acuan"
+
 title: "Bedah Kritis: Flow Moods: Recommending Music by Moods on Deezer"
 author: "Théo Bontempelli et al. (Deezer Research)"
 year: 2022
@@ -16,8 +17,10 @@ tags:
   - flow-moods
   - acm-recsys
 status: "audited"
+aliases:
+  - Bontempelli2022-Flow-Moods-Deezer
+  - Deezer Flow Moods
 ---
-
 # 📖 Bedah Kritis: Deezer Flow Moods (Bontempelli et al., 2022)
 ## *Recommending Music by Moods on Deezer*
 

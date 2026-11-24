@@ -1,4 +1,5 @@
----
+---tier: "Tier 3: Contextual & Auxiliary Reference"
+
 title: "Bedah Kritis: Emotion Manipulation Through Music: A Deep Learning Interactive Visual Approach"
 author: "M. Abdalla et al."
 year: 2024
@@ -15,8 +16,10 @@ tags:
   - emotion-manipulation
   - human-ai
 status: "audited"
+aliases:
+  - Abdalla2024-Emotion-Manipulation-Music
+  - Emotion Manipulation Abdalla
 ---
-
 # 📖 Bedah Kritis: Manipulasi Emosi Interaktif (Abdalla et al., 2024)
 ## *Emotion Manipulation Through Music: A Deep Learning Interactive Visual Approach*
 

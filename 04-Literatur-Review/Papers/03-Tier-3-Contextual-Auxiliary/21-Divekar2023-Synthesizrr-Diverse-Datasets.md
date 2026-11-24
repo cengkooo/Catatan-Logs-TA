@@ -1,4 +1,5 @@
----
+---tier: "Tier 3: Contextual & Auxiliary Reference"
+
 title: "Bedah Kritis: Synthesizrr: Generating Diverse Datasets with Retrieval Augmentation (Divekar et al., 2023)"
 author: "Chandresh Divekar et al."
 year: 2023
@@ -15,8 +16,10 @@ tags:
   - diversity-sampling
   - neurips
 status: "audited"
+aliases:
+  - Divekar2023-Synthesizrr-Diverse-Datasets
+  - Synthesizrr Divekar
 ---
-
 # 📖 Bedah Kritis: Synthesizrr Retrieval Diversity (Divekar et al., 2023)
 ## *Synthesizrr: Generating Diverse Datasets with Retrieval Augmentation*
 

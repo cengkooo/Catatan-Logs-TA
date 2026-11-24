@@ -1,4 +1,5 @@
----
+---tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
+
 title: "Bedah Kritis: MOODetector: A Prototype Software Tool for Mood-based Playlist Generation"
 author: "Bruno Cardoso & K. E. Voigt"
 year: 2011
@@ -15,8 +16,10 @@ tags:
   - path-planning
   - moodetector
 status: "audited"
+aliases:
+  - Cardoso2011-MOODetector-Prototype
+  - MOODetector Cardoso
 ---
-
 # 📖 Bedah Kritis: Prototipe MOODetector (Cardoso & Voigt, 2011)
 ## *MOODetector: A Prototype Software Tool for Mood-based Playlist Generation*
 

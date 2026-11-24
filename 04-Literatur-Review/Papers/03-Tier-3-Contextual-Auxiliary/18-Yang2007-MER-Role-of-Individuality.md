@@ -1,4 +1,5 @@
----
+---tier: "Tier 3: Contextual & Auxiliary Reference"
+
 title: "Bedah Kritis: Music Emotion Recognition: The Role of Individuality (Yang et al., 2007)"
 author: "Yi-Hsuan Yang et al."
 year: 2007
@@ -15,8 +16,10 @@ tags:
   - subjective-perception
   - acm-mm
 status: "audited"
+aliases:
+  - Yang2007-MER-Role-of-Individuality
+  - Individuality MER Yang
 ---
-
 # 📖 Bedah Kritis: Peran Individualitas dalam MER (Yang et al., 2007)
 ## *Music Emotion Recognition: The Role of Individuality*
 

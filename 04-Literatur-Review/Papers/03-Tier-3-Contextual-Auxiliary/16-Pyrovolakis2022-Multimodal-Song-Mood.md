@@ -1,4 +1,5 @@
----
+---tier: "Tier 3: Contextual & Auxiliary Reference"
+
 title: "Bedah Kritis: Multi Modal Song Mood Detection with Deep Learning (Pyrovolakis et al., 2022)"
 author: "Konstantinos Pyrovolakis et al."
 year: 2022
@@ -15,8 +16,10 @@ tags:
   - deep-learning
   - expert-systems
 status: "audited"
+aliases:
+  - Pyrovolakis2022-Multimodal-Song-Mood
+  - Multimodal Pyrovolakis
 ---
-
 # 📖 Bedah Kritis: Multimodal Deep Learning MER (Pyrovolakis et al., 2022)
 ## *Multi Modal Song Mood Detection with Deep Learning*
 

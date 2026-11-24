@@ -1,4 +1,5 @@
----
+---tier: "Tier 1: Core Foundation & Baseline Acuan"
+
 title: "Bedah Kritis: Leakage-Audited Dynamic Arousal Forecasting With Scheduled Future Music"
 author: "Bin Wen, Dai-Qiao Zhang, & Tien-Ping Tan"
 year: 2025
@@ -16,8 +17,10 @@ tags:
   - deam
   - forecasting
 status: "audited"
+aliases:
+  - Wen2025-Leakage-Audited-Dynamic-Arousal
+  - Leakage-Audited Wen
 ---
-
 # 📖 Bedah Kritis: Leakage-Audited Dynamic Arousal (Wen et al., 2025)
 ## *Known Music, Unknown Response: Leakage-Audited Dynamic Arousal Forecasting*
 

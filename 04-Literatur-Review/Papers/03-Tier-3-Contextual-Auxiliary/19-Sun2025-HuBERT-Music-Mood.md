@@ -1,4 +1,5 @@
----
+---tier: "Tier 3: Contextual & Auxiliary Reference"
+
 title: "Bedah Kritis: Feature Centric Based Deep Learning Approach for Music Mood Recognition with HuBERT Transformer Model"
 author: "Y. Sun et al."
 year: 2025
@@ -16,8 +17,10 @@ tags:
   - deam
   - dynamic-regression
 status: "audited"
+aliases:
+  - Sun2025-HuBERT-Music-Mood
+  - HuBERT Sun
 ---
-
 # 📖 Bedah Kritis: HuBERT Transformer untuk MER (Sun et al., 2025)
 ## *Feature Centric Deep Learning Approach with HuBERT Transformer Model*
 

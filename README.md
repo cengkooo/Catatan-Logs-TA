@@ -40,9 +40,10 @@ Catatan-Memori-Logs/
 │   ├── 01-Notulensi-Bimbingan.md s.d. 04-Lembar-Diskusi-Skenario-User-Study.md (Linier 01–04)
 │   └── README.md
 │
-├── 04-Literatur-Review/   ◄── Matriks sintesis 21 paper IEEE/MIR, kamus notasi, spreadsheet
-│   ├── Matriks-Sintesis.md
-│   └── Kamus-Notasi-Glosarium.md
+├── 04-Literatur-Review/   ◄── Matriks sintesis 21 paper IEEE/MIR terstruktur 3 Tier, glosarium, spreadsheet
+│   ├── Papers/ (01-Tier-1-Core-Foundation, 02-Tier-2-Methodological, 03-Tier-3-Contextual)
+│   ├── Matriks-Sintesis.md & Kamus-Notasi-Glosarium.md
+│   └── README.md
 │
 ├── 05-Eksperimen/         ◄── Dokumentasi teknis koding, dataset DEAM, baseline Gaur, & model usulan
 │   ├── 01-Dataset-DEAM-dan-Eksplorasi.md s.d. 09-Peta-Kode-Code-Walkthrough.md (Linier 01–09)

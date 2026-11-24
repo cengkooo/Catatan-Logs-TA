@@ -1,4 +1,5 @@
----
+---tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
+
 title: "Bedah Kritis: Automatic Music Playlist Generation via Simulation-based Reinforcement Learning"
 author: "Federico Tomasi, Zhenwen Dai, & Damien Tardieu (Spotify Research)"
 year: 2023
@@ -15,8 +16,10 @@ tags:
   - spotify
   - playlist-generation
 status: "audited"
+aliases:
+  - Tomasi2023-Automatic-Playlist-RL
+  - Spotify RL Playlist Tomasi
 ---
-
 # 📖 Bedah Kritis: Playlist Berbasis RL Spotify (Tomasi et al., 2023)
 ## *Automatic Music Playlist Generation via Simulation-based Reinforcement Learning*
 

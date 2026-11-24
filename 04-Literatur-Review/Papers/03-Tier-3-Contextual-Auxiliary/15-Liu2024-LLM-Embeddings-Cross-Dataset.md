@@ -1,4 +1,5 @@
----
+---tier: "Tier 3: Contextual & Auxiliary Reference"
+
 title: "Bedah Kritis: Leveraging LLM Embeddings for Cross Dataset Label Alignment and Zero Shot Music Emotion Prediction"
 author: "Xuan Liu et al."
 year: 2024
@@ -15,8 +16,10 @@ tags:
   - cross-dataset
   - zero-shot
 status: "audited"
+aliases:
+  - Liu2024-LLM-Embeddings-Cross-Dataset
+  - LLM Embeddings Liu
 ---
-
 # 📖 Bedah Kritis: Penyelarasan Label Lintas Dataset LLM (Liu et al., 2024)
 ## *Leveraging LLM Embeddings for Cross Dataset Label Alignment*
 

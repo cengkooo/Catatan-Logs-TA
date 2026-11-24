@@ -1,4 +1,5 @@
----
+---tier: "Tier 3: Contextual & Auxiliary Reference"
+
 title: "Bedah Kritis: Music Mood Detection Based on Audio and Lyrics with Deep Neural Net (Delbouys et al., 2018)"
 author: "Régis Delbouys et al. (Deezer Research)"
 year: 2018
@@ -16,8 +17,10 @@ tags:
   - deezer
   - ismir
 status: "audited"
+aliases:
+  - Delbouys2018-Music-Mood-Audio-Lyrics
+  - DMDD Delbouys
 ---
-
 # 📖 Bedah Kritis: Deteksi Mood Audio & Lirik (Delbouys et al., 2018)
 ## *Music Mood Detection Based on Audio and Lyrics with Deep Neural Net*
 

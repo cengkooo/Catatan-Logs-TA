@@ -1,4 +1,5 @@
----
+---tier: "Tier 1: Core Foundation & Baseline Acuan"
+
 title: "An Exploration of Mood Arc in Music Playlists"
 author: "Manas Gaur & Austin Donnelly"
 year: 2020
@@ -9,8 +10,9 @@ tags:
   - literatur
   - paper-review
 status: "read"
+aliases:
+  - Gaur2020-Mood-Arc
 ---
-
 # 📖 An Exploration of Mood Arc in Music Playlists
 
 - **Penulis:** `Manas Gaur & Austin Donnelly` (2020)

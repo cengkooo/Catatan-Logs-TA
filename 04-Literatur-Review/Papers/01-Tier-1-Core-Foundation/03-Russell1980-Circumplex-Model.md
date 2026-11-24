@@ -1,4 +1,5 @@
----
+---tier: "Tier 1: Core Foundation & Baseline Acuan"
+
 title: "Bedah Kritis: A Circumplex Model of Affect (Russell, 1980)"
 author: "James A. Russell"
 year: 1980
@@ -16,8 +17,10 @@ tags:
   - valence-arousal
   - jpsp
 status: "audited"
+aliases:
+  - Russell1980-Circumplex-Model
+  - Circumplex Model Russell
 ---
-
 # 📖 Bedah Kritis: Model Emosi Sirkumpleks (Russell, 1980)
 ## *A Circumplex Model of Affect*
 

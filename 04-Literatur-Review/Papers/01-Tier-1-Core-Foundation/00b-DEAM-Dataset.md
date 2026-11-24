@@ -1,4 +1,5 @@
----
+---tier: "Tier 1: Core Foundation & Baseline Acuan"
+
 title: "The MediaEval Database for Emotion Analysis in Music (DEAM)"
 author: "Anna Aljanaki et al."
 year: 2017
@@ -9,8 +10,9 @@ tags:
   - literatur
   - paper-review
 status: "read"
+aliases:
+  - DEAM-Dataset
 ---
-
 # 📖 The MediaEval Database for Emotion Analysis in Music (DEAM)
 
 - **Penulis:** `Anna Aljanaki, Yi-Hsuan Yang, Mohammad Soleymani` (2017)

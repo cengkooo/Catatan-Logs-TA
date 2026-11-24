@@ -1,4 +1,5 @@
----
+---tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
+
 title: "Bedah Kritis: MERT Acoustic Music Understanding Model with Large-Scale Self-Supervised Training"
 author: "Yizhi Li et al. (Cambridge / Queen Mary / HKUST)"
 year: 2024
@@ -16,8 +17,10 @@ tags:
   - self-supervised
   - audio-embeddings
 status: "audited"
+aliases:
+  - Li2024-MERT-Acoustic-Understanding
+  - MERT Audio Model
 ---
-
 # 📖 Bedah Kritis: Model Audio MERT (Li et al., 2024)
 ## *MERT: Acoustic Music Understanding Model with Large-Scale Self-Supervised Training*
 
