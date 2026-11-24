@@ -117,6 +117,41 @@ Untuk mencegah *merge conflict*, bloat repositori, dan kebocoran file sementara,
 
 ---
 
+## 🔄 Otomatisasi Backup GitHub Setiap Perubahan (CRUD)
+
+Vault ini telah dilengkapi dengan sistem pencadangan otomatis ke GitHub setiap kali terjadi aksi **Create, Read/Update, Delete, atau Rename (CRUD)** terhadap berkas catatan:
+
+### 1. Cara Kerja Otomatis di Dalam Obsidian (Native Event Trigger)
+Plugin `obsidian-shellcommands` telah dikonfigurasi untuk menangani event:
+* `file-created` (Saat membuat note baru)
+* `file-modified` (Saat menyunting atau mengetik isi note)
+* `file-deleted` (Saat menghapus note)
+* `file-renamed` (Saat mengganti nama note)
+
+> **Mekanisme Debounce (15 Detik):**  
+> Sistem akan menunggu selama 15 detik setelah Anda selesai mengetik/berhenti mengedit, lalu otomatis mengeksekusi skrip `scripts/sync_vault_now.ps1` (`git add -A`, `git commit`, dan `git push`) secara hening di latar belakang serta memunculkan notifikasi di pojok kanan bawah.
+
+### 2. Pemicu Manual Lewat Obsidian Command Palette
+Anda dapat melakukan sinkronisasi instan kapan saja:
+1. Tekan `Ctrl + P` di Obsidian.
+2. Ketik: **`Git: Backup Vault ke GitHub Sekarang`** lalu tekan `Enter`.
+
+### 3. Background Watcher Eksternal (PowerShell)
+Bila Anda sering menyunting berkas Markdown dari luar Obsidian (misal via VS Code atau terminal), jalankan background watcher:
+```powershell
+powershell -ExecutionPolicy Bypass -File "D:\Kuliah\Semester 7\Tugas Akhir\Proposal Tugas Akhir\scripts\watch_vault_git_sync.ps1"
+```
+
+### 4. Menghubungkan ke Repositori GitHub Anda (Sekali Saja)
+Vault lokal sudah diinisialisasi sebagai repositori Git. Untuk menghubungkannya ke GitHub:
+```powershell
+cd "D:\Kuliah\Semester 7\Tugas Akhir\Proposal Tugas Akhir\Catatan-Memori\Catatan-Memori-Logs"
+git remote add origin https://github.com/<USERNAME-ANDA>/<NAMA-REPO-VAULT>.git
+git push -u origin master
+```
+
+---
+
 ## 🚀 Panduan Alur Kerja Harian Mahasiswa
 
 1. **Pagi (06:00–07:00):** Buka `02-Daily-Logs/YYYY-MM-DD.md`, cek target prioritas hari ini.
