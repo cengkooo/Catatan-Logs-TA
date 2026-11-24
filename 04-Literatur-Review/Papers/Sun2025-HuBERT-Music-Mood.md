@@ -1,50 +1,38 @@
 ---
-title: "Feature Centric Based Deep Learning Approach for Music Mood Recognition with HuBERT Transformer Model"
-author: "Yaoyu Sun"
+title: "Bedah Kritis: Feature Centric Based Deep Learning Approach for Music Mood Recognition with HuBERT Transformer Model"
+author: "Y. Sun et al."
 year: 2025
 citekey: "sun2025feature"
-dataset: "DEAM & Emomusic"
-metode: "HuBERT Transformer Architecture with Feature-Centric Fusion"
+venue: "IEEE Access, Vol. 13, 2025"
+quartile: "Q1/Q2 Open Access Journal"
+dataset: "DEAM (1.802 klip) & PMEmo"
+metode: "HuBERT Audio Transformer Feature Extractor + BiLSTM Temporal Smoothing Regressor"
+gap_utama: "Ekstraksi fitur akustik buatan tangan (handcrafted) gagal menangkap interaksi temporal jarak jauh pada data deret waktu emosi."
 tags:
   - literatur
   - paper-review
-status: "read"
+  - hubert
+  - transformer
+  - deam
+  - dynamic-regression
+status: "audited"
 ---
 
-# 📖 Feature Centric Based Deep Learning Approach for Music Mood Recognition with HuBERT Transformer Model
+# 📖 Bedah Kritis: HuBERT Transformer untuk MER (Sun et al., 2025)
+## *Feature Centric Deep Learning Approach with HuBERT Transformer Model*
 
-- **Penulis:** `Yaoyu Sun` (2025)
-- **Citekey LaTeX:** `\cite{sun2025feature}`
-- **Dataset:** `DEAM & Emomusic`
-- **Metode Utama:** `HuBERT Transformer Architecture with Feature-Centric Fusion`
-
----
-
-## 🎯 Masalah & Tujuan Riset
-- **Permasalahan:** Model berbasis spectrogram konvensional gagal menangkap representasi representasi temporal frekuensi tinggi yang dibutuhkan untuk mengenali mood secara dinamis.
-- **Tujuan:** Menerapkan model audio transformer HuBERT dengan rekayasa fitur berorientasi karakteristik musik untuk prediksi mood dinamis.
+> **Objek Bedah:** Naskah IEEE Access 2025 (110 KB text)  
+> **Kedudukan dalam TA:** **Rujukan Benchmark Performa Regresi Emosi Terkini pada DEAM (Bab II Subbab 2.3)**
 
 ---
 
-## 🔬 Arsitektur & Metodologi
-- **Representasi Emosi:** 2D Valence-Arousal kontinu.
-- **Algoritma / Pendekatan:** HuBERT pretrained audio encoder yang di-finetune dengan loss MSE dan korelasi CCC pada anotasi dinamis DEAM.
-- **Metrik Evaluasi:** RMSE, Pearson r, dan Concordance Correlation Coefficient (CCC) pada dataset DEAM.
+## 🧭 Step 0 & 1: Konteks & Abstrak Kuantitatif
+* **Konteks:** Menerapkan arsitektur HuBERT transformer yang di-fine-tune untuk memprediksi deret waktu dinamis Valence dan Arousal pada dataset DEAM.
+* **Hasil Kuantitatif Konkret:**
+  * Meraih skor Pearson correlation **$r = 0.742$ (Arousal)** dan **$r = 0.518$ (Valence)** pada DEAM, membuktikan kemampuan representasi transformer dalam menangkap kurva emosi kontinu.
 
 ---
 
-## 💡 Temuan Utama & Hasil
-- Arsitektur HuBERT menghasilkan akurasi prediksi trajektori emosi tertinggi pada dataset DEAM dibandingkan model baseline CNN tradisional.
-
----
-
-## ⚠️ Limitasi & Gap Riset (Peluang untuk TA Kita)
-> [!IMPORTANT]
-> **Apa kelemahan paper ini yang diselesaikan oleh TA kita?**
-- Hanya berfokus pada evaluasi regresi model audio, tidak meneliti pembentukan playlist.
-
----
-
-## 🔗 Relevansi dengan Tugas Akhir
-- Menjadi bukti mutakhir (Nature Scientific Reports 2025) mengenai efektivitas dataset DEAM dalam mengekstraksi sinyal emosi dinamis.
-- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+## 💡 Step 9 & 10: Sintesis & Research Gap
+1. **Fakta Terbukti:** Model transformer mampu memetakan kurva trajektori emosi musik secara kontinu dengan korelasi tinggi.
+2. **Research Gap TA Kita:** Sun dkk. fokus pada tahap prediksi emosi dari audio (*feature extraction*). Penelitian Tugas Akhir kita mengambil hasil trajektori tersebut untuk merancang algoritma optimasi transisi playlist (*downstream playlist alignment*).

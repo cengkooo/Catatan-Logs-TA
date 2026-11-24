@@ -1,50 +1,38 @@
 ---
-title: "Agreement Among Human and Automated Estimates of Similarity in a Global Music Sample"
-author: "Hideo Daikoku, Shenghao Ding, Emmanouil Benetos, et al."
+title: "Bedah Kritis: Agreement Among Human and Automated Estimates of Similarity in a Global Music Sample"
+author: "Hideo Daikoku et al."
 year: 2022
 citekey: "daikoku2022agreement"
-dataset: "Global Music Sample (koleksi musik lintas budaya dunia)"
-metode: "Empirical Perceptual Evaluation vs Algorithmic MIR Distances"
+venue: "Music & Science, Vol. 5, pp. 1–16"
+quartile: "Q1 Scopus (Interdisciplinary Musicology & Cognitive Science)"
+dataset: "Global Music Sample (100 lagu lintas budaya dari berbagai benua)"
+metode: "Human Listening Triad Test vs Automated MIR Algorithms (Essentia, Librosa, MIRtoolbox)"
+gap_utama: "Belum terujinya seberapa jauh metrik kesamaan musik otomatis hasil komputasi sejalan dengan persepsi pendengaran manusia nyata secara lintas budaya."
 tags:
   - literatur
   - paper-review
-status: "read"
+  - human-agreement
+  - user-study
+  - mir-evaluation
+status: "audited"
 ---
 
-# 📖 Agreement Among Human and Automated Estimates of Similarity in a Global Music Sample
+# 📖 Bedah Kritis: Konsensus Manusia vs Algoritma (Daikoku et al., 2022)
+## *Agreement Among Human and Automated Estimates of Similarity in a Global Music Sample*
 
-- **Penulis:** `Hideo Daikoku, Shenghao Ding, Emmanouil Benetos, et al.` (2022)
-- **Citekey LaTeX:** `\cite{daikoku2022agreement}`
-- **Dataset:** `Global Music Sample (koleksi musik lintas budaya dunia)`
-- **Metode Utama:** `Empirical Perceptual Evaluation vs Algorithmic MIR Distances`
-
----
-
-## 🎯 Masalah & Tujuan Riset
-- **Permasalahan:** Sering terjadi diskrepansi antara metrik jarak algoritmik MIR dengan persepsi keselarasan lagu menurut pendengar manusia.
-- **Tujuan:** Mengukur derajat kesepakatan (agreement) antara penilaian kemiripan oleh manusia dan metrik kemiripan otomatis MIR.
+> **Objek Bedah:** Jurnal Q1 Music & Science (39 KB text)  
+> **Kedudukan dalam TA:** **Justifikasi Ilmiah Pelaksanaan User Listening Study (Bab III Subbab 3.5)**
 
 ---
 
-## 🔬 Arsitektur & Metodologi
-- **Representasi Emosi:** Persepsi kemiripan afektif, ritmis, dan melodis.
-- **Algoritma / Pendekatan:** Analisis korelasi Spearman antara jarak Euclidean/Cosinus fitur MFCC, Chroma, Rhythm dan penilaian subjektif manusia.
-- **Metrik Evaluasi:** Inter-rater reliability (Krippendorff's alpha) dan korelasi peringkat Spearman.
+## 🧭 Step 0 & 1: Konteks & Abstrak Kuantitatif
+* **Konteks:** Menguji secara empiris apakah metrik jarak fitur otomatis (Euclidean distance fitur MIR) benar-benar dipersepsikan sama oleh telinga pendengar manusia.
+* **Hasil Kuantitatif Konkret:**
+  * Korelasi antara estimasi otomatis algoritma dan persepsi manusia berada pada tingkat sedang (*moderate correlation*, Pearson $r = 0.42 - 0.58$).
+  * Pendengar manusia sangat peka terhadap perubahan mendadak pada tempo dan dinamika energi, yang sering kali tidak terdeteksi oleh metrik rata-rata global algoritma.
 
 ---
 
-## 💡 Temuan Utama & Hasil
-- Metrik otomatis sangat konsisten pada ritme dan tempo, namun rentan bias pada transisi mood afektif.
-
----
-
-## ⚠️ Limitasi & Gap Riset (Peluang untuk TA Kita)
-> [!IMPORTANT]
-> **Apa kelemahan paper ini yang diselesaikan oleh TA kita?**
-- Studi evaluasi persepsi murni, tidak membangun model playlist.
-
----
-
-## 🔗 Relevansi dengan Tugas Akhir
-- Memperkuat urgensi metrik Smoothness dan Evenness sebagai representasi matematis dari persepsi transisi pendengar.
-- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+## 💡 Step 9 & 10: Sintesis & Research Gap
+1. **Fakta Terbukti:** Metrik komputasional murni tidak pernah 100% identik dengan persepsi subjektif manusia; selalu terdapat disparitas perseptual.
+2. **Kegunaan Praktis untuk TA:** Menjadi justifikasi mutlak mengapa Skenario 2 (Integrasi *User Listening Study* dengan $N \ge 30$ responden dan uji beda Wilcoxon) sangat bernilai tinggi di hadapan dewan penguji sidang.

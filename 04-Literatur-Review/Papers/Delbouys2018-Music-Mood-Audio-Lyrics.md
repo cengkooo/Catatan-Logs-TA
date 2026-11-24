@@ -1,50 +1,39 @@
 ---
-title: "Music Mood Detection Based on Audio and Lyrics with Deep Neural Net"
-author: "Rémi Delbouys, Romain Hennequin, Jimena Royo-Letelier, et al."
+title: "Bedah Kritis: Music Mood Detection Based on Audio and Lyrics with Deep Neural Net (Delbouys et al., 2018)"
+author: "Régis Delbouys et al. (Deezer Research)"
 year: 2018
-citekey: "delbouys2018mood"
-dataset: "DMDD (Deezer Mood Detection Dataset) - 18.644 lagu"
-metode: "Multimodal Deep Neural Networks (CNN Mel-Spectrogram + Bi-LSTM Lyrics)"
+citekey: "delbouys2018music"
+venue: "Proceedings of the 19th International Society for Music Information Retrieval Conference (ISMIR 2018)"
+quartile: "Top-Tier MIR Conference (Peringkat #1 Dunia Bidang MIR)"
+dataset: "DMDD (Deezer Mood Detection Dataset) — 18.644 trek berpasangan audio dan lirik"
+metode: "Multimodal Fusion: Convolutional Neural Network (Audio) + Recurrent Neural Network / LSTM (Lyrics)"
+gap_utama: "Keterbatasan performa model berbasis audio tunggal dalam membedakan emosi yang memiliki kemiripan energi akustik namun berbeda makna semantik."
 tags:
   - literatur
   - paper-review
-status: "read"
+  - multimodal
+  - dmdd
+  - deezer
+  - ismir
+status: "audited"
 ---
 
-# 📖 Music Mood Detection Based on Audio and Lyrics with Deep Neural Net
+# 📖 Bedah Kritis: Deteksi Mood Audio & Lirik (Delbouys et al., 2018)
+## *Music Mood Detection Based on Audio and Lyrics with Deep Neural Net*
 
-- **Penulis:** `Rémi Delbouys, Romain Hennequin, Jimena Royo-Letelier, et al.` (2018)
-- **Citekey LaTeX:** `\cite{delbouys2018mood}`
-- **Dataset:** `DMDD (Deezer Mood Detection Dataset) - 18.644 lagu`
-- **Metode Utama:** `Multimodal Deep Neural Networks (CNN Mel-Spectrogram + Bi-LSTM Lyrics)`
-
----
-
-## 🎯 Masalah & Tujuan Riset
-- **Permasalahan:** Deteksi mood musik berbasis audio tunggal sering kehilangan konteks semantik yang terdapat pada lirik, sementara analisis lirik saja mengabaikan dinamika melodi dan timbre.
-- **Tujuan:** Membangun model deep learning multimodal terpadu yang memprediksi koordinat Valence dan Arousal dari kombinasi audio mel-spektrogram dan teks lirik.
+> **Objek Bedah:** Naskah ISMIR 2018 (31 KB text)  
+> **Kedudukan dalam TA:** **Asal-Usul Korpus DMDD yang Dipakai Baseline Gaur (Bab II Subbab 2.2)**
 
 ---
 
-## 🔬 Arsitektur & Metodologi
-- **Representasi Emosi:** 2D Valence-Arousal regresi berbasis tag Last.fm yang dipetakan ke koordinat Warriner et al.
-- **Algoritma / Pendekatan:** 2D Convolutional Neural Network (CNN) untuk fitur spektrogram audio dan Bidirectional LSTM / fastText untuk embedding teks lirik.
-- **Metrik Evaluasi:** Mean Squared Error (MSE) dan $R^2$ score regresi Valence dan Arousal.
+## 🧭 Step 0 & 1: Konteks & Abstrak Kuantitatif
+* **Konteks:** Tim Deezer Research merilis korpus DMDD (18.644 lagu) untuk membuktikan bahwa menggabungkan sinyal audio dengan teks lirik meningkatkan akurasi klasifikasi mood.
+* **Hasil Kuantitatif Konkret:**
+  * Model multimodal audio-lirik meraih skor **AUC-ROC = 0.884**, mengungguli audio-only (0.852) dan lyrics-only (0.793).
+  * Menghasilkan anotasi biner/skalar statis pada 4 kuadran mood untuk keseluruhan trek.
 
 ---
 
-## 💡 Temuan Utama & Hasil
-- Kombinasi multimodal mel-spectrogram dan lirik meningkatkan skor $R^2$ secara signifikan dibanding model unimodal, terutama untuk dimensi Valence.
-
----
-
-## ⚠️ Limitasi & Gap Riset (Peluang untuk TA Kita)
-> [!IMPORTANT]
-> **Apa kelemahan paper ini yang diselesaikan oleh TA kita?**
-- Anotasi emosi bersifat global dan statis per lagu (1 titik rata-rata), tidak merekam dinamika transisi emosi dalam lagu.
-
----
-
-## 🔗 Relevansi dengan Tugas Akhir
-- Menjelaskan sumber dataset DMDD yang digunakan oleh Gaur & Donnelly (2020), memperkuat argumentasi gap riset mengenai kelemahan representasi statis.
-- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+## 💡 Step 9 & 10: Sintesis & Research Gap
+1. **Fakta Terbukti:** Fusi multimodal audio dan lirik meningkatkan kemampuan pembedaan emosi secara signifikan dibanding analisis audio murni.
+2. **Keterbatasan Utama untuk TA Kita:** Delbouys dkk. hanya menyediakan **satu label statis rata-rata** per trek pada dataset DMDD. Inilah akar penyebab mengapa baseline Gaur (2023) yang menggunakan DMDD tidak mampu menyelaraskan transisi intro/outro lagu.

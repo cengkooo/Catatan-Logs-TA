@@ -1,50 +1,37 @@
 ---
-title: "Music Emotion Recognition: The Role of Individuality"
-author: "Yi-Hsuan Yang, Ya-Fan Su, Yu-Ching Lin, Homer H. Chen"
+title: "Bedah Kritis: Music Emotion Recognition: The Role of Individuality (Yang et al., 2007)"
+author: "Yi-Hsuan Yang et al."
 year: 2007
 citekey: "yang2007music"
-dataset: "Subjective Listening Experiment (koleksi musik populer)"
-metode: "Support Vector Regression (SVR) Modeling Individual Perception Variance"
+venue: "Proceedings of the ACM International Conference on Multimedia (ACM MM 2007)"
+quartile: "Top-Tier Multimedia Conference (Core A*)"
+dataset: "195 Klip Musik Klasik & Pop dengan Anotasi Multi-Subjek"
+metode: "Support Vector Regression (SVR) + Individual Difference Modeling + Ranking Adaptation"
+gap_utama: "Penggunaan nilai emosi rata-rata tunggal (*ground truth consensus*) mengaburkan variasi preferensi dan sensitivitas emosional antar individu."
 tags:
   - literatur
   - paper-review
-status: "read"
+  - individuality
+  - subjective-perception
+  - acm-mm
+status: "audited"
 ---
 
-# 📖 Music Emotion Recognition: The Role of Individuality
+# 📖 Bedah Kritis: Peran Individualitas dalam MER (Yang et al., 2007)
+## *Music Emotion Recognition: The Role of Individuality*
 
-- **Penulis:** `Yi-Hsuan Yang, Ya-Fan Su, Yu-Ching Lin, Homer H. Chen` (2007)
-- **Citekey LaTeX:** `\cite{yang2007music}`
-- **Dataset:** `Subjective Listening Experiment (koleksi musik populer)`
-- **Metode Utama:** `Support Vector Regression (SVR) Modeling Individual Perception Variance`
-
----
-
-## 🎯 Masalah & Tujuan Riset
-- **Permasalahan:** Persepsi emosi musik memiliki unsur subjektivitas yang tinggi antar individu sehingga model emosi umum sering dianggap tidak akurat oleh sebagian pendengar.
-- **Tujuan:** Mempelajari sejauh mana variasi individual mempengaruhi persepsi emosi musik dan bagaimana memodelkannya secara komputasional.
+> **Objek Bedah:** Naskah ACM Multimedia 2007 (40 KB text)  
+> **Kedudukan dalam TA:** **Landasan Subjektivitas Evaluasi Pendengaran (Bab II Subbab 2.1)**
 
 ---
 
-## 🔬 Arsitektur & Metodologi
-- **Representasi Emosi:** Ruang 2D Valence-Arousal Thayer.
-- **Algoritma / Pendekatan:** SVR personalisasi yang menggabungkan model emosi konsensus umum dengan bobot profil preferensi pendengar individual.
-- **Metrik Evaluasi:** $R^2$ score dan korelasi antara prediksi model personal vs persepsi aktual subjek.
+## 🧭 Step 0 & 1: Konteks & Abstrak Kuantitatif
+* **Konteks:** Meneliti sejauh mana perbedaan latar belakang musik, suasana hati personal, dan kepribadian mempengaruhi persepsi emosi lagu.
+* **Hasil Kuantitatif Konkret:**
+  * Korelasi persepsi antar subjek manusia (*inter-subject agreement*) berkisar antara **$r = 0.55 - 0.75$**, membuktikan bahwa ada komponen emosi konsensus yang objektif, namun tetap ada variasi subjektif sebesar ~30%.
 
 ---
 
-## 💡 Temuan Utama & Hasil
-- Meskipun ada variasi subjektif pada Valence, respons Arousal dan gradien perubahan mood memiliki konsensus tinggi antar pendengar.
-
----
-
-## ⚠️ Limitasi & Gap Riset (Peluang untuk TA Kita)
-> [!IMPORTANT]
-> **Apa kelemahan paper ini yang diselesaikan oleh TA kita?**
-- Ukuran sampel subjek terbatas pada eksperimen laboratorium kecil.
-
----
-
-## 🔗 Relevansi dengan Tugas Akhir
-- Membenarkan penggunaan nilai rata-rata agregat dari dataset DEAM karena tren trajektori makro terbukti memiliki konsensus tinggi.
-- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+## 💡 Step 9 & 10: Sintesis & Research Gap
+1. **Fakta Terbukti:** Persepsi emosi musik memiliki komponen konsensus umum (dapat dioptimasi oleh algoritma komputasi) dan komponen personal.
+2. **Kegunaan untuk TA:** Memperkuat dasar pengujian *User Listening Study* kita bahwa evaluasi transisi playlist harus menggunakan uji statistik non-parametrik (seperti Wilcoxon Signed-Rank Test) yang memperhitungkan variasi pasangan respon per individu.

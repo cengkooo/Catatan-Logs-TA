@@ -1,50 +1,39 @@
 ---
-title: "FMA: A Dataset for Music Analysis"
-author: "Michaël Defferrard, Kirell Benzi, Pierre Vandergheynst, Xavier Bresson"
+title: "Bedah Kritis: FMA: A Dataset for Music Analysis (Defferrard et al., 2017)"
+author: "Michaël Defferrard et al. (EPFL)"
 year: 2017
 citekey: "defferrard2017fma"
-dataset: "Free Music Archive (FMA) - 106.574 trek musik"
-metode: "Open Large-Scale Music Information Retrieval Benchmark"
+venue: "Proceedings of the 18th International Society for Music Information Retrieval Conference (ISMIR 2017)"
+quartile: "Top-Tier MIR Conference (Benchmark Terbuka Standar Dunia)"
+dataset: "Free Music Archive (FMA) — 106.574 trek audio terbuka berlisensi Creative Commons (917 GB)"
+metode: "Open Science Dataset Creation + Full Audio Waveforms + Metadata & Audio Feature Baselines"
+gap_utama: "Kelangkaan dataset musik skala besar yang dapat diunduh bebas secara legal tanpa terbentur hak cipta komersial label rekaman."
 tags:
   - literatur
   - paper-review
-status: "read"
+  - dataset-benchmark
+  - fma
+  - open-data
+  - ismir
+status: "audited"
 ---
 
-# 📖 FMA: A Dataset for Music Analysis
+# 📖 Bedah Kritis: Dataset FMA (Defferrard et al., 2017)
+## *FMA: A Dataset for Music Analysis*
 
-- **Penulis:** `Michaël Defferrard, Kirell Benzi, Pierre Vandergheynst, Xavier Bresson` (2017)
-- **Citekey LaTeX:** `\cite{defferrard2017fma}`
-- **Dataset:** `Free Music Archive (FMA) - 106.574 trek musik`
-- **Metode Utama:** `Open Large-Scale Music Information Retrieval Benchmark`
-
----
-
-## 🎯 Masalah & Tujuan Riset
-- **Permasalahan:** Dataset musik publik sering terbentur batasan hak cipta sehingga hanya menyediakan audio klip beberapa detik atau fitur terkomputasi saja tanpa audio mentah.
-- **Tujuan:** Menyediakan dataset musik skala raksasa yang legal, berkualitas tinggi, dan disertai fitur audio lengkap untuk riset MIR.
+> **Objek Bedah:** Naskah ISMIR 2017 (38 KB text)  
+> **Kedudukan dalam TA:** **Asal-Usul Audio Mentah DEAM & Sumber Verifikasi Akustik (Bab II Subbab 2.1)**
 
 ---
 
-## 🔬 Arsitektur & Metodologi
-- **Representasi Emosi:** Metadata genre, artis, dan fitur audio librosa (MFCC, Spectral, Chroma).
-- **Algoritma / Pendekatan:** Standardisasi ekstraksi fitur spektral audio dan penyusunan partisi data hierarkis (FMA small, medium, large, full).
-- **Metrik Evaluasi:** Baseline klasifikasi genre dengan berbagai model machine learning (SVM, kNN, CNN).
+## 🧭 Step 0 & 1: Konteks & Abstrak Kuantitatif
+* **Konteks:** Menyediakan dataset musik terbuka berlisensi legal Creative Commons pertama berskala lebih dari 100 ribu trek musik untuk penelitian MIR global.
+* **Hasil Kuantitatif Konkret:**
+  * Menyediakan 4 subset terstandarisasi: *fma_small* (8.000 trek, 8 genre seimbang), *fma_medium*, *fma_large*, dan *fma_full*.
+  * Seluruh trek pada dataset DEAM (1.802 lagu) diambil langsung dari korpus terbuka FMA ini.
 
 ---
 
-## 💡 Temuan Utama & Hasil
-- Menjadi dataset standar terbuka nomor satu untuk benchmarking algoritma audio musik di dunia MIR.
-
----
-
-## ⚠️ Limitasi & Gap Riset (Peluang untuk TA Kita)
-> [!IMPORTANT]
-> **Apa kelemahan paper ini yang diselesaikan oleh TA kita?**
-- FMA berfokus pada hierarki genre dan metadata umum, tidak memiliki anotasi kontinu Valence-Arousal per 0,5 detik seperti DEAM.
-
----
-
-## 🔗 Relevansi dengan Tugas Akhir
-- Sebagai literatur perbandingan dataset pada Bab 3 untuk memperjelas alasan pemilihan DEAM dibanding FMA.
-- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+## 💡 Step 9 & 10: Sintesis & Research Gap
+1. **Fakta Terbukti:** Ketersediaan audio mentah terbuka (*open audio waveforms*) sangat penting untuk reproducibility riset MIR.
+2. **Keterkaitan dengan TA:** Memastikan bahwa penelitian Tugas Akhir kita mematuhi prinsip *Open Science* dan kebijakan *Open Data ITERA* karena seluruh data audio DEAM berbasis FMA yang legal untuk dipublikasikan kembali.

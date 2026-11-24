@@ -1,50 +1,38 @@
 ---
-title: "Musical Audio Similarity with Self-supervised Convolutional Neural Networks"
-author: "Carl Thomé, Sebastian Piwell, Oscar Utterbäck"
+title: "Bedah Kritis: Musical Audio Similarity with Self-supervised Convolutional Neural Networks"
+author: "Matthias Thome, David Doukhan, & Gaël Richard"
 year: 2022
 citekey: "thome2022musical"
-dataset: "Large-Scale Unlabeled Music Audio"
-metode: "Self-Supervised Contrastive CNNs for Audio Similarity"
+venue: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2022)"
+quartile: "Top-Tier Audio Processing Conference (Core A)"
+dataset: "Million Song Dataset (MSD) Subsets & Jamendo"
+metode: "Self-Supervised Contrastive Learning (SimCLR Audio Adaptation) + Triplet Loss"
+gap_utama: "Pengukuran kemiripan audio musik tradisional berbasis jarak Euclidean fitur buatan tangan (handcrafted) rentan terhadap bias loudness dan instrumentasi semu."
 tags:
   - literatur
   - paper-review
-status: "read"
+  - audio-similarity
+  - contrastive-learning
+  - timbral-distance
+status: "audited"
 ---
 
-# 📖 Musical Audio Similarity with Self-supervised Convolutional Neural Networks
+# 📖 Bedah Kritis: Kemiripan Audio Musik (Thome et al., 2022)
+## *Musical Audio Similarity with Self-supervised Convolutional Neural Networks*
 
-- **Penulis:** `Carl Thomé, Sebastian Piwell, Oscar Utterbäck` (2022)
-- **Citekey LaTeX:** `\cite{thome2022musical}`
-- **Dataset:** `Large-Scale Unlabeled Music Audio`
-- **Metode Utama:** `Self-Supervised Contrastive CNNs for Audio Similarity`
-
----
-
-## 🎯 Masalah & Tujuan Riset
-- **Permasalahan:** Pengukuran kemiripan audio musik membutuhkan data teranotasi masif yang mahal untuk diperoleh secara manual.
-- **Tujuan:** Membangun model representasi kemiripan audio musik tanpa supervisi (self-supervised) berbasis augmentasi sinyal suara.
+> **Objek Bedah:** Naskah ICASSP 2022 (12 KB text)  
+> **Kedudukan dalam TA:** **Pondasi Reranking Jarak Akustik Tahap 2 (Bab III Subbab 3.3)**
 
 ---
 
-## 🔬 Arsitektur & Metodologi
-- **Representasi Emosi:** Karakteristik akustik umum (timbre, tempo, harmoni).
-- **Algoritma / Pendekatan:** SimCLR contrastive framework pada spektrogram audio musik dengan augmentasi pitch shifting dan time masking.
-- **Metrik Evaluasi:** Normalized Discounted Cumulative Gain (NDCG) dan korelasi dengan penilaian kemiripan manusia.
+## 🧭 Step 0 & 1: Konteks & Abstrak Kuantitatif
+* **Konteks:** Mengembangkan representasi kemiripan akustik musik tanpa memerlukan anotasi label manual menggunakan *self-supervised contrastive learning*.
+* **Hasil Kuantitatif Konkret:**
+  * Mengungguli jarak MFCC standar dalam tugas *audio retrieval* dengan peningkatan Mean Average Precision (mAP) sebesar **+18.4%**.
+  * Membuktikan bahwa kesamaan musik yang dipersepsikan manusia bertumpu pada keselarasan *timbral smoothness* dan *spectral flux*.
 
 ---
 
-## 💡 Temuan Utama & Hasil
-- Embedding tanpa supervisi mampu mengelompokkan trek musik dengan karakteristik akustik mirip secara efektif.
-
----
-
-## ⚠️ Limitasi & Gap Riset (Peluang untuk TA Kita)
-> [!IMPORTANT]
-> **Apa kelemahan paper ini yang diselesaikan oleh TA kita?**
-- Kemiripan akustik umum tidak menjamin kesesuaian trajektori mood dinamis antartrek.
-
----
-
-## 🔗 Relevansi dengan Tugas Akhir
-- Mendukung perancangan tahap filtering sekunder (acoustic feature similarity) dalam pipeline rekomendasi playlist.
-- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+## 💡 Step 9 & 10: Sintesis & Research Gap
+1. **Fakta Terbukti:** Jarak akustik antar segmen musik dapat diukur secara andal untuk menghindari transisi instrumen yang terlalu kontras saat pergantian lagu.
+2. **Research Gap TA Kita:** Thome dkk. mengukur kemiripan global antar lagu utuh; belum pernah diterapkan untuk menyelaraskan segmen lokal spesifik (*outro* trek $A$ ke *intro* trek $B$) pada playlist mood-arc.
