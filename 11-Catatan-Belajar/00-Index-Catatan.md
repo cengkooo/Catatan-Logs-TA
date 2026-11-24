@@ -53,5 +53,5 @@ SORT file.mtime DESC
 ## 🔗 Navigasi Cepat
 - 🏠 **Dashboard Utama:** [[Master-Dashboard]]
 - 📖 **Paper Asli:** [[Matriks-Sintesis|04-Literatur-Review/Papers]]
-- 🔬 **Eksperimen & Data:** [[05-Eksperimen]] | [[Dataset-DEAM]]
+- 🔬 **Eksperimen & Data:** [[05-Eksperimen]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]]
 - 📝 **Draf Naskah Bab:** [[06-Naskah-Draft/Bab-2-Tinjauan-Pustaka]] | [[06-Naskah-Draft/Bab-3-Metodologi]]

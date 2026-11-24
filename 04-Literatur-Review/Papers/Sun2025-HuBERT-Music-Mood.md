@@ -47,4 +47,4 @@ status: "read"
 
 ## 🔗 Relevansi dengan Tugas Akhir
 - Menjadi bukti mutakhir (Nature Scientific Reports 2025) mengenai efektivitas dataset DEAM dalam mengekstraksi sinyal emosi dinamis.
-- Terkait dengan: [[Matriks-Sintesis]] | [[Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]

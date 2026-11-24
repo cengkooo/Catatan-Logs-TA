@@ -1,5 +1,5 @@
 ---
-title: "3_PANDUAN_TERMINOLOGI_SEMPRO — Kamus Istilah Ilmiah & Panduan Komunikasi Sempro/Sidang IF ITERA"
+title: "07_PANDUAN_TERMINOLOGI_SEMPRO — Kamus Istilah Ilmiah & Panduan Komunikasi Sempro/Sidang IF ITERA"
 tags:
   - sempro
   - sidang-ta
@@ -11,13 +11,16 @@ tags:
 date: 2026-11-19
 status: "DEFINITIVE & VERIFIED"
 author: "Andryano Shevchenko Limbong (123140205)"
+aliases:
+  - 3_PANDUAN_TERMINOLOGI_SEMPRO
+  - PANDUAN_TERMINOLOGI_SEMPRO
+  - Kamus Istilah Sempro
 ---
-
-# 🛡️ 3_PANDUAN_TERMINOLOGI_SEMPRO
+# 🛡️ 07_PANDUAN_TERMINOLOGI_SEMPRO
 ## Kamus Istilah Akademik, Antisipasi Jebakan Penguji, & Panduan Komunikasi Ilmiah
 ### Program Studi Teknik Informatika — Institut Teknologi Sumatera (ITERA)
 
-> **Dokumen Terkait:** [Proposal Pengajuan TA.pdf](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Proposal%20Pengajuan%20TA.pdf), [1_TRAIN_BASELINE.md](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Catatan-Memori/Catatan-Memori-Logs/05-Eksperimen/1_TRAIN_BASELINE.md), dan [plan_academic_taxonomy_of_thesis.md](file:///C:/Users/kadarisman/.gemini/antigravity-cli/brain/65c74f6d-fb7e-4835-968d-67954c603f26/plan_academic_taxonomy_of_thesis.md)  
+> **Dokumen Terkait:** [Proposal Pengajuan TA.pdf](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Proposal%20Pengajuan%20TA.pdf), [1_TRAIN_BASELINE.md](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Catatan-Memori/Catatan-Memori-Logs/05-Eksperimen/06-Log-Training-Baseline-Gaur.md), dan [plan_academic_taxonomy_of_thesis.md](file:///C:/Users/kadarisman/.gemini/antigravity-cli/brain/65c74f6d-fb7e-4835-968d-67954c603f26/plan_academic_taxonomy_of_thesis.md)  
 > **Tujuan Dokumen:** Memastikan mahasiswa menggunakan register bahasa ilmiah yang $100\%$ presisi, menghindari istilah rancu (*blunder*) yang memancing serangan penguji, dan memaksimalkan nilai **Presentasi (20%)** serta **Code Walkthrough (10%)** pada Sempro dan Sidang Akhir.
 
 ---

@@ -47,4 +47,4 @@ status: "read"
 
 ## 🔗 Relevansi dengan Tugas Akhir
 - Menjadi baseline primer dan titik pijak utama Tugas Akhir ini. Kita mereplikasi arsitektur KNN ini dan meningkatkannya dengan Trajectory Alignment berbasis dataset DEAM.
-- Terkait dengan: [[Matriks-Sintesis]] | [[Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]

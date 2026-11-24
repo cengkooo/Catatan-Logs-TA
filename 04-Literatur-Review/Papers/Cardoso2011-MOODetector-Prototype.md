@@ -47,4 +47,4 @@ status: "read"
 
 ## 🔗 Relevansi dengan Tugas Akhir
 - Rujukan historis penting untuk tinjauan pustaka mengenai evolusi playlist generation berbasis mood spasial.
-- Terkait dengan: [[Matriks-Sintesis]] | [[Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]

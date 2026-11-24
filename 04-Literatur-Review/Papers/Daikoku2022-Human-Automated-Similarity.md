@@ -47,4 +47,4 @@ status: "read"
 
 ## 🔗 Relevansi dengan Tugas Akhir
 - Memperkuat urgensi metrik Smoothness dan Evenness sebagai representasi matematis dari persepsi transisi pendengar.
-- Terkait dengan: [[Matriks-Sintesis]] | [[Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]

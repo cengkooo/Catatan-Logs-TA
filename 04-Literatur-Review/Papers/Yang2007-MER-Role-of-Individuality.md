@@ -47,4 +47,4 @@ status: "read"
 
 ## 🔗 Relevansi dengan Tugas Akhir
 - Membenarkan penggunaan nilai rata-rata agregat dari dataset DEAM karena tren trajektori makro terbukti memiliki konsensus tinggi.
-- Terkait dengan: [[Matriks-Sintesis]] | [[Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]
+- Terkait dengan: [[Matriks-Sintesis]] | [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[Bab-2-Tinjauan-Pustaka]]

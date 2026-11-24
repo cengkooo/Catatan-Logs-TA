@@ -8,8 +8,10 @@ tags:
   - lampiran-4
 created: 2026-11-23
 updated: 2026-11-23
+aliases:
+  - Peta-Kode-Code-Walkthrough
+  - Code Walkthrough Sidang
 ---
-
 # 💻 Peta Kode untuk Code Walkthrough (Lampiran 4)
 
 Dokumen ini disusun sebagai panduan teknis operasional (*Cheat Sheet / Code-to-Math Mapping*) untuk menghadapi **Sesi Code Walkthrough (Bobot 10% Nilai Sidang Akhir)** di hadapan dewan penguji Program Studi Teknik Informatika ITERA sesuai **Pedoman TA [1.2.0] Subbab 7.5**.
@@ -64,6 +66,6 @@ python analyze_intra_song_dynamics.py
 ---
 
 ## 🔗 Tautan Terkait
-- 🔬 **Log Eksperimen:** [[Dataset-DEAM]] | [[Ekstraksi-Trajectory]] | [[Replikasi-Baseline-KNN]]
+- 🔬 **Log Eksperimen:** [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[02-Formulasi-Ekstraksi-Trajectory|Ekstraksi-Trajectory]] | [[03-Replikasi-Baseline-KNN-Gaur|Replikasi-Baseline-KNN]]
 - 📝 **Metodologi Naskah:** [[Bab-3-Metodologi]] | [[Phase-03-Bab-3-Metodologi-Desain]]
 - 🛡️ **Tanya Jawab Ujian:** [[Bank-Pertanyaan-Dosen]] | [[03-Speaker-Notes-Dan-Antisipasi-QnA]]

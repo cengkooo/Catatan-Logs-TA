@@ -62,7 +62,7 @@ Setiap keadaan emosi musik merupakan satu titik koordinat $(v, a)$ dalam lingkar
 ## 🛠️ Relevansi Kritis pada Tugas Akhir Kita
 
 ### 1. Kenapa Model Ini Dipilih Mengalahkan Model Kategorikal?
-- **Dataset DEAM ([[Dataset-DEAM]]):** Menyediakan anotasi dinamis berbasis time-series (frekuensi 2 Hz, 45 detik) dalam nilai kontinu Valence dan Arousal.
+- **Dataset DEAM ([[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]]):** Menyediakan anotasi dinamis berbasis time-series (frekuensi 2 Hz, 45 detik) dalam nilai kontinu Valence dan Arousal.
 - **Interpolasi Matematika:** Koordinat kontinu memungkinkan perhitungan jarak euclidean/cosine ($L_2$ norm), regresi lereng trajektori dinamis ($m = \Delta y / \Delta x$), serta perancangan busur mood-arc mulus yang tidak dapat diakomodasi oleh label kategori diskrit.
 
 ### 2. Akar Masalah Baseline Gaur & Donnelly (2020):
@@ -80,6 +80,6 @@ Setiap keadaan emosi musik merupakan satu titik koordinat $(v, a)$ dalam lingkar
 - [[Matriks-Sintesis]]
 - [[Russell1980-Circumplex-Model]]
 - [[Aljanaki2017-Developing-Benchmark-DEAM]]
-- [[Dataset-DEAM]]
-- [[Ekstraksi-Trajectory]]
+- [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]]
+- [[02-Formulasi-Ekstraksi-Trajectory|Ekstraksi-Trajectory]]
 - [[Bab-2-Tinjauan-Pustaka]]

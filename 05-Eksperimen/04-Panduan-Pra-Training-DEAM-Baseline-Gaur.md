@@ -11,9 +11,10 @@ tags:
   - audio-features
   - tugas-akhir
 date: 2026-11-17
+aliases:
+  - Panduan-Pra-Training-DEAM-Baseline-Gaur
+  - Pra-Training DEAM
 ---
-
-
 # 📖 Panduan Pra-Fitting, Ekstraksi Akustik & Pemanfaatan Dataset DEAM untuk Baseline KNN Gaur
 
 > **Rujukan Utama:** Shaurya Gaur & Peter Donnelly (*"Mood-Dynamic Playlist: Interpolating a Path of Emotions Using a KNN Algorithm"*, University of Victoria 2023 / Springer EvoMUSART 2024).  
@@ -236,8 +237,8 @@ Partisi telah dieksekusi dan disimpan permanen dalam direktori `EXPERIMENT/Code/
 ---
 
 ## 🔗 Navigasi & File Terkait di Vault
-- Dataset Utama: [[Dataset-DEAM]]
-- Replikasi Baseline: [[Replikasi-Baseline-KNN]]
+- Dataset Utama: [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]]
+- Replikasi Baseline: [[03-Replikasi-Baseline-KNN-Gaur|Replikasi-Baseline-KNN]]
 - Todolist Eksperimen: [[Experiment-Baseline-KNN-Gaur-Todolist]]
 - Panduan Eksekusi CUDA: `EXPERIMENT/Code/baseline_gaur/TUTORIAL_RUN_CUDA.md`
 - Kode Implementasi Lengkap: `EXPERIMENT/Code/baseline_gaur/`

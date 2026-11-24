@@ -1,5 +1,5 @@
 ---
-title: "4_BLUEPRINT_ARAH_PENELITIAN_TA — Penjelasan Komprehensif Arah, Visi, & Metodologi Tugas Akhir"
+title: "08_BLUEPRINT_ARAH_PENELITIAN_TA — Penjelasan Komprehensif Arah, Visi, & Metodologi Tugas Akhir"
 tags:
   - tugas-akhir
   - blueprint
@@ -13,9 +13,12 @@ date: 2026-11-19
 status: "COMPREHENSIVE MASTER BLUEPRINT"
 author: "Andryano Shevchenko Limbong (123140205)"
 advisor: "I Wayan Wiprayoga Wisesa, S.Kom., M.Kom."
+aliases:
+  - 4_BLUEPRINT_ARAH_PENELITIAN_TA
+  - BLUEPRINT_ARAH_PENELITIAN_TA
+  - Blueprint Riset TA
 ---
-
-# 🧭 4_BLUEPRINT_ARAH_PENELITIAN_TA
+# 🧭 08_BLUEPRINT_ARAH_PENELITIAN_TA
 ## Panduan Komprehensif: Memahami Arah, Filosofi, Metodologi, & Peta Eksekusi Tugas Akhir
 
 > **Dasar Naskah:** [Proposal Pengajuan TA.pdf](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Proposal%20Pengajuan%20TA.pdf)  

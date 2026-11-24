@@ -20,7 +20,7 @@ Kumpulan potensi pertanyaan dari dosen penguji beserta strategi argumentasi ilmi
 
 ### Q2: Apa bukti bahwa lagu-lagu di dataset DEAM benar-benar memiliki dinamika mood internal yang signifikan?
 * **Jawaban Kunci:** 
-  Pada tahap EDA Sprint 1 ([[Dataset-DEAM]]), kita menghitung magnitudo variansi dan arah vektor pergeseran titik awal ($t_0$) ke titik akhir ($t_{\text{end}}$) di ruang Valence-Arousal. Sebagian besar lagu menunjukkan perpindahan kuadran emosi atau pergeseran arousal yang signifikan (> threshold $\epsilon$), membuktikan bahwa informasi dinamis ini membawa sinyal riil, bukan sekadar noise.
+  Pada tahap EDA Sprint 1 ([[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]]), kita menghitung magnitudo variansi dan arah vektor pergeseran titik awal ($t_0$) ke titik akhir ($t_{\text{end}}$) di ruang Valence-Arousal. Sebagian besar lagu menunjukkan perpindahan kuadran emosi atau pergeseran arousal yang signifikan (> threshold $\epsilon$), membuktikan bahwa informasi dinamis ini membawa sinyal riil, bukan sekadar noise.
 
 ---
 

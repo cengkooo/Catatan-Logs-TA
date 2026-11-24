@@ -13,14 +13,16 @@ tags:
   - sidang-ta
 date: 2026-11-19
 status: "VERIFIED & PASSED"
+aliases:
+  - Panduan-Validasi-dan-Testing-Baseline-Gaur
+  - Validasi Testing Baseline
 ---
-
 # 🧪 Panduan Validasi, Testing, & Analisis Kesesuaian Baseline Gaur pada Dataset DEAM
 
 > **Rujukan Teori Utama:** Shaurya Gaur (*"Mood-Dynamic Playlist: Interpolating a Path of Emotions Using a KNN Algorithm"*, University of Victoria 2023 / Springer EvoMUSART 2024).  
 > **Dataset Rujukan:** **DEAM (Database for Emotion Analysis in Music)** pada direktori `EXPERIMENT/Dataset/DEAM/`.  
 > **Tujuan Dokumen:** Memberikan verifikasi komprehensif atas kesesuaian implementasi kode baseline terhadap teori dan dataset, memberikan kepastian ilmiah terkait pemilihan dataset, serta menyajikan tutorial langkah demi langkah (*step-by-step*) untuk melakukan testing dan validasi mandiri.  
-> **Kaitan Berkas Lain:** [[Replikasi-Baseline-KNN]], [[Panduan-Pra-Training-DEAM-Baseline-Gaur]], [[Dataset-DEAM]], `EXPERIMENT/Code/baseline_gaur/`.
+> **Kaitan Berkas Lain:** [[03-Replikasi-Baseline-KNN-Gaur|Replikasi-Baseline-KNN]], [[04-Panduan-Pra-Training-DEAM-Baseline-Gaur|Panduan-Pra-Training-DEAM-Baseline-Gaur]], [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]], `EXPERIMENT/Code/baseline_gaur/`.
 
 ---
 

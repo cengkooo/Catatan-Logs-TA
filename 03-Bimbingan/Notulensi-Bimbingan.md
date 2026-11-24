@@ -23,4 +23,4 @@ tags:
   2. Dataset DEAM memiliki anotasi kontinu 2 Hz (setiap 0.5 detik). Perlu dijustifikasi kenapa sampling ini memadai untuk menangkap pergerakan emosi.
 - **Tindak Lanjut / Action Items:**
   - [ ] Tambahkan grafik perbandingan V-A statis vs dinamis di [[Bab-1-Pendahuluan]]
-  - [ ] Periksa kembali sebaran durasi lagu di [[Dataset-DEAM]]
+  - [ ] Periksa kembali sebaran durasi lagu di [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]]

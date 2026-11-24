@@ -238,7 +238,7 @@ EXPERIMENT/Code/baseline_gaur/
   - Penambahan pendeteksi otomatis keberadaan file `data/processed/deam_extracted_features.csv`.
 - [x] **Langkah 6.3 — Penyusunan Dokumen Panduan Validasi Mandiri & Code Walkthrough:**
   - Penerbitan [PANDUAN_VALIDASI_DAN_TESTING.md](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/EXPERIMENT/Code/baseline_gaur/PANDUAN_VALIDASI_DAN_TESTING.md) di repositori kode.
-  - Sinkronisasi catatan ke Obsidian Vault: [[Panduan-Validasi-dan-Testing-Baseline-Gaur]].
+  - Sinkronisasi catatan ke Obsidian Vault: [[05-Panduan-Validasi-dan-Testing-Baseline-Gaur|Panduan-Validasi-dan-Testing-Baseline-Gaur]].
   - Penyiapan lembar persiapan tanya jawab (*cheat sheet*) untuk sesi *Code Walkthrough* Sidang Tugas Akhir ITERA (Bobot 10%).
 
 ---
@@ -297,9 +297,9 @@ Karena dataset utama yang digunakan adalah **DEAM**, proyek ini memiliki keuntun
 
 ## 🔗 Navigasi & Berkas Terkait
 - Panduan Resmi Validasi & Testing: [PANDUAN_VALIDASI_DAN_TESTING.md](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/EXPERIMENT/Code/baseline_gaur/PANDUAN_VALIDASI_DAN_TESTING.md)
-- Catatan Obsidian Validasi: [[Panduan-Validasi-dan-Testing-Baseline-Gaur]]
+- Catatan Obsidian Validasi: [[05-Panduan-Validasi-dan-Testing-Baseline-Gaur|Panduan-Validasi-dan-Testing-Baseline-Gaur]]
 - Rangkaian Unit Test: [test_baseline.py](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/EXPERIMENT/Code/baseline_gaur/tests/test_baseline.py)
-- Catatan Replikasi Baseline: [[Replikasi-Baseline-KNN]]
-- Panduan Pra-Training DEAM: [[Panduan-Pra-Training-DEAM-Baseline-Gaur]]
-- Profil Dataset DEAM: [[Dataset-DEAM]]
+- Catatan Replikasi Baseline: [[03-Replikasi-Baseline-KNN-Gaur|Replikasi-Baseline-KNN]]
+- Panduan Pra-Training DEAM: [[04-Panduan-Pra-Training-DEAM-Baseline-Gaur|Panduan-Pra-Training-DEAM-Baseline-Gaur]]
+- Profil Dataset DEAM: [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]]
 - Direktori Sumber Kode: `EXPERIMENT/Code/baseline_gaur/`

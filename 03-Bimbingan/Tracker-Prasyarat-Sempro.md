@@ -47,7 +47,7 @@ Dokumen ini memantau secara ketat seluruh pemenuhan syarat administratif pendaft
 | :-: | :---: | :--- | :--- | :---: | :--- |
 | **#1** | 2026-11-20 | Email / Google Drive | Validasi Latar Belakang, perumusan gap riset, dan pemilihan dataset DEAM | `[x] Diajukan` | [[Notulensi-Bimbingan]] · [[Sprint-1-Bab1-EDA]] |
 | **#2** | 2026-11-21 | Luring / Ruang Dosen | Diskusi Tinjauan Pustaka, 21 Paper IEEE, & Replikasi Baseline Gaur (2020) | `[ ] Menunggu ACC` | [[Sprint-2-Bab2-Baseline]] · [[Matriks-Sintesis]] |
-| **#3** | 2026-11-22 | Luring / Ruang Dosen | Verifikasi Desain Metodologi, Trajectory Alignment, & Rumusan Metrik | `[ ] Menunggu ACC` | [[Sprint-3-Bab3-Metodologi]] · [[Peta-Kode-Code-Walkthrough]] |
+| **#3** | 2026-11-22 | Luring / Ruang Dosen | Verifikasi Desain Metodologi, Trajectory Alignment, & Rumusan Metrik | `[ ] Menunggu ACC` | [[Sprint-3-Bab3-Metodologi]] · [[09-Peta-Kode-Code-Walkthrough|Peta-Kode-Code-Walkthrough]] |
 | **#4** | 2026-11-23 | Luring / TASYS | Review Final Draf Proposal (Format UNESCO), Uji Turnitin, & ACC Sempro | `[ ] ACC Sempro` | [[Turnitin-Similarity-Ledger]] · [[laporan-ta.pdf]] |
 
 ---

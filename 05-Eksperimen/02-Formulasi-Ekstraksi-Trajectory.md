@@ -4,8 +4,10 @@ tags:
   - eksperimen
   - trajectory
   - matematika
+aliases:
+  - Ekstraksi-Trajectory
+  - Formulasi Trajectory
 ---
-
 # 📐 Formulasi & Ekstraksi Vektor Trajectory Mood
 
 Catatan perancangan algoritma ekstraksi arah dan magnitudo perubahan mood lagu.

@@ -47,7 +47,7 @@ Tutorial ini memandu Anda menjalani siklus kerja harian dari pagi hingga malam a
 3. Anda tidak perlu takut data hilang: setiap ketikan Anda otomatis di-commit dan di-push ke GitHub setiap 15 detik.
 
 ### Jika Sedang Menjalankan Eksperimen Koding:
-1. Buka `05-Eksperimen/Peta-Kode-Code-Walkthrough.md` untuk melihat arsitektur modul yang sedang Anda uji.
+1. Buka `05-Eksperimen/09-Peta-Kode-Code-Walkthrough.md` untuk melihat arsitektur modul yang sedang Anda uji.
 2. Catat temuan metrik (misal nilai *Smoothness* $\mathcal{S}$ atau grafik traversal) pada subbab `## 🔬 Log Riset & Eksperimen Hari Ini` di daily log Anda.
 
 ---

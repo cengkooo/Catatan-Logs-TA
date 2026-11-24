@@ -8,8 +8,10 @@ tags:
   - gaur2023
   - audio-features
 date: 2026-11-17
+aliases:
+  - Replikasi-Baseline-KNN
+  - Baseline KNN Gaur
 ---
-
 # 🧪 Replikasi Baseline Model Gaur & Donnelly (2020 / 2023 / 2024)
 
 Dokumen ini mendokumentasikan implementasi dan evaluasi model acuan (*baseline*) berbasis *Two-Stage KNN Playlist Generator* yang diadaptasikan pada korpus utama **DEAM**.
@@ -53,8 +55,8 @@ flowchart TD
 ---
 
 ## 🔗 Navigasi & File Terkait
-- **Panduan Pra-Training & Pemrosesan DEAM:** [[Panduan-Pra-Training-DEAM-Baseline-Gaur]]
-- **Profil Detail Dataset DEAM:** [[Dataset-DEAM]]
+- **Panduan Pra-Training & Pemrosesan DEAM:** [[04-Panduan-Pra-Training-DEAM-Baseline-Gaur|Panduan-Pra-Training-DEAM-Baseline-Gaur]]
+- **Profil Detail Dataset DEAM:** [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]]
 - **Checklist Todolist Eksekusi:** [[Experiment-Baseline-KNN-Gaur-Todolist]]
 - **Tutorial Eksekusi CUDA:** `EXPERIMENT/Code/baseline_gaur/TUTORIAL_RUN_CUDA.md`
 - **Kode Sumber Baseline:** `EXPERIMENT/Code/baseline_gaur/`

@@ -46,10 +46,9 @@ Catatan-Memori-Logs/
 │   ├── Matriks-Sintesis.md
 │   └── Kamus-Notasi-Glosarium.md
 │
-├── 05-Eksperimen/         ◄── Catatan teknis koding, analisis dataset DEAM, baseline Gaur
-│   ├── 01-baseline-gaur/ (Replikasi baseline KNN Gaur 2020 & log training)
-│   ├── 02-dynamic-trajectory-alignment/ (Dataset DEAM, Ekstraksi Trajectory, Peta Kode Walkthrough)
-│   └── README.md
+├── 05-Eksperimen/         ◄── Dokumentasi teknis koding, dataset DEAM, baseline Gaur, & model usulan
+│   ├── 01-Dataset-DEAM-dan-Eksplorasi.md s.d. 09-Peta-Kode-Code-Walkthrough.md (Linier 01–09)
+│   └── README.md (Indeks Peta Eksperimen & Matriks Komparasi)
 │
 ├── 06-Naskah-Draft/       ◄── Draf naskah proposal Bab I–III format UNESCO & pemantauan Turnitin
 │   ├── 01-Skenario-Murni-Komputasional/ (Bab I–III versi metrik matematis objektif)
@@ -164,5 +163,5 @@ git push -u origin master
 
 1. **Pagi (06:00–07:00):** Buka `02-Daily-Logs/YYYY-MM-DD.md`, cek target prioritas hari ini.
 2. **Bimbingan Dosen:** Buka `03-Bimbingan/Notulensi-Bimbingan.md` dan `Tracker-Prasyarat-Sempro.md` untuk mencatat arahan dan memantau status TASYS.
-3. **Eksperimen & Koding:** Rujuk ke `05-Eksperimen/Peta-Kode-Code-Walkthrough.md` saat menguji modul Python.
+3. **Eksperimen & Koding:** Rujuk ke `05-Eksperimen/09-Peta-Kode-Code-Walkthrough.md` saat menguji modul Python.
 4. **Malam (21:45):** Perbarui checklist deliverable harian dan catat kendala sebelum menutup hari.

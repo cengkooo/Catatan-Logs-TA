@@ -59,7 +59,7 @@ LIMIT 5
 - 💬 **Bimbingan Dosen:** [[Notulensi-Bimbingan]] | [[Bank-Pertanyaan-Dosen]] | [[Tracker-Prasyarat-Sempro|Tracker Prasyarat Sempro & TASYS]]
 - 📖 **Literatur:** [[Matriks-Sintesis]] | [[Spreadsheet-Studi-Literatur]] | [[Spreadsheet-Penjelasan-Dataset]] | [[Kamus-Notasi-Glosarium]]
 - 💡 **Catatan Belajar & Tech Stack:** [[00-Index-Catatan|11-Catatan-Belajar (Konsep, Tools, & Sintesis)]]
-- 🔬 **Eksperimen:** [[Dataset-DEAM]] | [[Ekstraksi-Trajectory]] | [[Replikasi-Baseline-KNN]] | [[1_TRAIN_BASELINE|Analisis Baseline Gaur]] | [[4_BLUEPRINT_ARAH_PENELITIAN_TA|Blueprint Arah TA]] | [[Peta-Kode-Code-Walkthrough|Peta Kode Walkthrough (Lampiran 4)]]
+- 🔬 **Eksperimen:** [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[02-Formulasi-Ekstraksi-Trajectory|Ekstraksi-Trajectory]] | [[03-Replikasi-Baseline-KNN-Gaur|Replikasi-Baseline-KNN]] | [[06-Log-Training-Baseline-Gaur|Analisis Baseline Gaur]] | [[08-Blueprint-Arah-Penelitian-TA|Blueprint Arah TA]] | [[09-Peta-Kode-Code-Walkthrough|Peta Kode Walkthrough (Lampiran 4)]]
 - ✍️ **Draf Naskah:** [[Bab-1-Pendahuluan]] | [[Bab-2-Tinjauan-Pustaka]] | [[Bab-3-Metodologi]] | [[Turnitin-Similarity-Ledger|Turnitin Similarity & Parafrase]]
 - 💬 **Riwayat Prompt AI:** [[README|08-Prompt-History]] | [[Prompt-2026-11-23]]
 - 📜 **Pedoman Resmi IF ITERA:** [[pedoman-ta-itera-lengkap|Buku Pedoman Lengkap]] | [[format-isi-ta]] | [[format-penulisan-unesco]] | [[dokumen-wajib]]

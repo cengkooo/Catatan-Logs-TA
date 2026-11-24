@@ -8,8 +8,10 @@ tags:
   - time-series
   - tugas-akhir
 date: 2026-11-17
+aliases:
+  - Dataset-DEAM
+  - Eksplorasi DEAM
 ---
-
 # 🎵 Dataset DEAM (Database for Emotion Analysis in Music)
 
 Dokumen ini mendokumentasikan analisis mendalam dataset **DEAM** yang digunakan sebagai data primer utama penelitian Tugas Akhir.
@@ -63,7 +65,7 @@ Untuk menjamin representasi merata di tengah *class imbalance*, dataset dipartis
 ---
 
 ## 🔗 Navigasi & File Terkait
-- **Panduan Lengkap Pra-Training Baseline pada DEAM:** [[Panduan-Pra-Training-DEAM-Baseline-Gaur]]
-- **Dokumentasi Replikasi Baseline:** [[Replikasi-Baseline-KNN]]
+- **Panduan Lengkap Pra-Training Baseline pada DEAM:** [[04-Panduan-Pra-Training-DEAM-Baseline-Gaur|Panduan-Pra-Training-DEAM-Baseline-Gaur]]
+- **Dokumentasi Replikasi Baseline:** [[03-Replikasi-Baseline-KNN-Gaur|Replikasi-Baseline-KNN]]
 - **Todolist Eksperimen:** [[Experiment-Baseline-KNN-Gaur-Todolist]]
 - **Tutorial Eksekusi CUDA:** `EXPERIMENT/Code/baseline_gaur/TUTORIAL_RUN_CUDA.md`

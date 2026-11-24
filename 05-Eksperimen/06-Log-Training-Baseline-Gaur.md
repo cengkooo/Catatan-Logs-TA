@@ -1,5 +1,5 @@
 ---
-title: "1_TRAIN_BASELINE — Brief Eksekutif & Teknis: Apa yang Sebenarnya Di-Train pada Baseline Gaur?"
+title: "06_LOG_TRAINING_BASELINE — Brief Eksekutif & Teknis: Apa yang Sebenarnya Di-Train pada Baseline Gaur?"
 tags:
   - eksperimen
   - baseline
@@ -12,9 +12,12 @@ tags:
 date: 2026-11-19
 status: "DEFINITIVE & VERIFIED"
 author: "Kadarisman (123140205)"
+aliases:
+  - 1_TRAIN_BASELINE
+  - TRAIN_BASELINE
+  - Log Training Baseline Gaur
 ---
-
-# 📋 1_TRAIN_BASELINE: Brief Eksekutif & Teknis
+# 📋 06_LOG_TRAINING_BASELINE: Brief Eksekutif & Teknis
 ## "Sebenarnya Apa yang Ku-Train di Kode Python `baseline_gaur`?"
 
 > **Objek Analisis:** Direktori `EXPERIMENT/Code/baseline_gaur/`  
@@ -186,5 +189,5 @@ Dengan memposisikan Gaur sebagai *Baseline Retrieval Statis*, Anda memiliki just
 ### 📂 Navigasi Berkas Terkait:
 - 📖 Penjelasan Detail Kode & Gap: `EXPERIMENT/Code/baseline_gaur/PENJELASAN_KODE_DAN_GAP.md`
 - 🧪 Log Rekonstruksi Fitur Nyata Mode B: `EXPERIMENT/Code/baseline_gaur/traine1.md`
-- 📘 Panduan Validasi & Testing: `Catatan-Memori/Catatan-Memori-Logs/05-Eksperimen/Panduan-Validasi-dan-Testing-Baseline-Gaur.md`
+- 📘 Panduan Validasi & Testing: `Catatan-Memori/Catatan-Memori-Logs/05-Eksperimen/05-Panduan-Validasi-dan-Testing-Baseline-Gaur.md`
 - 💻 Kode Sumber Pipeline: `EXPERIMENT/Code/baseline_gaur/src/`
