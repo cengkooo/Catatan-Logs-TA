@@ -1,5 +1,5 @@
----tier: "Tier 3: Contextual & Auxiliary Reference"
-
+---
+tier: "Tier 3: Contextual & Auxiliary Reference"
 title: "Bedah Kritis: Synthesizrr: Generating Diverse Datasets with Retrieval Augmentation (Divekar et al., 2023)"
 author: "Chandresh Divekar et al."
 year: 2023

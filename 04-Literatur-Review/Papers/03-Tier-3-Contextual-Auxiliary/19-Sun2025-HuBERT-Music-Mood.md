@@ -1,5 +1,5 @@
----tier: "Tier 3: Contextual & Auxiliary Reference"
-
+---
+tier: "Tier 3: Contextual & Auxiliary Reference"
 title: "Bedah Kritis: Feature Centric Based Deep Learning Approach for Music Mood Recognition with HuBERT Transformer Model"
 author: "Y. Sun et al."
 year: 2025

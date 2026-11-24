@@ -1,5 +1,5 @@
----tier: "Tier 1: Core Foundation & Baseline Acuan"
-
+---
+tier: "Tier 1: Core Foundation & Baseline Acuan"
 title: "Bedah Kritis: Developing a Benchmark for Emotional Analysis of Music (DEAM)"
 author: "Anna Aljanaki, Yi-Hsuan Yang, & Mohammad Soleymani"
 year: 2017

@@ -1,5 +1,5 @@
----tier: "Tier 3: Contextual & Auxiliary Reference"
-
+---
+tier: "Tier 3: Contextual & Auxiliary Reference"
 title: "Bedah Kritis: Music Emotion Recognition: The Role of Individuality (Yang et al., 2007)"
 author: "Yi-Hsuan Yang et al."
 year: 2007

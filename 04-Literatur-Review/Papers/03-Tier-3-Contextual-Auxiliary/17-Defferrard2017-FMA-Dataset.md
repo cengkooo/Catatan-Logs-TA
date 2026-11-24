@@ -1,5 +1,5 @@
----tier: "Tier 3: Contextual & Auxiliary Reference"
-
+---
+tier: "Tier 3: Contextual & Auxiliary Reference"
 title: "Bedah Kritis: FMA: A Dataset for Music Analysis (Defferrard et al., 2017)"
 author: "Michaël Defferrard et al. (EPFL)"
 year: 2017

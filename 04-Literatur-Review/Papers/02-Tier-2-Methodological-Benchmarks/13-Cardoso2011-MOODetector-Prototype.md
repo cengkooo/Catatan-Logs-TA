@@ -1,5 +1,5 @@
----tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
-
+---
+tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
 title: "Bedah Kritis: MOODetector: A Prototype Software Tool for Mood-based Playlist Generation"
 author: "Bruno Cardoso & K. E. Voigt"
 year: 2011

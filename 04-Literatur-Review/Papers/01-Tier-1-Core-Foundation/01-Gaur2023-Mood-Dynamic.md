@@ -1,5 +1,5 @@
----tier: "Tier 1: Core Foundation & Baseline Acuan"
-
+---
+tier: "Tier 1: Core Foundation & Baseline Acuan"
 title: "Bedah Kritis: Mood-Dynamic Playlist Interpolating a Path of Emotions Using a KNN Algorithm"
 author: "Shaurya Gaur & Patrick Donnelly"
 year: 2023

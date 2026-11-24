@@ -1,5 +1,5 @@
----tier: "Tier 3: Contextual & Auxiliary Reference"
-
+---
+tier: "Tier 3: Contextual & Auxiliary Reference"
 title: "Bedah Kritis: Multi Modal Song Mood Detection with Deep Learning (Pyrovolakis et al., 2022)"
 author: "Konstantinos Pyrovolakis et al."
 year: 2022

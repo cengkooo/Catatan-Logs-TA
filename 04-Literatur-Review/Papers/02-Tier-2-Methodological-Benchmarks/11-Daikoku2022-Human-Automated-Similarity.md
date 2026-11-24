@@ -1,5 +1,5 @@
----tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
-
+---
+tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
 title: "Bedah Kritis: Agreement Among Human and Automated Estimates of Similarity in a Global Music Sample"
 author: "Hideo Daikoku et al."
 year: 2022

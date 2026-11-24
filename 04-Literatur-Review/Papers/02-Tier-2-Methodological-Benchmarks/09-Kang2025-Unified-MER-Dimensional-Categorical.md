@@ -1,5 +1,5 @@
----tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
-
+---
+tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
 title: "Bedah Kritis: Towards Unified Music Emotion Recognition across Dimensional and Categorical Models"
 author: "Huan Kang et al."
 year: 2025

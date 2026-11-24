@@ -1,5 +1,5 @@
----tier: "Tier 1: Core Foundation & Baseline Acuan"
-
+---
+tier: "Tier 1: Core Foundation & Baseline Acuan"
 title: "Bedah Kritis: A Circumplex Model of Affect (Russell, 1980)"
 author: "James A. Russell"
 year: 1980

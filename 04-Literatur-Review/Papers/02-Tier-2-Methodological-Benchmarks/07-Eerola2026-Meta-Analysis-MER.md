@@ -1,5 +1,5 @@
----tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
-
+---
+tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
 title: "Bedah Kritis: A Meta-Analysis of Music Emotion Recognition Studies (Eerola et al., 2026)"
 author: "Tuomas Eerola, Jonna Vuoskoski, & Petri Toiviainen"
 year: 2026

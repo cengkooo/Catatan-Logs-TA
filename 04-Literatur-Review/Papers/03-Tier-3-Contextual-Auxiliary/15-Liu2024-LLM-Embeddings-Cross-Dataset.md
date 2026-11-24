@@ -1,5 +1,5 @@
----tier: "Tier 3: Contextual & Auxiliary Reference"
-
+---
+tier: "Tier 3: Contextual & Auxiliary Reference"
 title: "Bedah Kritis: Leveraging LLM Embeddings for Cross Dataset Label Alignment and Zero Shot Music Emotion Prediction"
 author: "Xuan Liu et al."
 year: 2024

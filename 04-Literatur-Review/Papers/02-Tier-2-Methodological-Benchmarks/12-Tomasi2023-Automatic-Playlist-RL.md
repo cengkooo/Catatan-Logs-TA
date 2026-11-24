@@ -1,5 +1,5 @@
----tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
-
+---
+tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
 title: "Bedah Kritis: Automatic Music Playlist Generation via Simulation-based Reinforcement Learning"
 author: "Federico Tomasi, Zhenwen Dai, & Damien Tardieu (Spotify Research)"
 year: 2023

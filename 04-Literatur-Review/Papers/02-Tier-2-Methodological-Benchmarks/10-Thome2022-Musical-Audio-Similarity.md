@@ -1,5 +1,5 @@
----tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
-
+---
+tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
 title: "Bedah Kritis: Musical Audio Similarity with Self-supervised Convolutional Neural Networks"
 author: "Matthias Thome, David Doukhan, & Gaël Richard"
 year: 2022

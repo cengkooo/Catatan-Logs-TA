@@ -1,5 +1,5 @@
----tier: "Tier 1: Core Foundation & Baseline Acuan"
-
+---
+tier: "Tier 1: Core Foundation & Baseline Acuan"
 title: "The MediaEval Database for Emotion Analysis in Music (DEAM)"
 author: "Anna Aljanaki et al."
 year: 2017

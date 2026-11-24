@@ -1,5 +1,5 @@
----tier: "Tier 1: Core Foundation & Baseline Acuan"
-
+---
+tier: "Tier 1: Core Foundation & Baseline Acuan"
 title: "An Exploration of Mood Arc in Music Playlists"
 author: "Manas Gaur & Austin Donnelly"
 year: 2020

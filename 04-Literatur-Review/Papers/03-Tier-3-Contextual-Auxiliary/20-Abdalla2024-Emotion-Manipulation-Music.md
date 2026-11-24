@@ -1,5 +1,5 @@
----tier: "Tier 3: Contextual & Auxiliary Reference"
-
+---
+tier: "Tier 3: Contextual & Auxiliary Reference"
 title: "Bedah Kritis: Emotion Manipulation Through Music: A Deep Learning Interactive Visual Approach"
 author: "M. Abdalla et al."
 year: 2024

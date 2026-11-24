@@ -1,5 +1,5 @@
----tier: "Tier 1: Core Foundation & Baseline Acuan"
-
+---
+tier: "Tier 1: Core Foundation & Baseline Acuan"
 title: "Bedah Kritis: The Impact of Playlist Characteristics on Coherence in User-Curated Playlists"
 author: "Harald Schweiger, Emilia Parada-Cabaleiro, & Markus Schedl"
 year: 2025

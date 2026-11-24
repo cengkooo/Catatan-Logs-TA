@@ -1,5 +1,5 @@
----tier: "Tier 1: Core Foundation & Baseline Acuan"
-
+---
+tier: "Tier 1: Core Foundation & Baseline Acuan"
 title: "Bedah Kritis: Leakage-Audited Dynamic Arousal Forecasting With Scheduled Future Music"
 author: "Bin Wen, Dai-Qiao Zhang, & Tien-Ping Tan"
 year: 2025

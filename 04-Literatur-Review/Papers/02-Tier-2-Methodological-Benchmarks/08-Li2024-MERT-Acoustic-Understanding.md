@@ -1,5 +1,5 @@
----tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
-
+---
+tier: "Tier 2: Methodological Benchmarks & Audio Similarity"
 title: "Bedah Kritis: MERT Acoustic Music Understanding Model with Large-Scale Self-Supervised Training"
 author: "Yizhi Li et al. (Cambridge / Queen Mary / HKUST)"
 year: 2024

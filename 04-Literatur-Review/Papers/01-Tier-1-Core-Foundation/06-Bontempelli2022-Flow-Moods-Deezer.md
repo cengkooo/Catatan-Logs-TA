@@ -1,5 +1,5 @@
----tier: "Tier 1: Core Foundation & Baseline Acuan"
-
+---
+tier: "Tier 1: Core Foundation & Baseline Acuan"
 title: "Bedah Kritis: Flow Moods: Recommending Music by Moods on Deezer"
 author: "Théo Bontempelli et al. (Deezer Research)"
 year: 2022
