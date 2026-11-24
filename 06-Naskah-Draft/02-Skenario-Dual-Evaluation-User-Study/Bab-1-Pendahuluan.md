@@ -11,7 +11,7 @@ tags:
 status: "READY FOR COMPILATION"
 date: 2026-11-24
 ---
-
+	
 # ✍️ Bab I Pendahuluan (Skenario 2: Dual Evaluation dengan User Listening Study)
 
 *Pendekatan evaluasi ganda (*Dual Evaluation Framework*) yang memadukan metrik komputasional objektif di GPU dengan uji persepsi manusia (*Blind A/B Listening Test* pada klip transisi 30s, $N \ge 30$ responden).*

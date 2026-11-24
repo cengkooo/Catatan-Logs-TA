@@ -42,6 +42,7 @@ flowchart TD
 | **[[09-Task-Audit-Pedoman-TA-Changelog-1-2-0]]** | Update Skills & Translasi Web Pedoman TA ke Obsidian | Koleksi Markdown 07-panduan-ta + Sinkronisasi SKILL/AGENTS/GEMINI | 1–2 Jam |
 | **[[10-Task-Migrasi-Template-UNESCO-Bentuk1]]** | Migrasi & Refaktor Templat UNESCO 2026 | Berkas config/, chapters/, thesis.tex 100% selaras Bentuk 1 | 2–3 Jam |
 | **[[11-Task-Bedah-Paper-Referensi-Riset]]** | Bedah Forensik 21 Paper Referensi (Framework 11 Langkah) | Review terstruktur Tier 1–3 + Matriks Sintesis + Gap 3 Lapis | 6–8 Jam |
+| **[[12-Task-Penguatan-Draft-Naskah-dan-Sinkronisasi-LaTeX]]** | Penguatan Draf Komprehensif (06-Naskah-Draft) & Sinkronisasi LaTeX UNESCO | Draf Bab 1–3 Kaya Empiris & File .tex Siap Kompilasi | 6–8 Jam |
 
 ---
 
