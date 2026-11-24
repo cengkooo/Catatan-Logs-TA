@@ -11,6 +11,10 @@ date: 2026-11-24
 
 # 🔄 Tutorial 02: Otomatisasi Pencadangan GitHub pada Setiap Perubahan (CRUD)
 
+> [!tip] 💡 Jawaban Cepat (TL;DR): "Tekan Tombol Apa atau Biarin Aja? Emang Gak Berat?"
+> 1. **Apakah harus tekan tombol?** $\rightarrow$ **Biarin aja! 100% Otomatis.** Anda cukup mengetik seperti biasa. Setiap kali Anda berhenti mengetik selama 15 detik, sistem di latar belakang akan otomatis meng-commit dan mem-push catatan ke GitHub.
+> 2. **Apakah bakal bikin laptop berat/lag?** $\rightarrow$ **Sama sekali TIDAK!** Git hanya memproses file teks Markdown kecil (2–10 KB) di latar belakang (*background*). Konsumsi CPU saat Anda mengetik adalah **0%** (berkat debounce), dan file audio berat sudah diblokir oleh `.gitignore`.
+
 Kehilangan catatan penelitian Tugas Akhir akibat harddisk rusak, laptop bermasalah, atau salah hapus adalah mimpi buruk mahasiswa. Vault ini telah dilengkapi sistem pencadangan otomatis multi-lapis (*multi-tier auto-backup*) langsung ke repositori GitHub pribadi Anda.
 
 ---
