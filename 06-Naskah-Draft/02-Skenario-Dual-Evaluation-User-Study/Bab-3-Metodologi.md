@@ -135,6 +135,13 @@ Tabel 3.1 Hasil Pengujian Awal Replikasi Model Acuan pada Korpus DEAM
 
 Berdasarkan Tabel 3.1, ketiga konfigurasi jarak menghasilkan nilai korelasi kelurusan titik statis (*Linearity Smoothness* PCC) di atas $0{,}97$. Tingginya angka korelasi tersebut merupakan artefak dari pencocokan titik statis yang mereduksi setiap lagu menjadi satu titik rata-rata dan mengabaikan lonjakan emosi pada batas *intro-outro*. Nilai rata-rata langkah audio yang berkisar antara $0{,}2895$ hingga $0{,}3506$ mengindikasikan ketimpangan tekstur suara antartrek berturutan. Data pada Tabel 3.1 ditetapkan sebagai titik tolak pembandingan terhadap model usulan pada tahap implementasi lanjutan menggunakan metrik jarak *Boundary Smoothness* ($\mathcal{S}$).
 
+### 3.5.5 Desain Uji Ablasi (*Trajectory Filter ON vs OFF*)
+Untuk membuktikan bahwa perbaikan kelancaran transisi ($\mathcal{S}$) dan penurunan akumulasi penalti ($\mathcal{CBJC}$) berasal secara kausal dari komponen penyelarasan *trajectory* dinamis, penelitian ini menerapkan uji ablasi terkontrol (*ablation study*) sebagaimana diformalkan oleh Meyes et al. (2019) dan dipraktikkan pada arsitektur *playlist continuation* dua tahap oleh Bendada et al. (2023). Pengujian ablasi membandingkan dua konfigurasi identik pada seluruh 540 *batch run* dengan *seed*, korpus DEAM, jumlah kandidat $k$, dan bobot jarak KNN yang sama:
+1. **Konfigurasi *Trajectory Filter OFF* ($\lambda_{\text{traj}} = 0$):** Tahap kedua hanya mempertahankan penyaringan titik statis tanpa memperhitungkan arah vektor *trajectory* internal dan penalti *Boundary Jump Cost*.
+2. **Konfigurasi *Trajectory Filter ON* ($\lambda_{\text{traj}} > 0$):** Pipeline lengkap dengan penyelarasan vektor *outro-intro* serta penalti $\mathcal{BJC}$.
+
+Selisih skor $\mathcal{S}$, $\mathcal{E}$, dan $\mathcal{CBJC}$ antara kedua konfigurasi diuji signifikansinya menggunakan *Wilcoxon Signed-Rank Test* ($\alpha = 0{,}05$) guna mengisolasi kontribusi riil modul *trajectory* terhadap kinerja keseluruhan sistem.
+
 ---
 
 ## 3.6 Desain Protokol Pengujian Subjektif (User Listening Study)
@@ -166,3 +173,11 @@ $$r_s = 1 - \frac{6 \sum d_i^2}{n(n^2 - 1)} \tag{3.15}$$
 
 ### 3.6.6 Kepatuhan Etika Penelitian dan Kerahasiaan Data
 Pelaksanaan pengujian pengguna mematuhi dua prinsip etika penelitian. Pertama, setiap responden menerima penjelasan tertulis mengenai tujuan, durasi pengujian (15 hingga 20 menit), dan ketiadaan risiko fisiologis sebelum menandatangani lembar persetujuan sadar (*informed consent*) secara sukarela. Kedua, seluruh data demografi dan penilaian responden dianonimkan menggunakan kode unik (misal R01 hingga R30) tanpa mempublikasikan informasi identitas pribadi sesuai amanat Undang-Undang Republik Indonesia Nomor 27 Tahun 2022 tentang Perlindungan Data Pribadi.
+
+---
+
+## 3.7 Validitas Penelitian dan Keterbatasan Data (*Threats to Validity*)
+
+Untuk menjaga akurasi interpretasi hasil eksperimen, ancaman terhadap validitas penelitian diidentifikasi dalam dua kategori:
+1. **Validitas Internal (*Internal Validity*):** Kinerja *pipeline* dipengaruhi oleh pemilihan *hyperparameter* seperti jumlah tetangga $k$, bobot penalti $\lambda$, dan ukuran jendela *smoothing* pada deret waktu 2 Hz. Risiko kebocoran evaluasi dikendalikan melalui pemisahan *song-level holdout split*, penguncian *random seed*, serta uji ablasi (*Trajectory Filter ON vs OFF*).
+2. **Validitas Eksternal (*External Validity*):** Korpus DEAM memiliki jumlah lagu terbatas (1.802 klip) dengan durasi potongan pendek 45 detik (30 detik segmen stabil) serta label yang berasal dari anotasi *crowd* sehingga berpotensi mengandung bias subjektivitas anotator maupun ketidakseimbangan genre. Dengan demikian, generalisasi hasil penelitian dibatasi pada segmen audio berdurasi 30 detik dalam korpus DEAM dan belum mencakup lagu utuh berdurasi penuh (3 hingga 5 menit) pada katalog layanan komersial.
