@@ -89,6 +89,7 @@ cd "Slides"
 ---
 
 ## 📑 Direktori Berkas Terkait
+- **Folder Progress Mingguan (Obsidian):** [`10-Slides/Progress/00-Index-Progress-Mingguan.md`](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Catatan-Memori/Catatan-Memori-Logs/10-Slides/Progress/00-Index-Progress-Mingguan.md) | [[Progress/01-Minggu-01-Baseline-DEAM]] | [[Progress/02-Minggu-02-Penguatan-Fundamental-dan-Skenario]]
 - **Slide Sempro:** [`Slides/01-Sempro/sempro_slides.typ`](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Slides/01-Sempro/sempro_slides.typ) | [PDF](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Slides/01-Sempro/sempro_slides.pdf)
 - **Slide Bimbingan #01:** [`Slides/02-Progress/01-Minggu-01-Baseline-DEAM/progres_m01.typ`](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Slides/02-Progress/01-Minggu-01-Baseline-DEAM/progres_m01.typ) | [PDF](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Slides/02-Progress/01-Minggu-01-Baseline-DEAM/progres_m01.pdf)
 - **Template Bimbingan:** [`Slides/02-Progress/00-Template-Mingguan/template_mingguan.typ`](file:///D:/Kuliah/Semester%207/Tugas%20Akhir/Proposal%20Tugas%20Akhir/Slides/02-Progress/00-Template-Mingguan/template_mingguan.typ)
