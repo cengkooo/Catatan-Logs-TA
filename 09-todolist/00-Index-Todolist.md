@@ -44,6 +44,7 @@ flowchart TD
 | **[[11-Task-Bedah-Paper-Referensi-Riset]]** | Bedah Forensik 21 Paper Referensi (Framework 11 Langkah) | Review terstruktur Tier 1–3 + Matriks Sintesis + Gap 3 Lapis | 6–8 Jam |
 | **[[12-Task-Penguatan-Draft-Naskah-dan-Sinkronisasi-LaTeX]]** | Penguatan Draf Komprehensif (06-Naskah-Draft) & Sinkronisasi LaTeX UNESCO | Draf Bab 1–3 Kaya Empiris & File .tex Siap Kompilasi | 6–8 Jam |
 | **[[13-Task-Rencana-Penguatan-Fundamental-Draft-Kedua-Skenario]]** | Rencana Penguatan Fundamental Naskah Kedua Skenario (Komputasional & User Study) | Checklist Mikro Injeksi 23 Literatur ke Kedua Folder Skenario | 4–6 Jam |
+| **[[14-Task-Generate-Slides-Typst-dari-Naskah]]** | Coding Typst Slide Progres Bimbingan #01 dari SSOT LaTeX (`chapters/`) | `progres_m01.typ` & `progres_m01.pdf` (5 Slide Siap Bimbingan) | 1–2 Jam |
 
 ---
 
