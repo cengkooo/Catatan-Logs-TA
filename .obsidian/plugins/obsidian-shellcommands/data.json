@@ -174,7 +174,7 @@
       },
       "shells": {},
       "alias": "Git: Backup Vault ke GitHub Sekarang",
-      "icon": "git-branch",
+      "icon": "lucide-git-branch",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "input_contents": {
@@ -212,7 +212,8 @@
         }
       },
       "debounce": {
-        "milliseconds": 15000
+        "milliseconds": 15000,
+        "prolongCooldown": false
       },
       "command_palette_availability": "enabled",
       "preactions": [],
