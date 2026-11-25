@@ -75,7 +75,22 @@ Penelitian ini memberikan kontribusi pada dua aspek utama:
 
 ## 1.6 Sistematika Penulisan
 
-Laporan tugas akhir ini disusun dalam lima bab yang saling berkaitan. Bab I menguraikan latar belakang masalah industri penyiaran musik, identifikasi *The Boundary Jump Problem*, justifikasi empiris korpus DEAM, kebutuhan evaluasi ganda, rumusan masalah, tujuan, batasan, manfaat, dan sistematika penulisan. Bab II memaparkan landasan teori model sirkumpleks Russell beserta revalidasi modernnya, dinamika temporal emosi musik, representasi fitur audio, teori transisi halus, psikoakustik evaluasi dengar, perbandingan penelitian terdahulu, sintesis kesenjangan riset, dan kerangka pemikiran. Bab III merinci alur penelitian tujuh tahap, prapemrosesan dataset DEAM bebas kebocoran data, perancangan *pipeline* dua tahap dan formulasi penalti *Boundary Jump Cost*, lingkungan eksperimen GPU, protokol pengujian 540 *batch run*, serta desain pengujian dengar pengguna. Bab IV menyajikan hasil eksperimen komputasional pada GPU, hasil pengujian dengar manusia, analisis korelasi metrik dengan persepsi, serta pembahasan teknis fenomena *boundary jump*. Bab V merangkum jawaban atas rumusan masalah berdasarkan temuan kuantitatif dan perseptual serta menguraikan saran pengembangan lanjutan.
+Laporan tugas akhir ini disusun dalam lima bab utama yang saling berkaitan dengan sistematika penulisan sebagai berikut:
+
+### 1.6.1 Bab I Pendahuluan
+Bab ini memuat latar belakang permasalahan, rumusan masalah, tujuan penelitian, batasan penelitian, manfaat penelitian, serta sistematika penulisan laporan.
+
+### 1.6.2 Bab II Tinjauan Pustaka
+Bab ini menguraikan landasan teori yang mendasari topik penelitian, kajian kritis terhadap penelitian terdahulu sebagai pembanding, serta kerangka pemikiran yang menghubungkan teori dengan rancangan solusi.
+
+### 1.6.3 Bab III Metodologi
+Bab ini menjabarkan tahapan alur penelitian, pengumpulan dan prapemrosesan data, perancangan sistem atau model, spesifikasi lingkungan eksperimen, serta metode pengujian dan evaluasi yang digunakan.
+
+### 1.6.4 Bab IV Hasil dan Pembahasan
+Bab ini menyajikan hasil pengujian yang diperoleh beserta analisis dan pembahasan mendalam mengenai kinerja solusi serta keterbatasannya.
+
+### 1.6.5 Bab V Kesimpulan dan Saran
+Bab ini berisi kesimpulan yang menjawab rumusan masalah penelitian serta saran pengembangan untuk penelitian selanjutnya.
 
 
 ---
@@ -92,7 +107,7 @@ Laporan tugas akhir ini disusun dalam lima bab yang saling berkaitan. Bab I meng
 Saat presentasi atau ditanya dosen, pastikan poin-poin berikut tersampaikan dengan tegas:
 
 1. **Urgensi Masalah Industri:**
-   - **Lebih dari 60% waktu mendengarkan musik di layanan streaming berasal dari playlist**, bukan memutar lagu satu per satu.
+   - **Layanan *streaming* modern bergeser ke kurasi *playlist* otomatis berbasis konteks dan aktivitas pendengar** ([[06-Bontempelli2022-Flow-Moods-Deezer|Bontempelli et al., 2022]]; [[05-Schweiger2025-Playlist-Coherence|Schweiger et al., 2025]]).
    - **Transisi emosi antarlagu yang melompat kasar ($\Delta > 0{,}25$) menaikkan tingkat *skip rate* pendengar hingga 37%** ([[05-Schweiger2025-Playlist-Coherence|Schweiger et al., 2025]]). Jadi kehalusan transisi bukan sekadar estetika, melainkan berdampak langsung pada retensi pengguna.
 
 2. **Kenapa Pakai Ruang Emosi Russell (1980) Meski Sudah Tua?**
@@ -104,11 +119,11 @@ Saat presentasi atau ditanya dosen, pastikan poin-poin berikut tersampaikan deng
 
 4. **Masalah Utama yang Dipecahkan (*The Boundary Jump Problem*):**
    - Dua lagu bisa punya nilai rata-rata yang mirip, tetapi **bagian akhir (*outro*) lagu 1 bertolak belakang dengan bagian awal (*intro*) lagu 2**, sehingga saat disambung terdengar menyentak.
-   - **Bukti replikasi awal 540 *batch run*: skor kehalusan tinggi Gaur ($0{,}9950$) hanyalah artefak rute diagonal buatan (Q3 $\to$ Q1)**; saat diuji pada rute lintas kuadran realistis (Q1 $\to$ Q2 atau Q1 $\to$ Q4), skornya anjlok ke **$0{,}6628$–$0{,}7189$**.
+   - **Bukti replikasi awal 540 *batch run*: skor *Linearity Smoothness* (PCC) tinggi milik Gaur ($0{,}9950$) hanyalah artefak rute diagonal buatan (Q3 $\to$ Q1)**; saat diuji pada rute lintas kuadran realistis (Q1 $\to$ Q2 atau Q1 $\to$ Q4), korelasi kelurusannya turun ke **$0{,}6628$–$0{,}7189$**, dan metrik PCC tersebut sama sekali tidak mengukur lompatan sambungan *outro-intro*.
 
 5. **Kenapa Harus *Dual Evaluation* (GPU + *User Listening Study*)?**
    - **Metrik matematis MIR saja hanya berkorelasi moderat dengan telinga manusia ($r = 0{,}42$–$0{,}58$)** ([[11-Daikoku2022-Human-Automated-Similarity|Daikoku et al., 2022]]).
-   - **Solusi Tugas Akhir ini:** menggabungkan **pengujian komputasional objektif (540 *batch run*, target reduksi *Smoothness Index* $\ge 15\%$)** dengan **validasi subjektif *Blind A/B Listening Test* ($N \ge 30$ responden, klip sambungan 30 detik, Likert 5 poin, uji Wilcoxon $p < 0{,}05$)**.
+   - **Solusi Tugas Akhir ini:** menggabungkan **pengujian komputasional objektif (540 *batch run*, target reduksi *Boundary Smoothness* $\ge 15\%$)** dengan **validasi subjektif *Blind A/B Listening Test* ($N \ge 30$ responden, klip sambungan 30 detik, Likert 5 poin, uji Wilcoxon $p < 0{,}05$)**.
 
 6. **Tiga Pilar Kontribusi (Sesuai 3 Rumusan Masalah & Tujuan):**
    - **Pilar 1 (Desain):** *Pipeline* 2 tahap (**KNN *Candidate Retrieval*** + ***Dynamic Trajectory Alignment Reranker*** dengan penalti ***Boundary Jump Cost***).
@@ -143,24 +158,25 @@ Saat presentasi atau ditanya dosen, pastikan poin-poin berikut tersampaikan deng
 
 ## 📖 3. Glosarium Kata-Kata Teknis pada Bab I
 
-| Istilah Teknis | Penjelasan Sederhana (Untuk Jawab Penguji) |
-| :--- | :--- |
-| **Music Information Retrieval (MIR)** | Bidang ilmu komputer yang fokus mengekstrak informasi bermakna (genre, tempo, emosi, kemiripan) dari sinyal audio musik secara otomatis. |
-| **Collaborative Filtering** | Metode rekomendasi tradisional berbasis pola kesukaan pengguna lain ("orang yang suka lagu A biasanya suka lagu B"), tanpa melihat isi/emosi lagunya. |
-| **Mood Arc** | Kurva atau lintasan perubahan suasana hati yang terencana dari awal playlist hingga akhir playlist (misal: dari sedih ke gembira). |
-| **Valence & Arousal** | Dua sumbu emosi: *Valence* = tingkat positif/negatif perasaan (senang vs sedih); *Arousal* = tingkat energi/aktivasi (bersemangat vs tenang). |
-| **Transformer Embeddings** | Representasi vektor numerik hasil ekstraksi model AI modern (jaringan saraf *Transformer*) yang menangkap makna semantik atau akustik secara padat. |
-| **K-Nearest Neighbors (KNN)** | Algoritma pencarian yang mengambil $K$ kandidat lagu dengan jarak koordinat terdekat terhadap titik target (*waypoint*) yang dicari. |
-| **Waypoint** | Titik-titik perantara di sepanjang kurva *mood arc* yang menjadi target koordinat untuk setiap urutan lagu ke-$1, 2, \dots, M$ dalam playlist. |
-| **Static-Point Matching** | Pencocokan lagu yang hanya melihat satu nilai rata-rata emosi keseluruhan lagu dan mengabaikan perubahan emosi dari awal sampai akhir lagu. |
-| **Smoothness Index ($\mathcal{S}$)** | Metrik yang mengukur seberapa halus (kecil selisih jaraknya) perpindahan emosi antartrek berturutan; **semakin kecil nilainya semakin halus**. |
-| **Evenness Index ($\mathcal{E}$)** | Metrik yang mengukur keseragaman jarak langkah antar-waypoint; nilai mendekati nol berarti laju perubahan emosi berjalan konsisten/rata. |
-| **Intra-Song Mood Dynamics** | Pergeseran atau dinamika perubahan suasana hati yang terjadi di dalam satu lagu itu sendiri dari bagian awal hingga bagian akhir. |
-| **Outro & Intro** | *Outro* adalah bagian penutup sebuah lagu (dalam riset ini: detik 42–45); *Intro* adalah bagian pembuka lagu berikutnya (detik 15–18 setelah *offset* adaptasi). |
-| **Batch Run** | Eksekusi pengujian otomatis secara massal (540 skenario rute playlist sekaligus) agar hasil evaluasi stabil dan bebas kebetulan. |
-| **Blind A/B Listening Test** | Uji dengar buta di mana responden membandingkan dua audio (Versi A dan Versi B) tanpa tahu mana buatan model usulan dan mana buatan model acuan, agar penilaian bebas bias. |
-| **Listener Fatigue** | Kelelahan pendengaran responden akibat mendengarkan audio terlalu lama; dicegah dengan memotong stimulus uji menjadi klip transisi terisolasi 30 detik saja. |
-| **Wilcoxon Signed-Rank Test** | Uji statistik non-parametrik untuk membandingkan dua kelompok berpasangan (Model Usulan vs Baseline) ketika data tidak diasumsikan berdistribusi normal (seperti skor Likert). |
-| **Cronbach's Alpha ($\alpha$)** | Ukuran konsistensi internal butir pertanyaan kuesioner; kuesioner dianggap reliabel/andal jika nilai $\alpha \ge 0{,}70$. |
-| **Korelasi Peringkat Spearman** | Metode statistik untuk mengukur kekuatan hubungan antara dua variabel berbasis peringkat (misal: apakah turunnya nilai $\mathcal{S}$ komputer sejalan dengan naiknya skor kepuasan manusia). |
-| **KNN Deterministik** | Pencarian KNN yang hasilnya selalu sama dan konsisten setiap kali dijalankan ulang (tanpa unsur acak), sehingga perbandingan dengan baseline adil dan dapat direproduksi. |
+| Istilah Teknis                          | Penjelasan Sederhana (Untuk Jawab Penguji)                                                                                                                                                   |      |                                                                                                                                                                |
+| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Music Information Retrieval (MIR)**   | Bidang ilmu komputer yang fokus mengekstrak informasi bermakna (genre, tempo, emosi, kemiripan) dari sinyal audio musik secara otomatis.                                                     |      |                                                                                                                                                                |
+| **Collaborative Filtering**             | Metode rekomendasi tradisional berbasis pola kesukaan pengguna lain ("orang yang suka lagu A biasanya suka lagu B"), tanpa melihat isi/emosi lagunya.                                        |      |                                                                                                                                                                |
+| **Mood Arc**                            | Kurva atau lintasan perubahan suasana hati yang terencana dari awal playlist hingga akhir playlist (misal: dari sedih ke gembira).                                                           |      |                                                                                                                                                                |
+| **Valence & Arousal**                   | Dua sumbu emosi: *Valence* = tingkat positif/negatif perasaan (senang vs sedih); *Arousal* = tingkat energi/aktivasi (bersemangat vs tenang).                                                |      |                                                                                                                                                                |
+| **Transformer Embeddings**              | Representasi vektor numerik hasil ekstraksi model AI modern (jaringan saraf *Transformer*) yang menangkap makna semantik atau akustik secara padat.                                          |      |                                                                                                                                                                |
+| **K-Nearest Neighbors (KNN)**           | Algoritma pencarian yang mengambil $K$ kandidat lagu dengan jarak koordinat terdekat terhadap titik target (*waypoint*) yang dicari.                                                         |      |                                                                                                                                                                |
+| **Waypoint**                            | Titik-titik perantara di sepanjang kurva *mood arc* yang menjadi target koordinat untuk setiap urutan lagu ke-$1, 2, \dots, M$ dalam playlist.                                               |      |                                                                                                                                                                |
+| **Static-Point Matching**               | Pencocokan lagu yang hanya melihat satu nilai rata-rata emosi keseluruhan lagu dan mengabaikan perubahan emosi dari awal sampai akhir lagu.                                                  |      |                                                                                                                                                                |
+| **Linearity Smoothness (PCC)**          | Metrik korelasi Pearson ($                                                                                                                                                                   | \rho | $) milik baseline Gaur yang mengukur kelurusan titik rata-rata statis; **semakin mendekati 1,0 semakin lurus**, tetapi tidak mengukur sambungan *outro-intro*. |
+| **Boundary Smoothness ($\mathcal{S}$)** | Metrik jarak Euclidean rata-rata pada sambungan *outro* lagu $j$ ke *intro* lagu $j+1$; **semakin kecil nilainya semakin halus transisinya** (target reduksi $\ge 15\%$).                    |      |                                                                                                                                                                |
+| **Evenness Index ($\mathcal{E}$)**      | Metrik yang mengukur keseragaman jarak langkah antar-waypoint; nilai mendekati nol berarti laju perubahan emosi berjalan konsisten/rata.                                                     |      |                                                                                                                                                                |
+| **Intra-Song Mood Dynamics**            | Pergeseran atau dinamika perubahan suasana hati yang terjadi di dalam satu lagu itu sendiri dari bagian awal hingga bagian akhir.                                                            |      |                                                                                                                                                                |
+| **Outro & Intro**                       | *Outro* adalah bagian penutup sebuah lagu (dalam riset ini: detik 42–45); *Intro* adalah bagian pembuka lagu berikutnya (detik 15–18 setelah *offset* adaptasi).                             |      |                                                                                                                                                                |
+| **Batch Run**                           | Eksekusi pengujian otomatis secara massal (540 skenario rute playlist sekaligus) agar hasil evaluasi stabil dan bebas kebetulan.                                                             |      |                                                                                                                                                                |
+| **Blind A/B Listening Test**            | Uji dengar buta di mana responden membandingkan dua audio (Versi A dan Versi B) tanpa tahu mana buatan model usulan dan mana buatan model acuan, agar penilaian bebas bias.                  |      |                                                                                                                                                                |
+| **Listener Fatigue**                    | Kelelahan pendengaran responden akibat mendengarkan audio terlalu lama; dicegah dengan memotong stimulus uji menjadi klip transisi terisolasi 30 detik saja.                                 |      |                                                                                                                                                                |
+| **Wilcoxon Signed-Rank Test**           | Uji statistik non-parametrik untuk membandingkan dua kelompok berpasangan (Model Usulan vs Baseline) ketika data tidak diasumsikan berdistribusi normal (seperti skor Likert).               |      |                                                                                                                                                                |
+| **Cronbach's Alpha ($\alpha$)**         | Ukuran konsistensi internal butir pertanyaan kuesioner; kuesioner dianggap reliabel/andal jika nilai $\alpha \ge 0{,}70$.                                                                    |      |                                                                                                                                                                |
+| **Korelasi Peringkat Spearman**         | Metode statistik untuk mengukur kekuatan hubungan antara dua variabel berbasis peringkat (misal: apakah turunnya nilai $\mathcal{S}$ komputer sejalan dengan naiknya skor kepuasan manusia). |      |                                                                                                                                                                |
+| **KNN Deterministik**                   | Pencarian KNN yang hasilnya selalu sama dan konsisten setiap kali dijalankan ulang (tanpa unsur acak), sehingga perbandingan dengan baseline adil dan dapat direproduksi.                    |      |                                                                                                                                                                |
