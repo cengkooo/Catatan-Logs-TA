@@ -31,6 +31,7 @@ flowchart TD
 
 | Berkas Panduan | Cakupan Utama | Target Deliverable | Estimasi Waktu |
 | :--- | :--- | :--- | :--- |
+| **[[00-Phase-00-Fundamental-TA-dan-Penguatan-Naskah]]** | 16 Pilar Fundamental TA, Uji Ablasi (`meyes2019ablation`, `bendada2023scalable`), & Penguatan Naskah | Fondasi Riset Konsisten + Naskah Bab I–III Tervalidasi | 2–3 Jam |
 | **[[01-Phase-01-Bab-1-Pendahuluan]]** | Penulisan Bab 1 lengkap | Draf Bab 1 (≥ 3 hlm) + 5 sitasi IEEE | 3–4 Jam |
 | **[[02-Phase-02-Bab-2-Tinjauan-Pustaka]]** | Sintesis 21 paper & teori | Draf Bab 2 (≥ 8 hlm) + komparasi baseline | 5–6 Jam |
 | **[[03-Phase-03-Bab-3-Metodologi-Desain]]** | Arsitektur & matematika | Draf Bab 3 (≥ 6 hlm) + flowchart + rumus | 4–5 Jam |
