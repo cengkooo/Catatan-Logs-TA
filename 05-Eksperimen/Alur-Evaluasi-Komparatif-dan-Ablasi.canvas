@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "id": "g1",
+      "type": "group",
+      "x": 10,
+      "y": 10,
+      "width": 1160,
+      "height": 280,
+      "label": "1. Skenario Komparasi 3 Model & Uji Ablasi (Bab III Subbab 3.5.2 & 3.5.5)"
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "x": 10,
+      "y": 330,
+      "width": 1160,
+      "height": 290,
+      "label": "2. Matriks Eksekusi Masif (540 Batch Run, Seed=42)"
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "x": 10,
+      "y": 660,
+      "width": 1160,
+      "height": 290,
+      "label": "3. Metrik Evaluasi & Uji Signifikansi Statistik (Bab III Subbab 3.5.1 & 3.5.3)"
+    },
+    {
+      "id": "n1",
+      "type": "text",
+      "x": 40,
+      "y": 60,
+      "width": 330,
+      "height": 205,
+      "color": "6",
+      "text": "### 1A. Kontrol: Naive Random\n\n- Pemilihan lagu acak tanpa struktur waypoint maupun trajektori\n- Batas bawah (*lower bound*) kinerja"
+    },
+    {
+      "id": "n2",
+      "type": "text",
+      "x": 420,
+      "y": 60,
+      "width": 340,
+      "height": 205,
+      "color": "3",
+      "text": "### 1B. Baseline: Gaur (2023/2024)\n`[Static-Point Matching]`\n\n- Replikasi 2-tahap KNN pada titik rata-rata $(\\bar{v}, \\bar{a})$ + fitur audio 12D PCA\n- Tanpa info trajektori 2 Hz"
+    },
+    {
+      "id": "n3",
+      "type": "text",
+      "x": 810,
+      "y": 60,
+      "width": 330,
+      "height": 205,
+      "color": "4",
+      "text": "### 1C. Model Usulan (2 Konfigurasi)\n`[Meyes 2019; Bendada 2023]`\n\n- **Ablasi OFF** ($\\lambda_{\\mathrm{traj}} = 0$): hanya titik statis\n- **Ablasi ON** ($\\lambda_{\\mathrm{traj}} > 0$): *Trajectory Alignment* + $\\mathcal{BJC}$"
+    },
+    {
+      "id": "n4",
+      "type": "text",
+      "x": 40,
+      "y": 380,
+      "width": 340,
+      "height": 215,
+      "color": "5",
+      "text": "### 2. Korpus & Split Terkontrol\n\n- DEAM 1.802 klip (*song-level holdout split*)\n- Penguncian `seed=42`\n- Jumlah kandidat $K$, bobot jarak, & pool sama persis untuk semua model"
+    },
+    {
+      "id": "n5",
+      "type": "text",
+      "x": 430,
+      "y": 380,
+      "width": 350,
+      "height": 215,
+      "color": "5",
+      "text": "### 3. 6 Rute Kuadran (540 Batch Run)\n\n- **Diagonal:** Q3 $\\leftrightarrow$ Q1, Q2 $\\leftrightarrow$ Q4\n- **Horizontal:** Q1 $\\leftrightarrow$ Q2, Q3 $\\leftrightarrow$ Q4\n- **Vertical:** Q1 $\\leftrightarrow$ Q4, Q2 $\\leftrightarrow$ Q3\n- Variasi $K$, panjang $M$, & trial"
+    },
+    {
+      "id": "n6",
+      "type": "text",
+      "x": 830,
+      "y": 380,
+      "width": 310,
+      "height": 215,
+      "color": "4",
+      "text": "### 4. Output Playlist per Model\n\n- 540 playlist per konfigurasi\n- Menyimpan koordinat `intro` & `outro` setiap pasang lagu $(L_j, L_{j+1})$"
+    },
+    {
+      "id": "n7",
+      "type": "text",
+      "x": 40,
+      "y": 710,
+      "width": 350,
+      "height": 215,
+      "color": "2",
+      "text": "### 5. Hitung 3 Metrik Objektif\n`[Bab III 3.5.1, Eq. 3.8 - 3.10]`\n\n- **Boundary Smoothness** ($\\mathcal{S}$): rata-rata lonjakan *outro-intro* (target turun $\\ge 15\\%$)\n- **Evenness Index** ($\\mathcal{E}$): variansi langkah\n- **Cumulative BJC** ($\\mathcal{CBJC}$): total penalti"
+    },
+    {
+      "id": "n8",
+      "type": "text",
+      "x": 440,
+      "y": 710,
+      "width": 340,
+      "height": 215,
+      "color": "1",
+      "text": "### 6. Uji Wilcoxon Signed-Rank\n`[Bab III 3.5.3 & 3.5.5]`\n\n- Uji non-parametrik berpasangan ($\\alpha = 0,05$)\n- Bandingkan Usulan vs Gaur & Ablasi ON vs OFF\n- Bukti kausalitas kontribusi modul trajektori"
+    },
+    {
+      "id": "n9",
+      "type": "text",
+      "x": 830,
+      "y": 710,
+      "width": 310,
+      "height": 215,
+      "color": "4",
+      "text": "### 7. Keputusan & Analisis Diagnostik\n\n- Jika $p < 0,05$ & $\\mathcal{S}$ turun $\\ge 15\\%$: hipotesis diterima\n- *Fallback*: analisis diagnostik per kuadran"
+    }
+  ],
+  "edges": [
+    { "id": "e1", "fromNode": "n1", "fromSide": "bottom", "toNode": "n4", "toSide": "top" },
+    { "id": "e2", "fromNode": "n2", "fromSide": "bottom", "toNode": "n4", "toSide": "top" },
+    { "id": "e3", "fromNode": "n3", "fromSide": "bottom", "toNode": "n4", "toSide": "top" },
+    { "id": "e4", "fromNode": "n4", "fromSide": "right", "toNode": "n5", "toSide": "left", "label": "Dataset + Seed" },
+    { "id": "e5", "fromNode": "n5", "fromSide": "right", "toNode": "n6", "toSide": "left", "label": "Eksekusi 540x" },
+    { "id": "e6", "fromNode": "n6", "fromSide": "bottom", "toNode": "n7", "toSide": "top", "label": "Skor Transisi" },
+    { "id": "e7", "fromNode": "n7", "fromSide": "right", "toNode": "n8", "toSide": "left", "label": "S, E, CBJC" },
+    { "id": "e8", "fromNode": "n8", "fromSide": "right", "toNode": "n9", "toSide": "left", "label": "p-value" }
+  ]
+}
