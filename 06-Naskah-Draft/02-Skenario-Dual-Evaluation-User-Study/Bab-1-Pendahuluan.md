@@ -108,7 +108,7 @@ Saat presentasi atau ditanya dosen, pastikan poin-poin berikut tersampaikan deng
 
 1. **Urgensi Masalah Industri:**
    - **Layanan *streaming* modern bergeser ke kurasi *playlist* otomatis berbasis konteks dan aktivitas pendengar** ([[06-Bontempelli2022-Flow-Moods-Deezer|Bontempelli et al., 2022]]; [[05-Schweiger2025-Playlist-Coherence|Schweiger et al., 2025]]).
-   - **Transisi emosi antarlagu yang melompat kasar ($\Delta > 0{,}25$) menaikkan tingkat *skip rate* pendengar hingga 37%** ([[05-Schweiger2025-Playlist-Coherence|Schweiger et al., 2025]]). Jadi kehalusan transisi bukan sekadar estetika, melainkan berdampak langsung pada retensi pengguna.
+   - **Transisi emosi antarlagu yang melompat kasar ($\Delta > 0{,}25$) menaikkan tingkat *skip rate* pendengar hingga 37%** ([[05-Schweiger2025-Playlist-Coherence|Schweiger et al., 2025]]). Jadi kehalusan t ransisi bukan sekadar estetika, melainkan berdampak langsung pada retensi pengguna.
 
 2. **Kenapa Pakai Ruang Emosi Russell (1980) Meski Sudah Tua?**
    - Ruang 2D **Valence–Arousal** bukan konstruksi subjektif kuno, melainkan **tervalidasi ulang oleh AI modern ([[23-Belaref2024-Data-Driven-Russell-Circumplex|Belaref et al., 2024]])**: representasi laten *Transformer* secara alami membentuk lingkaran sirkumpleks Russell dengan **korelasi angular $r > 0{,}82$** (75% konsep emosi akurat dalam $\Delta\theta < 30^\circ$).
