@@ -1,166 +1,34 @@
 {
-  "nodes": [
-    {
-      "id": "g1",
-      "type": "group",
-      "x": 10,
-      "y": 10,
-      "width": 1400,
-      "height": 210,
-      "label": "1. Persiapan Dataset & Preprocessing (DEAM -> 12D PCA -> KD-Tree)"
-    },
-    {
-      "id": "g2",
-      "type": "group",
-      "x": 10,
-      "y": 270,
-      "width": 1400,
-      "height": 210,
-      "label": "2. Pipeline Pembangkitan Playlist Baseline (TwoStagePlaylistGenerator - Gaur 2023/2024)"
-    },
-    {
-      "id": "g3",
-      "type": "group",
-      "x": 10,
-      "y": 530,
-      "width": 1440,
-      "height": 230,
-      "label": "3. Protokol Uji Coba, Metrik Evaluasi, & Temuan Empiris"
-    },
-    {
-      "id": "n1",
-      "type": "text",
-      "x": 40,
-      "y": 60,
-      "width": 280,
-      "height": 135,
-      "color": "5",
-      "text": "### 1. Load Dataset DEAM\n`src/deam_loader.py`\n- **1.802 klip audio** (45 detik)\n- Anotasi statis $(\\bar{v}, \\bar{a})$ & dinamis 2 Hz\n- Normalisasi $[1, 9] \\to [-1, +1]$"
-    },
-    {
-      "id": "n2",
-      "type": "text",
-      "x": 380,
-      "y": 60,
-      "width": 300,
-      "height": 135,
-      "color": "5",
-      "text": "### 2. Preprocessing Fitur Audio\n`src/preprocessing.py` (`GaurPreprocessor`)\n- IQR Discretizer (`mult=5.5, bins=20`)\n- Yeo-Johnson PowerTransformer\n- **12D PCA** + MinMaxScaler $[-1, 1]$"
-    },
-    {
-      "id": "n3",
-      "type": "text",
-      "x": 740,
-      "y": 60,
-      "width": 300,
-      "height": 135,
-      "color": "6",
-      "text": "### 3. Stratified Split (Anti-Leakage)\n`src/split_utils.py`\n- Train **70%** (1.261), Val **15%** (270), Test **15%** (271)\n- Transform Val/Test pakai parameter Train\n- Distribusi 4 kuadran (Q1–Q4) seimbang"
-    },
-    {
-      "id": "n4",
-      "type": "text",
-      "x": 1100,
-      "y": 60,
-      "width": 280,
-      "height": 135,
-      "color": "6",
-      "text": "### 4. Spatial Index (KD-Tree)\n`src/dataset.py` (`SongDatasetClass`)\n- Mengindeks koordinat unik $(V, A)$ 2D\n- Menyediakan query cepat tetangga terdekat untuk Stage 1"
-    },
-    {
-      "id": "n5",
-      "type": "text",
-      "x": 40,
-      "y": 320,
-      "width": 280,
-      "height": 135,
-      "color": "3",
-      "text": "### 5. Input Seed & Target\n- Pilih lagu awal $S_0$ (mis. Q3 Sad)\n- Pilih lagu tujuan $S_N$ (mis. Q1 Happy)\n- Tentukan panjang $N$ & jumlah kandidat $K$"
-    },
-    {
-      "id": "n6",
-      "type": "text",
-      "x": 380,
-      "y": 320,
-      "width": 320,
-      "height": 135,
-      "color": "3",
-      "text": "### 6. Stage 1: Linear Waypoint + KNN\n`src/stage1_knn.py`\n- Hitung waypoint target (Eq. 5):\n  $$S_T = S_L + \\frac{S_N - S_L}{N - L}$$\n- Query KD-Tree ambil **$K$ kandidat** terdekat"
-    },
-    {
-      "id": "n7",
-      "type": "text",
-      "x": 760,
-      "y": 320,
-      "width": 320,
-      "height": 135,
-      "color": "3",
-      "text": "### 7. Stage 2: Audio Re-Ranking (CUDA)\n`src/stage2_selector.py`\n- Hitung jarak fitur audio 12D PCA via PyTorch CUDA\n- Metrik: `cosine`, `euclidean`, `manhattan`\n- Pilih 1 lagu terdekat ke lagu terakhir $S_L$"
-    },
-    {
-      "id": "n8",
-      "type": "text",
-      "x": 1140,
-      "y": 320,
-      "width": 240,
-      "height": 135,
-      "color": "4",
-      "text": "### 8. Iterasi Playlist\n`src/playlist_generator.py`\n- Ulangi Stage 1 $\\to$ Stage 2 hingga panjang playlist mencapai $N$ lagu\n- Hasil: urutan playlist baseline"
-    },
-    {
-      "id": "n9",
-      "type": "text",
-      "x": 40,
-      "y": 580,
-      "width": 310,
-      "height": 150,
-      "color": "4",
-      "text": "### 9A. Uji Single-Run (Q3 -> Q1)\n`experiments/run_experiment.py`\n- $N=12, K=7$ (Cosine vs Euclidean vs Manhattan)\n- Output: `metrics_comparison_deam.csv` & `baseline_deam_traversal_plot.png`"
-    },
-    {
-      "id": "n10",
-      "type": "text",
-      "x": 400,
-      "y": 580,
-      "width": 340,
-      "height": 150,
-      "color": "4",
-      "text": "### 9B. Uji Batch 540 Playlist\n`experiments/run_quadrant_experiments.py`\n- 6 rute kuadran (Diagonal, Horizontal, Vertical)\n- $K \\in \\{5,7,15\\} \\times N \\in \\{5,12,19\\} \\times$ 2 metrik $\\times$ 5 trial = **540 evaluasi**\n- Output: `batch_quadrant_experiments_deam.csv`"
-    },
-    {
-      "id": "n11",
-      "type": "text",
-      "x": 790,
-      "y": 580,
-      "width": 300,
-      "height": 150,
-      "color": "2",
-      "text": "### 10. Evaluasi Metrik Baseline\n`src/metrics.py`\n- **Smoothness (PCC $\\rho$):** Cosine `0.9781`, Euclidean `0.9876`, Manhattan `0.9762`\n- **Evenness:** $\\text{Var}(\\text{RMSE})$ pada V-A & Audio 12D"
-    },
-    {
-      "id": "n12",
-      "type": "text",
-      "x": 1140,
-      "y": 580,
-      "width": 280,
-      "height": 150,
-      "color": "1",
-      "text": "### 11. Temuan Kritis & Gap Riset\n`analyze_intra_song_dynamics.py`\n- **98,11%** (1.768/1.802) lagu DEAM melintasi kuadran internal ($\\Delta = 0.1937$)\n- Baseline statis buta terhadap transisi *outro-intro* -> dasar metode usulan"
-    }
-  ],
-  "edges": [
-    { "id": "e1", "fromNode": "n1", "fromSide": "right", "toNode": "n2", "toSide": "left", "label": "df_raw + audio_cols" },
-    { "id": "e2", "fromNode": "n2", "fromSide": "right", "toNode": "n3", "toSide": "left", "label": "12D PCA + V-A [-1,1]" },
-    { "id": "e3", "fromNode": "n3", "fromSide": "right", "toNode": "n4", "toSide": "left", "label": "Catalog Pool" },
-    { "id": "e4", "fromNode": "n4", "fromSide": "bottom", "toNode": "n5", "toSide": "top", "label": "Siap Query" },
-    { "id": "e5", "fromNode": "n5", "fromSide": "right", "toNode": "n6", "toSide": "left", "label": "S_L, S_N, N, K" },
-    { "id": "e6", "fromNode": "n6", "fromSide": "right", "toNode": "n7", "toSide": "left", "label": "K kandidat" },
-    { "id": "e7", "fromNode": "n7", "fromSide": "right", "toNode": "n8", "toSide": "left", "label": "1 lagu terpilih" },
-    { "id": "e8", "fromNode": "n8", "fromSide": "top", "toNode": "n6", "toSide": "top", "label": "Loop L < N" },
-    { "id": "e9", "fromNode": "n8", "fromSide": "bottom", "toNode": "n9", "toSide": "top", "label": "Single Q3->Q1" },
-    { "id": "e10", "fromNode": "n8", "fromSide": "bottom", "toNode": "n10", "toSide": "top", "label": "Batch 6 Rute" },
-    { "id": "e11", "fromNode": "n9", "fromSide": "right", "toNode": "n11", "toSide": "bottom" },
-    { "id": "e12", "fromNode": "n10", "fromSide": "right", "toNode": "n11", "toSide": "left", "label": "540 playlist" },
-    { "id": "e13", "fromNode": "n11", "fromSide": "right", "toNode": "n12", "toSide": "left", "label": "Audit Kelemahan" }
-  ]
+	"nodes":[
+		{"id":"g3","type":"group","x":10,"y":900,"width":1870,"height":660,"label":"3. Protokol Uji Coba, Metrik Evaluasi, & Temuan Empiris (Gaur 2023, Sec. 8–9, hal. 32–44)"},
+		{"id":"g1","type":"group","x":-360,"y":-280,"width":2380,"height":400,"label":"1. Persiapan Dataset & Preprocessing (DEAM -> 12D PCA -> KD-Tree)"},
+		{"id":"g2","type":"group","x":-200,"y":340,"width":2080,"height":400,"label":"2. Pipeline Pembangkitan Playlist Baseline (TwoStagePlaylistGenerator — Gaur 2023, Sec. 7, hal. 27–31)"},
+		{"id":"n11","type":"text","text":"### 10. Evaluasi Metrik Baseline\n`[Gaur 2023, Sec. 8.2.1–8.2.2, Eq. 6–7, hal. 33–35]`\n\n`src/metrics.py`\n- **Smoothness (PCC $\\rho$):** Cosine `0.9781`, Euclidean `0.9876`, Manhattan `0.9762`\n- **Evenness:** $\\text{Var}(\\text{RMSE})$ V-A & Audio 12D","x":880,"y":975,"width":340,"height":235,"color":"2"},
+		{"id":"n9","type":"text","text":"### 9A. Uji Single-Run (Q3 -> Q1)\n`[Gaur 2023, Sec. 8.1 & 9.1, hal. 32, 36–37]`\n\n`experiments/run_experiment.py`\n- $N=12, K=7$ (Cosine vs Euclidean vs Manhattan)\n- Output: `metrics_comparison_deam.csv` & `baseline_deam_traversal_plot.png`","x":40,"y":1240,"width":340,"height":260,"color":"4"},
+		{"id":"n10","type":"text","text":"### 9B. Uji Batch 540 Playlist\n`[Gaur 2023, Sec. 9.1–9.4, hal. 36–44]`\n\n`experiments/run_quadrant_experiments.py`\n- 6 rute kuadran (Diagonal, Horizontal, Vertical)\n- $K \\in \\{5,7,15\\} \\times N \\in \\{5,12,19\\} \\times$ 2 metrik $\\times$ 5 trial = **540 evaluasi**","x":320,"y":950,"width":370,"height":260,"color":"4"},
+		{"id":"n12","type":"text","text":"### 11. Temuan Kritis & Gap Riset\n`[Adaptasi Lokal — isi gap Sec. 10.2, hal. 50]`\n\n`analyze_intra_song_dynamics.py`\n- **98,11%** (1.768/1.802) lagu DEAM melintasi kuadran internal ($\\Delta = 0.1937$)\n- Baseline statis buta transisi *outro-intro*","x":1520,"y":975,"width":320,"height":235,"color":"1"},
+		{"id":"n1","type":"text","text":"### 1. Load Dataset DEAM\n`[Adaptasi Lokal]` *(Gaur pakai DMDD di Sec. 5, hal. 13–22)*\n\n`src/deam_loader.py`\n- **1.802 klip audio** (45 detik)\n- Anotasi statis $(\\bar{v}, \\bar{a})$ & dinamis 2 Hz\n- Normalisasi $[1, 9] \\to [-1, +1]$","x":-285,"y":-200,"width":330,"height":280,"color":"5"},
+		{"id":"n2","type":"text","text":"### 2. Preprocessing Fitur Audio\n`[Gaur 2023, Sec. 6.1–6.2, hal. 23–25]`\n\n`src/preprocessing.py` (`GaurPreprocessor`)\n- IQR Discretizer (`5.5 × IQR`, `bins=20`)\n- Yeo-Johnson PowerTransformer\n- **12D PCA** + MinMaxScaler $[-1, 1]$","x":350,"y":-200,"width":340,"height":280,"color":"5"},
+		{"id":"n4","type":"text","text":"### 4. Spatial Index (KD-Tree)\n`[Gaur 2023, Sec. 6.3, hal. 26]`\n\n`src/dataset.py` (`SongDatasetClass`)\n- Mengindeks koordinat unik $(V, A)$ 2D\n- Menyediakan query cepat tetangga terdekat untuk Stage 1","x":1620,"y":-200,"width":320,"height":280,"color":"6"},
+		{"id":"n8","type":"text","text":"### 8. Iterasi Playlist\n`[Gaur 2023, Algorithm 1, hal. 27–28]`\n\n`src/playlist_generator.py`\n- Ulangi Stage 1 $\\to$ Stage 2 hingga panjang mencapai $N$ lagu\n- Hasil: urutan playlist baseline","x":1540,"y":390,"width":300,"height":270,"color":"4"},
+		{"id":"n7","type":"text","text":"### 7. Stage 2: Audio Re-Ranking (CUDA)\n`[Gaur 2023, Sec. 7.2, hal. 30]`\n\n`src/stage2_selector.py`\n- Jarak fitur audio 12D PCA via PyTorch CUDA\n- Metrik: `cosine`, `euclidean`, `manhattan`\n- Pilih 1 lagu terdekat ke lagu terakhir $S_L$","x":975,"y":390,"width":350,"height":310,"color":"3"},
+		{"id":"n5","type":"text","text":"### 5. Input Seed & Target\n`[Gaur 2023, Sec. 7 & 8.1, hal. 27, 32]`\n\n- Pilih lagu awal $S_0$ (mis. Q3 Sad)\n- Pilih lagu tujuan $S_N$ (mis. Q1 Happy)\n- Tentukan panjang $N$ & kandidat $K$ (default $K=7$)","x":-160,"y":410,"width":330,"height":250,"color":"3"},
+		{"id":"n6","type":"text","text":"### 6. Stage 1: Linear Waypoint + KNN\n`[Gaur 2023, Sec. 7.1, Eq. 5, hal. 29]`\n\n`src/stage1_knn.py`\n- Hitung waypoint target:\n  $$S_T = S_L + \\frac{S_N - S_L}{N - L}$$\n- Query KD-Tree ambil **$K$ kandidat** terdekat","x":400,"y":390,"width":350,"height":310,"color":"3"},
+		{"id":"n3","type":"text","text":"### 3. Stratified Split (Anti-Leakage)\n`[Adaptasi Lokal]` *(tidak ada di Gaur 2023)*\n\n`src/split_utils.py`\n- Train **70%** (1.261), Val **15%** (270), Test **15%** (271)\n- Transform Val/Test pakai parameter Train\n- Distribusi Q1–Q4 seimbang","x":1050,"y":-240,"width":340,"height":320,"color":"6"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"n1","fromSide":"right","toNode":"n2","toSide":"left","label":"df_raw + audio_cols"},
+		{"id":"e2","fromNode":"n2","fromSide":"right","toNode":"n3","toSide":"left","label":"12D PCA + V-A [-1,1]"},
+		{"id":"e3","fromNode":"n3","fromSide":"right","toNode":"n4","toSide":"left","label":"Catalog Pool"},
+		{"id":"e4","fromNode":"n4","fromSide":"bottom","toNode":"n5","toSide":"top","label":"Siap Query"},
+		{"id":"e5","fromNode":"n5","fromSide":"right","toNode":"n6","toSide":"left","label":"S_L, S_N, N, K"},
+		{"id":"e6","fromNode":"n6","fromSide":"right","toNode":"n7","toSide":"left","label":"K kandidat"},
+		{"id":"e7","fromNode":"n7","fromSide":"right","toNode":"n8","toSide":"left","label":"1 lagu terpilih"},
+		{"id":"e8","fromNode":"n8","fromSide":"top","toNode":"n6","toSide":"top","label":"Loop L < N"},
+		{"id":"e9","fromNode":"n8","fromSide":"bottom","toNode":"n9","toSide":"top","label":"Single Q3->Q1"},
+		{"id":"e10","fromNode":"n8","fromSide":"bottom","toNode":"n10","toSide":"top","label":"Batch 6 Rute"},
+		{"id":"e11","fromNode":"n9","fromSide":"right","toNode":"n11","toSide":"bottom"},
+		{"id":"e12","fromNode":"n10","fromSide":"right","toNode":"n11","toSide":"left","label":"540 playlist"},
+		{"id":"e13","fromNode":"n11","fromSide":"right","toNode":"n12","toSide":"left","label":"Audit Kelemahan"}
+	]
 }
