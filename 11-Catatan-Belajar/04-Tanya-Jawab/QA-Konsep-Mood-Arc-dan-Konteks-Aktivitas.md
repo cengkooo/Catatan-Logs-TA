@@ -46,6 +46,33 @@ Keduanya bekerja di lapisan yang berbeda namun saling terhubung:
 2. **Menjustifikasi bentuk "lintasan" (*arc*), bukan titik tunggal:** Aktivitas membuktikan bahwa emosi pendengar dalam satu sesi mendengarkan bersifat dinamis dan terarah dari satu titik emosi ke titik emosi lain.
 3. **Menjawab pertanyaan penguji soal manfaat praktis:** Tanpa contoh aktivitas nyata, topik *Valence-Arousal trajectory* bisa terdengar terlalu abstrak. Dengan adanya contoh tidur, olahraga, dan belajar, dosen penguji langsung menangkap dampak praktisnya di industri streaming.
 
+---
+
+## ❓ Pertanyaan #2
+> Memangnya algoritma yang saya ajukan bisa menebak fase waktu (awal, tengah, akhir) aktivitas pengguna?
+
+### 💡 Jawaban
+
+**Tidak.** Algoritma yang Anda ajukan **tidak menebak** aktivitas pengguna ataupun fase waktunya secara otomatis (bukan *activity recognition* atau deteksi konteks *real-time*).
+
+#### 1. Bagaimana Fase Awal, Tengah, dan Akhir Sebenarnya Bekerja di Algoritma Anda?
+Berdasarkan [[Bab-3-Metodologi]] (Subbab 3.3.1), alurnya bersifat **terkendali dari input (*user-defined / query-driven*)**, bukan tebakan otomatis:
+1. **Input Ditetapkan di Awal:** Titik emosi awal ($\mathbf{p}_{\text{start}}$), titik emosi target akhir ($\mathbf{p}_{\text{target}}$), dan jumlah lagu ($M$) diberikan sebagai parameter masukan (misalnya pada pengujian rute dari Q3 ke Q1 atau Q1 ke Q4).
+2. **Pembagian Fase via Interpolasi Linier (Persamaan 3.3):** Sistem membagi garis lurus antara $\mathbf{p}_{\text{start}}$ dan $\mathbf{p}_{\text{target}}$ menjadi $M$ titik acuan (*waypoints*):
+   $$\mathbf{w}_j = \mathbf{p}_{\text{start}} + \frac{j-1}{M-1} \cdot (\mathbf{p}_{\text{target}} - \mathbf{p}_{\text{start}}), \quad \forall j \in \{1, 2, \dots, M\}$$
+   - **Awal** = $\mathbf{w}_1 = \mathbf{p}_{\text{start}}$
+   - **Tengah** = $\mathbf{w}_j$ di antara keduanya
+   - **Akhir** = $\mathbf{w}_M = \mathbf{p}_{\text{target}}$
+3. **Peran KNN & Reranker:**
+   - **KNN (Tahap 1)** mengambil $K=20$ lagu terdekat di sekitar masing-masing $\mathbf{w}_j$.
+   - **Trajectory Alignment Reranker (Tahap 2)** memilih lagu yang arah perubahan emosi internalnya ($\vec{\mathbf{t}}_k$) searah dengan vektor perpindahan antar-waypoint ($\vec{\mathbf{u}}_j = \mathbf{w}_j - \mathbf{w}_{j-1}$) dan memiliki sambungan *outro-to-intro* paling halus ($\mathcal{BJC}$ minimal).
+
+#### 2. Cara Menjawab Jika Ditanya Dosen Penguji di Sempro
+Jika penguji bertanya *"Apakah sistemmu bisa mendeteksi otomatis user sedang olahraga atau mau tidur?"*, jawab secara jujur dan tegas:
+> *"Tidak, Pak/Bu. Deteksi aktivitas pengguna di luar batasan penelitian kami (sebagaimana tercantum di Batasan Penelitian bahwa sistem tidak membahas skenario real-time atau pengembangan aplikasi). Konteks aktivitas di Bab 1 berfungsi sebagai skenario kebutuhan nyata yang melatarbelakangi mengapa pengguna menginginkan playlist berbentuk lintasan dari satu titik emosi ke titik emosi lain. Algoritma kami bekerja setelah titik awal ($\mathbf{p}_{\text{start}}$) dan titik akhir ($\mathbf{p}_{\text{target}}$) ditentukan, untuk memastikan transisi antartrek di sepanjang lintasan tersebut berjalan mulus tanpa boundary jump."*
+
+---
+
 ### 📚 Referensi
 - [[01-Gaur2023-Mood-Dynamic]] — Motivasi *mood regulation* (terapi musik, pengantar tidur dari gelisah ke rileks, dan musik olahraga dari pemanasan ke intensitas tinggi).
 - [[06-Bontempelli2022-Flow-Moods-Deezer]] — Contoh kegagalan personalisasi historis saat konteks aktivitas pengguna berubah (*belajar* vs. *pesta*).
