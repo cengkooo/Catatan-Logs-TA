@@ -16,7 +16,8 @@ Selamat datang di **Second Brain & Knowledge Base** Tugas Akhir! Folder ini dide
 > 1. Gunakan `Template-Catatan-Konsep.md` untuk mencatat teori/domain MIR ke subfolder `01-Konsep-Teori/`.
 > 2. Gunakan `Template-Catatan-Techstack.md` untuk menyimpan sintaks, snippet, dan cheatsheet ke subfolder `02-Tech-Stack/`.
 > 3. Tuliskan ide kreatif, formulasi hipotesis baru, atau persiapan bimbingan/sidang di subfolder `03-Sintesis-dan-Ide/`.
-> 4. Seluruh tabel di bawah ini akan terisi dan terbarui secara **otomatis melalui Dataview**.
+> 4. Gunakan `Template-Tanya-Jawab.md` untuk menyimpan log tanya jawab belajar per topik ke subfolder `04-Tanya-Jawab/`.
+> 5. Seluruh tabel di bawah ini akan terisi dan terbarui secara **otomatis melalui Dataview**.
 
 ---
 
@@ -45,6 +46,16 @@ SORT file.name ASC
 ```dataview
 TABLE file.folder AS "Sub-Folder", file.mtime AS "Terakhir Diupdate"
 FROM "11-Catatan-Belajar/03-Sintesis-dan-Ide"
+SORT file.mtime DESC
+```
+
+---
+
+## 💬 4. Tanya Jawab & Diskusi Belajar (`04-Tanya-Jawab`)
+
+```dataview
+TABLE topik AS "Topik", rujukan_paper AS "Referensi", status AS "Status", file.mtime AS "Terakhir Diupdate"
+FROM "11-Catatan-Belajar/04-Tanya-Jawab" or #note/tanya-jawab
 SORT file.mtime DESC
 ```
 
