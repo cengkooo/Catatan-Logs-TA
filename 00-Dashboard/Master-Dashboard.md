@@ -61,7 +61,7 @@ LIMIT 5
 - 💡 **Catatan Belajar & Tech Stack:** [[00-Index-Catatan|11-Catatan-Belajar (Konsep, Tools, & Sintesis)]]
 - 🔬 **Eksperimen:** [[01-Dataset-DEAM-dan-Eksplorasi|Dataset-DEAM]] | [[02-Formulasi-Ekstraksi-Trajectory|Ekstraksi-Trajectory]] | [[03-Replikasi-Baseline-KNN-Gaur|Replikasi-Baseline-KNN]] | [[06-Log-Training-Baseline-Gaur|Analisis Baseline Gaur]] | [[08-Blueprint-Arah-Penelitian-TA|Blueprint Arah TA]] | [[09-Peta-Kode-Code-Walkthrough|Peta Kode Walkthrough (Lampiran 4)]]
 - ✍️ **Draf Naskah:** [[Bab-1-Pendahuluan]] | [[Bab-2-Tinjauan-Pustaka]] | [[Bab-3-Metodologi]] | [[Turnitin-Similarity-Ledger|Turnitin Similarity & Parafrase]]
-- 💬 **Riwayat Prompt AI:** [[README|08-Prompt-History]] | [[Prompt-2026-11-23]]
+- 💬 **Riwayat Prompt AI:** [[README|08-Prompt-History]] | [[Prompt-2026-11-26]]
 - 📜 **Pedoman Resmi IF ITERA:** [[09-pedoman-ta-itera-lengkap|Buku Pedoman Lengkap]] | [[07-format-isi-naskah-ta|format-isi-ta]] | [[04b-cheatsheet-format-unesco|format-penulisan-unesco]] | [[08-checklist-dokumen-wajib|dokumen-wajib]]
 - 📖 **Pusat Panduan & Tutorial:** [[00-Index-Tutorial|12-Tutorial-Catatan (Indeks Master Tutorial Vault)]]
 - 🛠️ **Panduan Sistem & Tooling:** [[tutorial-catatan|Panduan Vault & Hotkeys]] | [[obsidian-connect-google|Integrasi Google Workspace]]

@@ -88,3 +88,23 @@ flowchart TD
 | **9A–9B** | Uji Single-Run & Batch 6 Rute Kuadran (`run_experiment.py`, `run_quadrant_experiments.py`) | **Sec. 8.1 (hal. 32–33) & Sec. 9.1–9.4 (hal. 36–44)** | Variasi metrik jarak (Sec. 9.1 hal. 36), nilai $K$ (Sec. 9.3 hal. 42), panjang $N$ (Sec. 9.4 hal. 43) |
 | **10** | Metrik Evaluasi: Smoothness PCC (Eq. 6) & Evenness $\text{Var}(\text{RMSE})$ (Eq. 7) | **Sec. 8.2.1–8.2.2, hal. 33–35** | Rumus Eq. 6 (hal. 33–34) & Eq. 7 (hal. 34–35) |
 | **11** | Audit Dinamika Intra-Lagu 98,11% (`analyze_intra_song_dynamics.py`) | **Adaptasi Lokal** *(mengisi gap Sec. 10.2 Limitations, hal. 50)* | Bukti empiris lokal di DEAM untuk menguji limitasi titik statis Gaur |
+
+
+---
+
+## 4. Kamus Istilah Teknis & Arti Rumus (Bahasa Sederhana)
+
+> [!note] Panduan Membaca Istilah Teknis
+> - **Static-Point Matching:** Menganggap satu lagu hanya punya **satu titik mood rata-rata** $(\bar{v}, \bar{a})$, padahal di dunia nyata mood lagu bisa berubah dari awal ke akhir.
+> - **IQR Discretizer (`5.5 × IQR`):** Penyaring angka fitur audio yang terlalu ekstrem (*outlier*) supaya tidak merusak perhitungan jarak.
+> - **Yeo-Johnson PowerTransformer:** Pengubah skala data yang distribusinya miring (*skewed*) agar lebih rapi dan seimbang.
+> - **12D PCA (*Principal Component Analysis*):** Meringkas puluhan fitur suara menjadi **12 angka inti** saja agar komputasi lebih ringan dan tidak ada fitur yang saling tumpang tindih.
+> - **MinMaxScaler $[-1, 1]$:** Menyamakan rentang seluruh fitur ke skala $-1$ sampai $+1$ agar adil saat dihitung jaraknya.
+> - **Stratified 4-Quadrant Split (Anti-Data Leakage):** Membagi data Latih/Validasi/Uji secara seimbang di tiap kuadran emosi (Q1–Q4), dan memastikan aturan penskalaan hanya belajar dari data Latih agar model tidak "nyontek" data Uji.
+> - **KD-Tree:** Struktur indeks spasial (seperti daftar isi peta) supaya pencarian lagu terdekat jauh lebih cepat daripada mengecek satu per satu.
+> - **Cosine vs Euclidean vs Manhattan:** Tiga cara mengukur kemiripan fitur suara antarlagu (berdasar arah sudut, garis lurus, atau selisih langkah per sumbu).
+
+> [!tip] Arti Rumus Matematika
+> - **Interpolasi Waypoint ($S_T = S_L + \frac{S_N - S_L}{N - L}$):** Menentukan titik mood target berikutnya dengan membagi sisa jarak dari lagu terakhir ($S_L$) ke lagu tujuan ($S_N$) secara rata sesuai sisa panjang playlist ($N - L$).
+> - **Smoothness (PCC $\rho$):** Mengukur seberapa lurus deretan titik rata-rata lagu mengikuti garis lurus (mendekati $1{,}0$ = sangat lurus). *Catatan:* skor tinggi di baseline ini bersifat semu karena tidak melihat pergeseran mood di dalam lagu.
+> - **Evenness ($\text{Var}(\text{RMSE})$):** Mengukur apakah jarak langkah antarlagu seragam (semakin kecil / mendekati $0$, langkahnya semakin rata).

@@ -61,3 +61,24 @@ flowchart TD
 > - **Reliabilitas:** *Cronbach's Alpha* $\alpha \ge 0{,}70$ (Eq. 3.12).
 > - **Uji Beda:** *Wilcoxon Signed-Rank Test* ($\alpha = 0{,}05$) menguji $\mathrm{MOS}_{\mathrm{Usulan}} > \mathrm{MOS}_{\mathrm{Gaur}}$.
 > - **Korelasi:** Korelasi peringkat *Spearman* ($r_s$, Eq. 3.13) antara metrik objektif ($\mathcal{S}$, $\mathcal{BJC}$) dan skor MOS manusia.
+
+
+---
+
+## 3. Kamus Istilah Teknis & Arti Rumus (Bahasa Sederhana)
+
+> [!note] Panduan Membaca Istilah Teknis
+> - **Blind A/B Test:** Responden mendengarkan 2 versi sambungan lagu (A dan B) tanpa tahu mana buatan model usulan dan mana buatan baseline, agar penilaiannya objektif tanpa bias.
+> - **Counterbalanced Randomized Presentation:** Urutan putar A lalu B atau B lalu A dibalik-balik secara seimbang antar responden supaya tidak ada bias urutan (*order effect*).
+> - **Audio Stitching:** Menyambung dua potongan lagu (15 detik akhir lagu 1 + 15 detik awal lagu 2) menjadi satu klip uji 30 detik agar responden fokus menilai sambungannya saja.
+> - **Purposive Sampling ($N \ge 30$):** Memilih responden sesuai kriteria tertentu (usia 19–25, pendengaran normal, rutin dengar musik) minimal 30 orang agar analisis statistiknya kuat.
+> - **65–70 dB SPL:** Standar tingkat kekerasan suara di headphone agar nyaman di telinga dan seragam bagi semua responden.
+> - **Skala Likert 5 Poin:** Penilaian berjenjang dari angka 1 (sangat kasar/janggal) hingga 5 (sangat halus/alami).
+> - **MOS (*Mean Opinion Score*):** Nilai rata-rata skor kenyamanan dari seluruh responden.
+> - **Informed Consent & UU PDP No. 27/2022:** Lembar persetujuan sukarela responden serta kewajiban menyamarkan identitas asli responden menjadi kode `R01–R30`.
+
+> [!tip] Arti Rumus Matematika
+> - **Eq. 3.11 (Stimulus 30s):** Format klip uji gabungan 15 detik penutup lagu pertama + 15 detik pembuka lagu kedua.
+> - **Eq. 3.12 (*Cronbach's Alpha*, $\alpha \ge 0{,}70$):** Mengukur apakah jawaban kuesioner cukup konsisten dan dapat dipercaya. Jika $\alpha \ge 0{,}70$, data layak dianalisis lanjut.
+> - **Wilcoxon ($\mathrm{MOS}_{\mathrm{Usulan}} > \mathrm{MOS}_{\mathrm{Gaur}}$):** Uji statistik untuk membuktikan apakah skor kenyamanan responden pada model usulan benar-benar lebih tinggi secara signifikan ($p < 0{,}05$) dibanding baseline.
+> - **Eq. 3.13 (*Spearman* $r_s$):** Mengukur seberapa cocok hitungan komputer ($\mathcal{S}$ dan $\mathcal{BJC}$) dengan penilaian telinga manusia (MOS).

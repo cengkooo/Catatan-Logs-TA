@@ -15,7 +15,7 @@ Mengacu langsung pada **Bab III Subbab 3.3** ([chapter-3.tex](file:///D:/Kuliah/
 
 > [!tip] Versi Node-Graph Interaktif (Obsidian Canvas)
 > Buka **[[Alur-Metode-Usulan-Trajectory-Alignment.canvas]]** di Obsidian untuk tampilan *node-graph* interaktif.
-> Pembanding baseline: **[[Alur-Uji-Coba-Baseline-Gaur]]** ([[04-Literatur-Review/Alur-Uji-Coba-Baseline-Gaur.canvas]]).
+> Pembanding baseline: **[[Alur-Uji-Coba-Baseline-Gaur]]** ([[Alur-Uji-Coba-Baseline-Gaur.canvas]]).
 
 ---
 
@@ -62,3 +62,24 @@ flowchart TD
 > - **Keselarasan Arah (Eq. 3.5):** $\mathrm{Sim}_{\mathrm{traj}}(\vec{\mathbf{t}}_k, \vec{\mathbf{u}}_j) = \frac{\vec{\mathbf{t}}_k \cdot \vec{\mathbf{u}}_j}{\|\vec{\mathbf{t}}_k\|_2 \|\vec{\mathbf{u}}_j\|_2} \in [-1, +1]$.
 > - **Boundary Jump Cost (Eq. 3.6):** $\mathcal{BJC}(L_{j-1}, L_k) = \|\mathbf{p}_{\mathrm{outro}}(L_{j-1}) - \mathbf{p}_{\mathrm{intro}}(L_k)\|_2$.
 > - **Skor Komposit (Eq. 3.7):** $w_1 \frac{d_{\mathrm{target}}}{\max(d)} + w_2 \frac{1 - \mathrm{Sim}_{\mathrm{traj}}}{2} + w_3 \mathcal{BJC}$ ($w_1 + w_2 + w_3 = 1{,}0$), **skor terendah dipilih**.
+
+
+---
+
+## 3. Kamus Istilah Teknis & Arti Rumus (Bahasa Sederhana)
+
+> [!note] Panduan Membaca Istilah Teknis
+> - **Time-Series 2 Hz:** Data emosi lagu yang dicatat setiap setengah detik ($0{,}5$ detik = 2 titik per detik).
+> - **30s Stabil (buang 15s awal):** 15 detik pertama pada klip DEAM dibuang karena pendengar/anotator masih beradaptasi di awal lagu (*transient*), sehingga hanya detik ke-15 sampai ke-45 (**60 titik**) yang dipakai.
+> - **Intro & Outro:** Bagian pembuka lagu (rata-rata 6 titik awal, detik 15–18) dan penutup lagu (rata-rata 6 titik akhir, detik 42–45).
+> - **Dynamic Trajectory Alignment:** Menyelaraskan arah gerak emosi di dalam lagu (dari *intro* ke *outro*) agar searah dengan alur perjalanan playlist.
+> - **Boundary Jump Cost ($\mathcal{BJC}$):** "Biaya penalti" atau ukuran seberapa jauh mood melompat saat lagu sebelumnya berakhir (*outro*) dan lagu berikutnya dimulai (*intro*).
+
+> [!tip] Arti Rumus Matematika
+> - **Eq. 3.1 ($\mathbf{w}_j$):** Membagi lintasan dari mood awal ke mood tujuan menjadi $M$ titik perhentian (*waypoint*) yang berjarak sama.
+> - **Eq. 3.2 ($d_{\mathrm{target}}$):** Jarak garis lurus (Euclidean) antara titik perhentian $\mathbf{w}_j$ dengan mood rata-rata lagu, dipakai di Tahap 1 untuk mengambil $K=20$ kandidat terdekat.
+> - **Eq. 3.3 ($\vec{\mathbf{t}}_k = \mathbf{p}_{\mathrm{outro},k} - \mathbf{p}_{\mathrm{intro},k}$):** Anak panah arah perubahan mood di dalam satu lagu (dari pembuka menuju penutupnya).
+> - **Eq. 3.4 ($\vec{\mathbf{u}}_j = \mathbf{w}_j - \mathbf{w}_{j-1}$):** Anak panah arah perjalanan mood yang diinginkan oleh playlist pada langkah ke-$j$.
+> - **Eq. 3.5 ($\mathrm{Sim}_{\mathrm{traj}} \in [-1, +1]$):** Mengukur kekompakan arah antara panah lagu ($\vec{\mathbf{t}}_k$) dan panah playlist ($\vec{\mathbf{u}}_j$). Nilai $+1$ = searah persis, $0$ = tegak lurus, $-1$ = berlawanan arah.
+> - **Eq. 3.6 ($\mathcal{BJC}$):** Jarak lompatan emosi tepat di sambungan antara akhir lagu lama dan awal lagu baru. Semakin kecil, sambungannya semakin mulus.
+> - **Eq. 3.7 ($\mathrm{Score}(L_k)$):** Gabungan 3 nilai (jarak ke target + ketidaksearahan trajektori + lompatan sambungan) dengan bobot $w_1 + w_2 + w_3 = 1$. Lagu dengan **skor paling kecil** yang dipilih.

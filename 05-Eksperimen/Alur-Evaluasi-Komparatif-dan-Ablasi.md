@@ -63,3 +63,20 @@ flowchart TD
 > - **Evenness Index ($\mathcal{E}$, Eq. 3.9):** Variansi jarak langkah antar-waypoint.
 > - **Cumulative BJC ($\mathcal{CBJC}$, Eq. 3.10):** Akumulasi total penalti lompatan batas sepanjang playlist.
 > - **Wilcoxon Signed-Rank ($\alpha = 0{,}05$):** Menguji signifikansi selisih $\mathcal{S}$, $\mathcal{E}$, $\mathcal{CBJC}$ pada seluruh **540 *batch run***.
+
+
+---
+
+## 3. Kamus Istilah Teknis & Arti Rumus (Bahasa Sederhana)
+
+> [!note] Panduan Membaca Istilah Teknis
+> - **Naive Random:** Pemilih lagu acak tanpa aturan apa pun, dipakai sebagai batas bawah (*lower bound*) untuk memastikan model jauh lebih baik daripada menebak acak.
+> - **Uji Ablasi (*Ablation Study*):** Pengujian dengan cara "mematikan" satu komponen (*Trajectory Filter OFF* vs *ON*) sementara hal lain dibuat sama persis, untuk membuktikan bahwa perbaikan hasil memang berasal dari komponen tersebut.
+> - **Seed = 42:** Kunci pengacakan tetap supaya setiap kali eksperimen diulang, hasil pengacakannya sama persis (*reproducible*).
+> - **Holdout Split:** Memisahkan data uji agar tidak pernah disentuh saat penyetelan model.
+> - **Wilcoxon Signed-Rank Test ($\alpha = 0{,}05$):** Uji statistik berpasangan (tanpa syarat data harus berdistribusi normal) untuk membuktikan apakah selisih skor antara dua model benar-benar nyata ($p < 0{,}05$) atau sekadar kebetulan.
+
+> [!tip] Arti Rumus Matematika
+> - **Eq. 3.8 ($\mathcal{S}$, *Boundary Smoothness*):** Rata-rata besarnya lompatan mood di setiap sambungan antarlagu (*outro* ke *intro*). **Semakin kecil semakin halus** (target turun $\ge 15\%$).
+> - **Eq. 3.9 ($\mathcal{E}$, *Evenness Index*):** Variansi jarak langkah antar-waypoint. Nilai mendekati $0$ berarti kecepatan perpindahan mood stabil dan seragam.
+> - **Eq. 3.10 ($\mathcal{CBJC}$, *Cumulative BJC*):** Total penjumlahan seluruh lompatan batas dari lagu pertama sampai lagu terakhir dalam satu playlist.

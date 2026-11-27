@@ -1,154 +1,31 @@
 {
-  "nodes": [
-    {
-      "id": "g1",
-      "type": "group",
-      "x": 10,
-      "y": 10,
-      "width": 1540,
-      "height": 290,
-      "label": "1. Ekstraksi Dinamika 2 Hz & Tahap 1 KNN (Bab III Subbab 3.2 - 3.3.1)"
-    },
-    {
-      "id": "g2",
-      "type": "group",
-      "x": 10,
-      "y": 340,
-      "width": 1540,
-      "height": 300,
-      "label": "2. Tahap 2: Dynamic Trajectory Alignment & Penalti BJC (Bab III Subbab 3.3.2)"
-    },
-    {
-      "id": "g3",
-      "type": "group",
-      "x": 10,
-      "y": 680,
-      "width": 1160,
-      "height": 290,
-      "label": "3. Seleksi Komposit & Output Playlist Mood-Arc"
-    },
-    {
-      "id": "n1",
-      "type": "text",
-      "x": 40,
-      "y": 60,
-      "width": 330,
-      "height": 215,
-      "color": "5",
-      "text": "### 1. Time-Series DEAM 2 Hz\n`[Bab III 3.2]`\n\n- 1.802 klip audio (45 detik)\n- Buang 15s awal (transien)\n- Ambil **30s stabil** (detik 15–45, **60 timestamp**)"
-    },
-    {
-      "id": "n2",
-      "type": "text",
-      "x": 420,
-      "y": 60,
-      "width": 340,
-      "height": 215,
-      "color": "5",
-      "text": "### 2. Ekstraksi Intro & Outro\n`[Bab III 3.3.2, Eq. 3.3]`\n\n- **Intro** $\\mathbf{p}_{\\mathrm{intro},k}$: rata-rata 6 titik awal (15–18s)\n- **Outro** $\\mathbf{p}_{\\mathrm{outro},k}$: rata-rata 6 titik akhir (42–45s)\n- Vektor $\\vec{\\mathbf{t}}_k = \\mathbf{p}_{\\mathrm{outro}} - \\mathbf{p}_{\\mathrm{intro}}$ & $\\theta_k$"
-    },
-    {
-      "id": "n3",
-      "type": "text",
-      "x": 810,
-      "y": 60,
-      "width": 340,
-      "height": 215,
-      "color": "6",
-      "text": "### 3. Interpolasi Waypoint\n`[Bab III 3.3.1, Eq. 3.1]`\n\n- Input $\\mathbf{p}_{\\mathrm{start}}$, $\\mathbf{p}_{\\mathrm{target}}$, panjang $M$\n- Hitung $M$ titik acuan linier:\n  $$\\mathbf{w}_j = \\mathbf{p}_{\\mathrm{start}} + \\frac{j-1}{M-1}(\\mathbf{p}_{\\mathrm{target}} - \\mathbf{p}_{\\mathrm{start}})$$"
-    },
-    {
-      "id": "n4",
-      "type": "text",
-      "x": 1200,
-      "y": 60,
-      "width": 320,
-      "height": 215,
-      "color": "3",
-      "text": "### 4. Tahap 1: KNN Retrieval\n`[Bab III 3.3.1, Eq. 3.2]`\n\n- Query KD-Tree pada $\\bar{\\mathbf{p}}_k$\n- Hitung $d_{\\mathrm{target}}(\\mathbf{w}_j, \\bar{\\mathbf{p}}_k) = \\|\\mathbf{w}_j - \\bar{\\mathbf{p}}_k\\|_2$\n- Ambil **$K = 20$ kandidat** terdekat"
-    },
-    {
-      "id": "n5",
-      "type": "text",
-      "x": 40,
-      "y": 390,
-      "width": 340,
-      "height": 225,
-      "color": "3",
-      "text": "### 5. Vektor Target Lintasan\n`[Bab III 3.3.2, Eq. 3.4]`\n\n- Arah perubahan emosi yang diharapkan antar-waypoint:\n  $$\\vec{\\mathbf{u}}_j = \\mathbf{w}_j - \\mathbf{w}_{j-1}$$\n- Menjadi acuan arah gerak lagu"
-    },
-    {
-      "id": "n6",
-      "type": "text",
-      "x": 430,
-      "y": 390,
-      "width": 360,
-      "height": 225,
-      "color": "2",
-      "text": "### 6. Penyelarasan Arah Trajektori\n`[Bab III 3.3.2, Eq. 3.5]`\n\n- Cosine similarity antara gerak internal lagu $\\vec{\\mathbf{t}}_k$ & arah lintasan $\\vec{\\mathbf{u}}_j$:\n  $$\\mathrm{Sim}_{\\mathrm{traj}} = \\frac{\\vec{\\mathbf{t}}_k \\cdot \\vec{\\mathbf{u}}_j}{\\|\\vec{\\mathbf{t}}_k\\|_2 \\|\\vec{\\mathbf{u}}_j\\|_2} \\in [-1, +1]$$"
-    },
-    {
-      "id": "n7",
-      "type": "text",
-      "x": 840,
-      "y": 390,
-      "width": 350,
-      "height": 225,
-      "color": "1",
-      "text": "### 7. Penalti Boundary Jump Cost\n`[Bab III 3.3.2, Eq. 3.6 — Wang 2024 REMAST]`\n\n- Jarak fisik antara penutup lagu sebelumnya $L_{j-1}$ & pembuka kandidat $L_k$:\n  $$\\mathcal{BJC}(L_{j-1}, L_k) = \\|\\mathbf{p}_{\\mathrm{outro}}(L_{j-1}) - \\mathbf{p}_{\\mathrm{intro}}(L_k)\\|_2$$"
-    },
-    {
-      "id": "n8",
-      "type": "text",
-      "x": 1240,
-      "y": 390,
-      "width": 280,
-      "height": 225,
-      "color": "4",
-      "text": "### 8. Skor Komposit Reranker\n`[Bab III 3.3.2, Eq. 3.7]`\n\n- Gabung 3 komponen dengan bobot $w_1 + w_2 + w_3 = 1$:\n  - Jarak waypoint ($w_1$)\n  - Ketidakselarasan arah ($w_2$)\n  - Penalti $\\mathcal{BJC}$ ($w_3$)"
-    },
-    {
-      "id": "n9",
-      "type": "text",
-      "x": 40,
-      "y": 730,
-      "width": 350,
-      "height": 215,
-      "color": "4",
-      "text": "### 9. Seleksi Kandidat Terbaik\n\n- Pilih kandidat $L_k^*$ dengan **Score terendah**\n- Dekat waypoint + searah lintasan + sambungan *outro-intro* halus"
-    },
-    {
-      "id": "n10",
-      "type": "text",
-      "x": 440,
-      "y": 730,
-      "width": 340,
-      "height": 215,
-      "color": "4",
-      "text": "### 10. Iterasi Posisi j = 1..M\n\n- Simpan $L_k^*$ ke playlist\n- Ulangi untuk waypoint $\\mathbf{w}_{j+1}$ hingga panjang $M \\in \\{5, 10, 15\\}$"
-    },
-    {
-      "id": "n11",
-      "type": "text",
-      "x": 830,
-      "y": 730,
-      "width": 310,
-      "height": 215,
-      "color": "4",
-      "text": "### 11. Output Playlist Mood-Arc\n\n- Siap dievaluasi dengan metrik $\\mathcal{S}$, $\\mathcal{E}$, $\\mathcal{CBJC}$ & *Blind A/B*"
-    }
-  ],
-  "edges": [
-    { "id": "e1", "fromNode": "n1", "fromSide": "right", "toNode": "n2", "toSide": "left", "label": "60 timestamp 2 Hz" },
-    { "id": "e2", "fromNode": "n2", "fromSide": "right", "toNode": "n3", "toSide": "left", "label": "p_intro, p_outro, t_k" },
-    { "id": "e3", "fromNode": "n3", "fromSide": "right", "toNode": "n4", "toSide": "left", "label": "Waypoint w_j" },
-    { "id": "e4", "fromNode": "n4", "fromSide": "bottom", "toNode": "n5", "toSide": "top", "label": "K=20 kandidat" },
-    { "id": "e5", "fromNode": "n5", "fromSide": "right", "toNode": "n6", "toSide": "left", "label": "Vektor u_j" },
-    { "id": "e6", "fromNode": "n6", "fromSide": "right", "toNode": "n7", "toSide": "left", "label": "Sim_traj" },
-    { "id": "e7", "fromNode": "n7", "fromSide": "right", "toNode": "n8", "toSide": "left", "label": "BJC" },
-    { "id": "e8", "fromNode": "n8", "fromSide": "bottom", "toNode": "n9", "toSide": "top", "label": "Min Score" },
-    { "id": "e9", "fromNode": "n9", "fromSide": "right", "toNode": "n10", "toSide": "left", "label": "L_k*" },
-    { "id": "e10", "fromNode": "n10", "fromSide": "top", "toNode": "n4", "toSide": "bottom", "label": "Loop j < M" },
-    { "id": "e11", "fromNode": "n10", "fromSide": "right", "toNode": "n11", "toSide": "left", "label": "j = M" }
-  ]
+	"nodes":[
+		{"id":"g1","type":"group","x":-440,"y":-200,"width":2360,"height":400,"label":"1. Ekstraksi Dinamika 2 Hz & Tahap 1 KNN (Bab III Subbab 3.2 - 3.3.1)"},
+		{"id":"g2","type":"group","x":-440,"y":340,"width":2360,"height":360,"label":"2. Tahap 2: Dynamic Trajectory Alignment & Penalti BJC (Bab III Subbab 3.3.2)"},
+		{"id":"g3","type":"group","x":-440,"y":940,"width":2360,"height":290,"label":" "},
+		{"id":"n3","type":"text","text":"### 3. Interpolasi Waypoint\n`[Bab III 3.3.1, Eq. 3.1]`\n\n- Input $\\mathbf{p}_{\\mathrm{start}}$, $\\mathbf{p}_{\\mathrm{target}}$, panjang $M$\n- Hitung $M$ titik acuan linier:\n  $$\\mathbf{w}_j = \\mathbf{p}_{\\mathrm{start}} + \\frac{j-1}{M-1}(\\mathbf{p}_{\\mathrm{target}} - \\mathbf{p}_{\\mathrm{start}})$$","x":810,"y":-150,"width":340,"height":215,"color":"6"},
+		{"id":"n1","type":"text","text":"### 1. Time-Series DEAM 2 Hz\n`[Bab III 3.2]`\n\n- 1.802 klip audio (45 detik)\n- Buang 15s awal (transien)\n- Ambil **30s stabil** (detik 15–45, **60 timestamp**)","x":-400,"y":-150,"width":330,"height":215,"color":"5"},
+		{"id":"n2","type":"text","text":"### 2. Ekstraksi Intro & Outro\n`[Bab III 3.3.2, Eq. 3.3]`\n\n- **Intro** $\\mathbf{p}_{\\mathrm{intro},k}$: rata-rata 6 titik awal (15–18s)\n- **Outro** $\\mathbf{p}_{\\mathrm{outro},k}$: rata-rata 6 titik akhir (42–45s)\n- Vektor $\\vec{\\mathbf{t}}_k = \\mathbf{p}_{\\mathrm{outro}} - \\mathbf{p}_{\\mathrm{intro}}$ & $\\theta_k$","x":180,"y":-150,"width":340,"height":250,"color":"5"},
+		{"id":"n4","type":"text","text":"### 4. Tahap 1: KNN Retrieval\n`[Bab III 3.3.1, Eq. 3.2]`\n\n- Query KD-Tree pada $\\bar{\\mathbf{p}}_k$\n- Hitung $d_{\\mathrm{target}}(\\mathbf{w}_j, \\bar{\\mathbf{p}}_k) = \\|\\mathbf{w}_j - \\bar{\\mathbf{p}}_k\\|_2$\n- Ambil **$K = 20$ kandidat** terdekat","x":1480,"y":-150,"width":320,"height":215,"color":"3"},
+		{"id":"n9","type":"text","text":"### 9. Seleksi Kandidat Terbaik\n\n- Pilih kandidat $L_k^*$ dengan **Score terendah**\n- Dekat waypoint + searah lintasan + sambungan *outro-intro* halus","x":40,"y":990,"width":350,"height":215,"color":"4"},
+		{"id":"n5","type":"text","text":"### 5. Vektor Target Lintasan\n`[Bab III 3.3.2, Eq. 3.4]`\n\n- Arah perubahan emosi yang diharapkan antar-waypoint:\n  $$\\vec{\\mathbf{u}}_j = \\mathbf{w}_j - \\mathbf{w}_{j-1}$$\n- Menjadi acuan arah gerak lagu","x":-340,"y":378,"width":340,"height":250,"color":"3"},
+		{"id":"n11","type":"text","text":"### 11. Output Playlist Mood-Arc\n\n- Siap dievaluasi dengan metrik $\\mathcal{S}$, $\\mathcal{E}$, $\\mathcal{CBJC}$ & *Blind A/B*","x":1060,"y":990,"width":310,"height":215,"color":"4"},
+		{"id":"n10","type":"text","text":"### 10. Iterasi Posisi j = 1..M\n\n- Simpan $L_k^*$ ke playlist\n- Ulangi untuk waypoint $\\mathbf{w}_{j+1}$ hingga panjang $M \\in \\{5, 10, 15\\}$","x":540,"y":990,"width":340,"height":215,"color":"4"},
+		{"id":"n6","type":"text","text":"### 6. Penyelarasan Arah Trajektori\n`[Bab III 3.3.2, Eq. 3.5]`\n\n- Cosine similarity antara gerak internal lagu $\\vec{\\mathbf{t}}_k$ & arah lintasan $\\vec{\\mathbf{u}}_j$:\n  $$\\mathrm{Sim}_{\\mathrm{traj}} = \\frac{\\vec{\\mathbf{t}}_k \\cdot \\vec{\\mathbf{u}}_j}{\\|\\vec{\\mathbf{t}}_k\\|_2 \\|\\vec{\\mathbf{u}}_j\\|_2} \\in [-1, +1]$$","x":180,"y":391,"width":360,"height":225,"color":"2"},
+		{"id":"n7","type":"text","text":"### 7. Penalti Boundary Jump Cost\n`[Bab III 3.3.2, Eq. 3.6 — Wang 2024 REMAST]`\n\n- Jarak fisik antara penutup lagu sebelumnya $L_{j-1}$ & pembuka kandidat $L_k$:\n  $$\\mathcal{BJC}(L_{j-1}, L_k) = \\|\\mathbf{p}_{\\mathrm{outro}}(L_{j-1}) - \\mathbf{p}_{\\mathrm{intro}}(L_k)\\|_2$$","x":705,"y":391,"width":350,"height":225,"color":"1"},
+		{"id":"n8","type":"text","text":"### 8. Skor Komposit Reranker\n`[Bab III 3.3.2, Eq. 3.7]`\n\n- Gabung 3 komponen dengan bobot $w_1 + w_2 + w_3 = 1$:\n  - Jarak waypoint ($w_1$)\n  - Ketidakselarasan arah ($w_2$)\n  - Penalti $\\mathcal{BJC}$ ($w_3$)","x":1520,"y":359,"width":280,"height":290,"color":"4"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"n1","fromSide":"right","toNode":"n2","toSide":"left","label":"60 timestamp 2 Hz"},
+		{"id":"e2","fromNode":"n2","fromSide":"right","toNode":"n3","toSide":"left","label":"p_intro, p_outro, t_k"},
+		{"id":"e3","fromNode":"n3","fromSide":"right","toNode":"n4","toSide":"left","label":"Waypoint w_j"},
+		{"id":"e4","fromNode":"n4","fromSide":"bottom","toNode":"n5","toSide":"top","label":"K=20 kandidat"},
+		{"id":"e5","fromNode":"n5","fromSide":"right","toNode":"n6","toSide":"left","label":"Vektor u_j"},
+		{"id":"e6","fromNode":"n6","fromSide":"right","toNode":"n7","toSide":"left","label":"Sim_traj"},
+		{"id":"e7","fromNode":"n7","fromSide":"right","toNode":"n8","toSide":"left","label":"BJC"},
+		{"id":"e8","fromNode":"n8","fromSide":"bottom","toNode":"n9","toSide":"top","label":"Min Score"},
+		{"id":"e9","fromNode":"n9","fromSide":"right","toNode":"n10","toSide":"left","label":"L_k*"},
+		{"id":"e10","fromNode":"n10","fromSide":"top","toNode":"n4","toSide":"bottom","label":"Loop j < M"},
+		{"id":"e11","fromNode":"n10","fromSide":"right","toNode":"n11","toSide":"left","label":"j = M"}
+	]
 }
