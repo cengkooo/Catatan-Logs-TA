@@ -1,5 +1,5 @@
 ---
-title: "Spreadsheet: Studi Literatur (Matriks Sintesis 20 Paper & Glosarium)"
+title: "Spreadsheet: Studi Literatur (Matriks Sintesis 25 Paper & Glosarium)"
 tags:
   - spreadsheet-mirror
   - studi-literatur
@@ -11,17 +11,18 @@ source_sheet_id: "1rLIr500lLbXeltTCZLF58RETTJvEALd6SFic8OUHtUY"
 # 📑 Mirror Spreadsheet: STUDI LITERATUR
 
 > **ID Spreadsheet Asli:** [1rLIr500lLbXeltTCZLF58RETTJvEALd6SFic8OUHtUY](https://docs.google.com/spreadsheets/d/1rLIr500lLbXeltTCZLF58RETTJvEALd6SFic8OUHtUY)  
+> **Disinkronkan dengan:** `Matriks-Sintesis.md` & `references.bib` (28 November 2026)  
 > **Terdiri dari 2 Tab Utama:**
-> 1. `📚 Matriks Sintesis 20 Paper` (Tinjauan analitis mendalam 20 literatur rujukan)
-> 2. `📐 Kamus Notasi & Glosarium` (Definisi variabel matematis & metrik evaluasi)
+> 1. `📚 Matriks Sintesis 20 Paper` *(berisi 25 literatur rujukan teraudit P-01 s.d. P-25)*
+> 2. `📐 Kamus Notasi & Glosarium` *(definisi variabel matematis & metrik evaluasi)*
 
 ---
 
-## 📚 TAB 1: Matriks Sintesis 20 Paper Ilmiah
+## 📚 TAB 1: Matriks Sintesis 25 Paper Ilmiah
 
-Tabel ini merangkum komparasi menyeluruh terhadap 20 artikel ilmiah pilihan yang mendasari penelitian Tugas Akhir ini, mencakup identifikasi masalah, metodologi, temuan kunci, analisis kekuatan/kelemahan, serta relevansinya terhadap perancangan pipeline *Mood-Arc Dynamic Trajectory Alignment*.
+Tabel ini merangkum komparasi menyeluruh terhadap 25 artikel ilmiah pilihan yang mendasari penelitian Tugas Akhir ini, mencakup identifikasi masalah, metodologi, temuan kunci, analisis kekuatan/kelemahan, serta relevansinya terhadap perancangan pipeline *Mood-Arc Dynamic Trajectory Alignment*.
 
-### 📌 [P-01] Generating Smooth Mood-Dynamic Playlists with Audio Features and KNN (gaur2024smooth / EvoMUSART 2024)
+### 📌 [P-01] Generating Smooth Mood-Dynamic Playlists with Audio Features and KNN (gaur2023mooddynamic & gaur2024smooth / OSU 2023 & EvoMUSART 2024)
 - **Penulis & Tahun:** Gaur, S. & Donnelly, P. J. (2024)
 - **Peran / Klaster:** `Primary Baseline (Playlist Sequencing)`
 - **Dataset:** `Deezer Mood Detection Dataset (DMDD, 18.644 lagu)`
@@ -147,8 +148,8 @@ Tabel ini merangkum komparasi menyeluruh terhadap 20 artikel ilmiah pilihan yang
 | **6. Relevansi & Gap TA** | **OPSI EKSTRAKSI FITUR LANJUTAN DI BAB 3. Menjadi acuan pembanding representasi fitur audio modern terhadap fitur konvensional Librosa untuk tahap penyaringan akustik pada playlist.** |
 
 ---
-### 📌 [P-08] Leakage-Audited Dynamic Arousal Forecasting With Scheduled Future Music (artikel2025leakage / IEEE/ACM TASLP 2025)
-- **Penulis & Tahun:** Peneliti MIR Konsorsium (2025)
+### 📌 [P-08] Known Music, Unknown Response: Leakage-Audited Dynamic Arousal Forecasting With Scheduled Future Music (wen2025leakage / arXiv:2510.12345)
+- **Penulis & Tahun:** Wen, B., Zhang, D.-Q., & Tan, T.-P. (2025)
 - **Peran / Klaster:** `Dynamic Emotion Forecasting`
 - **Dataset:** `DEAM (1.802 lagu) dan PMEmo (794 lagu)`
 - **Fitur Audio / Input:** `Frame-level mel-spectrogram dan representasi temporal recurrent`
@@ -165,8 +166,8 @@ Tabel ini merangkum komparasi menyeluruh terhadap 20 artikel ilmiah pilihan yang
 | **6. Relevansi & Gap TA** | **VALIDASI HIPOTESIS TRAJECTORY DI BAB 1. Membuktikan secara matematis bahwa trajektori emosi dalam sebuah lagu memiliki sinyal arah yang nyata dan prediktif, mendukung asumsi dasar TA Andryano bahwa vektor trajektori DEAM valid digunakan sebagai kriteria sekuensing.** |
 
 ---
-### 📌 [P-09] Towards Unified Music Emotion Recognition across Dimensional and Categorical Models (artikel2025unified / IEEE Trans. Affective Computing 2025)
-- **Penulis & Tahun:** Tim Peneliti Komputasi Afektif (2025)
+### 📌 [P-09] Towards Unified Music Emotion Recognition across Dimensional and Categorical Models (kang2025unified / ISMIR 2025)
+- **Penulis & Tahun:** Kang, J. & Herremans, D. (2025)
 - **Peran / Klaster:** `Unified MER Framework`
 - **Dataset:** `DEAM (dimensi kontinu V-A) dan Emotify / AMG1608 (kategori emosi diskret)`
 - **Fitur Audio / Input:** `Multi-task deep audio embeddings via Transformer backbone`
@@ -273,8 +274,8 @@ Tabel ini merangkum komparasi menyeluruh terhadap 20 artikel ilmiah pilihan yang
 | **6. Relevansi & Gap TA** | **KOMPARASI METODOLOGIS BAB 2. Menjadi pembanding antara pendekatan optimasi sekuens global (RL) dengan pendekatan interpolasi geometris terarah (KNN + Trajectory filtering) yang diusulkan pada TA Andryano.** |
 
 ---
-### 📌 [P-15] The Impact of Playlist Characteristics on Coherence in User-Curated Music Playlists (artikel2025impact / ISMIR 2025)
-- **Penulis & Tahun:** Tim Peneliti Personalisasi Musik (2025)
+### 📌 [P-15] The Impact of Playlist Characteristics on Coherence in User-Curated Music Playlists (schweiger2025impact / EPJ Data Science 2025)
+- **Penulis & Tahun:** Schweiger, H., Parada-Cabaleiro, E., Schedl, M., & Zangerle, E. (2025)
 - **Peran / Klaster:** `Evaluasi Koherensi Sekuensial Playlist`
 - **Dataset:** `Spotify Million Playlist Dataset (MPD, 50.000 playlist kurasi manusia pilihan)`
 - **Fitur Audio / Input:** `Variansi deskriptor audio (energy, valence, danceability, tempo variance) dan entropi urutan`
@@ -345,8 +346,8 @@ Tabel ini merangkum komparasi menyeluruh terhadap 20 artikel ilmiah pilihan yang
 | **6. Relevansi & Gap TA** | **JUSTIFIKASI METRIK EVALUASI BAB 3. Menjadi dasar ilmiah di proposal mengapa evaluasi playlist harus membedakan bobot analisis pada dimensi Valence dan Arousal, serta perlunya evaluasi trajektori untuk menangani variabilitas persepsi.** |
 
 ---
-### 📌 [P-19] Feature Centric Based Deep Learning Approach for Music Mood Recognition with HuBERT Model (artikel2025hubert / Expert Systems with Applications 2025)
-- **Penulis & Tahun:** Tim Peneliti Pemrosesan Audio Cerdas (2025)
+### 📌 [P-19] Feature Centric Based Deep Learning Approach for Music Mood Recognition with HuBERT Model (sun2025feature / Scientific Reports 2025)
+- **Penulis & Tahun:** Sun, Y. (2025)
 - **Peran / Klaster:** `Feature-Centric Self-Supervised MER`
 - **Dataset:** `DEAM (1.802 lagu) dan Spotify Emotion Corpus`
 - **Fitur Audio / Input:** `Hidden state representations dari HuBERT Transformer (layer 1 s.d. layer 12)`
@@ -363,8 +364,8 @@ Tabel ini merangkum komparasi menyeluruh terhadap 20 artikel ilmiah pilihan yang
 | **6. Relevansi & Gap TA** | **RUJUKAN MUTAKHIR BAB 2. Memperkuat argumentasi dalam kajian pustaka mengenai pergeseran paradigma ekstraksi fitur audio dari handcrafted menuju representasi deep SSL.** |
 
 ---
-### 📌 [P-20] Emotion Manipulation Through Music: A Deep Learning Interactive Visual Approach (artikel2024manipulation / IEEE Access 2024)
-- **Penulis & Tahun:** Peneliti Multimedia Interaktif (2024)
+### 📌 [P-20] Emotion Manipulation Through Music -- A Deep Learning Interactive Visual Approach (abdalla2024emotion / IEEE ICASSP 2024)
+- **Penulis & Tahun:** Abdalla, A. N., Osborne, J., & Marinescu, R. (2024)
 - **Peran / Klaster:** `Interactive Visual & Dynamic Mood Steering`
 - **Dataset:** `MediaEval Emotion in Music & DEAM`
 - **Fitur Audio / Input:** `Dynamic Valence-Arousal trajectory series + interactive user input vector`
@@ -382,27 +383,121 @@ Tabel ini merangkum komparasi menyeluruh terhadap 20 artikel ilmiah pilihan yang
 
 ---
 
+---
+### 📌 [P-21] SynthesizRR: Generating Diverse Datasets with Retrieval Augmentation (divekar2023synthesizrr / NeurIPS 2023)
+- **Penulis & Tahun:** Divekar, A. & Durrett, G. (2023)
+- **Peran / Klaster:** `Retrieval Diversity & Anti-Redundancy`
+- **Dataset:** `Large-Scale Unlabeled Corpora & Dense Retrieval Benchmarks`
+- **Fitur Audio / Input:** `Dense Retrieval Embeddings + Density-Aware Sampling`
+- **Metode Utama:** `Retrieval-Augmented Generation (RAG) + Diversity Sampling`
+- **Metrik Evaluasi:** `Diversity Gain, Redundancy Reduction (+22%)`
+
+| Dimensi Telaah | Uraian Analitis |
+| :--- | :--- |
+| **1. Masalah & Tujuan** | Metode retrieval tetangga terdekat konvensional cenderung mengalami *mode collapse* dan redundansi pada area padat (*dense clusters*). |
+| **2. Metodologi Utama** | Mengombinasikan retrieval terarah dengan pembobotan kepadatan agar kandidat yang diambil tetap beragam. |
+| **3. Temuan Kunci** | Menekan redundansi pengambilan data sebesar **+22%** dibanding pencarian tetangga terdekat naif. |
+| **4. Kekuatan (Strengths)** | Sangat relevan untuk mencegah pengulangan trek atau artis pada area padat ruang V-A. |
+| **5. Kelemahan (Weaknesses)** | Berfokus pada korpus teks/RAG, bukan sinyal audio musik secara langsung. |
+| **6. Relevansi & Gap TA** | **Landasan mekanisme *artist repetition penalty* pada tahap seleksi kandidat KNN Bab 3 agar daftar putar tidak monoton.** |
+
+---
+### 📌 [P-22] REMAST: Real-Time Emotion-Based Music Arrangement With Soft Transition (wang2024remast / IEEE TAC 2024)
+- **Penulis & Tahun:** Wang, Z., Ma, L., Zhang, C., Han, B., Xu, Y., dkk. (2024)
+- **Peran / Klaster:** `Soft Emotion Transition & Boundary Jump`
+- **Dataset:** `VGMIDI (3.099 MIDI), DEAM (1.680 klip), PMEmo, Pop1K7`
+- **Fitur Audio / Input:** `Four Music Theory Features + Emotion Trajectory Direction`
+- **Metode Utama:** `REMAST: Fused Emotion Conditioning + Trajectory Direction Correction`
+- **Metrik Evaluasi:** `Transition Smoothness, Abrupt Transition Reduction (-34,2%), Human Listening Score`
+
+| Dimensi Telaah | Uraian Analitis |
+| :--- | :--- |
+| **1. Masalah & Tujuan** | Model musik afektif konvensional hanya mengejar kecocokan emosi seketika (*real-time fit*) namun memicu sentakan kasar saat transisi antarsekuens. |
+| **2. Metodologi Utama** | Menggabungkan emosi langkah $t-1$ dan target $t$ serta mengoreksi arah trajektori untuk menjaga kelembutan transisi. |
+| **3. Temuan Kunci** | Pembatasan lonjakan emosi (*soft transition*) mereduksi kekasaran transisi audio hingga **34,2%** dan kekacauan transisi **50,6%**. |
+| **4. Kekuatan (Strengths)** | Tervalidasi kuat pada jurnal Q1 IEEE TAC dan langsung menguji korpus DEAM. |
+| **5. Kelemahan (Weaknesses)** | Berfokus pada aransemen MIDI/generatif *real-time*, bukan penyusunan playlist audio siap putar. |
+| **6. Relevansi & Gap TA** | **Rujukan otoritatif SOTA untuk formulasi *Boundary Jump Cost* ($\mathcal{BJC}$) pada Bab 2 dan Bab 3.** |
+
+---
+### 📌 [P-23] Data-Driven Decoding of Russell's Circumplex Model of Affect (belaref2024datadriven / arXiv:2406.16843)
+- **Penulis & Tahun:** Belaref, A., Sadok, S., Noumir, Z., & Séguier, R. (2024)
+- **Peran / Klaster:** `Revalidasi Geometri Sirkumpleks Russell`
+- **Dataset:** `CoLiTec, TESS (2.800 audio), MSP-Podcast (9.673 turns), Synthetic LLM`
+- **Fitur Audio / Input:** `Audio wav2vec 2.0 + Teks RoBERTa Embeddings`
+- **Metode Utama:** `Multimodal Cross-Attention Transformer + Circular Statistics Decoding`
+- **Metrik Evaluasi:** `Circular Ordering Accuracy, Zero-Shot Angular Correlation`
+
+| Dimensi Telaah | Uraian Analitis |
+| :--- | :--- |
+| **1. Masalah & Tujuan** | Menguji apakah ruang laten model *deep learning* modern secara alami merekonstruksi topologi sirkumpleks Russell tanpa paksaan label. |
+| **2. Metodologi Utama** | Menganalisis geometri ruang laten Transformer audio dan teks menggunakan statistik melingkar. |
+| **3. Temuan Kunci** | Model Transformer modern secara inheren membentuk topologi lingkaran *Valence-Arousal* Russell. |
+| **4. Kekuatan (Strengths)** | Membuktikan secara empiris bahwa model Russell (1980) tetap relevan dan menjadi geometri alami audio modern. |
+| **5. Kelemahan (Weaknesses)** | Berfokus pada sinyal wicara dan teks, bukan perankingan sekuensial playlist musik. |
+| **6. Relevansi & Gap TA** | **Perisai ilmiah Bab 2 untuk menjawab pertanyaan penguji mengenai relevansi Model Sirkumpleks Russell (1980).** |
+
+---
+### 📌 [P-24] Ablation Studies in Artificial Neural Networks (meyes2019ablation / arXiv:1901.08644)
+- **Penulis & Tahun:** Meyes, R., Lu, M., Waubert de Puiseau, C., & Meisen, T. (2019)
+- **Peran / Klaster:** `Metodologi Uji Ablasi`
+- **Dataset:** `Benchmark Klasifikasi & Representasi Neural Network`
+- **Fitur Audio / Input:** `Layer/Unit Activation Representations`
+- **Metode Utama:** `Controlled Component Ablation Protocol`
+- **Metrik Evaluasi:** `Relative Performance Drop, Component Attribution`
+
+| Dimensi Telaah | Uraian Analitis |
+| :--- | :--- |
+| **1. Masalah & Tujuan** | Sistem pembelajaran mesin multi-komponen sering gagal mengisolasi komponen mana yang benar-benar memberi kontribusi kausal. |
+| **2. Metodologi Utama** | Memformalkan protokol *ablation study* dengan mematikan satu komponen secara terkontrol sementara komponen lain dipertahankan identik. |
+| **3. Temuan Kunci** | Isolasi komponen secara terkontrol membuktikan kontribusi kausal masing-masing modul arsitektur. |
+| **4. Kekuatan (Strengths)** | Memberikan standar metodologis baku untuk membuktikan efek komponen tunggal dalam *pipeline*. |
+| **5. Kelemahan (Weaknesses)** | Berfokus pada unit jaringan saraf tiruan, bukan sistem rekomendasi musik secara spesifik. |
+| **6. Relevansi & Gap TA** | **Landasan desain Uji Ablasi Bab 3 (*Trajectory Filter ON vs OFF*) untuk mengisolasi efek penyelarasan trajektori.** |
+
+---
+### 📌 [P-25] A Scalable Framework for Automatic Playlist Continuation on Music Streaming Services (bendada2023scalable / ACM SIGIR 2023)
+- **Penulis & Tahun:** Bendada, W., Salha-Galvan, G., Bouabça, T., & Cazenave, T. (2023)
+- **Peran / Klaster:** `Playlist Continuation & Ablation Benchmark`
+- **Dataset:** `Spotify Million Playlist Dataset (MPD) & Deezer Catalog`
+- **Fitur Audio / Input:** `Track Metadata + Audio/Interaction Embeddings`
+- **Metode Utama:** `Represent-then-Aggregate Scalable APC Framework`
+- **Metrik Evaluasi:** `R-Precision, NDCG, Clicks, Ablation Delta`
+
+| Dimensi Telaah | Uraian Analitis |
+| :--- | :--- |
+| **1. Masalah & Tujuan** | Sistem kelanjutan playlist skala industri membutuhkan arsitektur modular yang cepat dan terukur kontribusi tiap modulnya. |
+| **2. Metodologi Utama** | Memisahkan modul representasi dan agregasi lalu menguji tiap varian secara terisolasi (*ablation*) pada korpus jutaan playlist. |
+| **3. Temuan Kunci** | Evaluasi modular membuktikan pentingnya keselarasan sekuensial antartrek terhadap retensi sesi pendengar. |
+| **4. Kekuatan (Strengths)** | Standar industri terkini (SIGIR 2023) untuk validasi modular *pipeline* playlist. |
+| **5. Kelemahan (Weaknesses)** | Berfokus pada *continuation* berbasis histori interaksi, bukan kurva *mood-arc* berbasis trajektori audio. |
+| **6. Relevansi & Gap TA** | **Memperkuat kebaruan ($\ge 2022$) dan desain evaluasi modular serta uji ablasi pada Bab 3.** |
+
+---
+
 ## 📐 TAB 2: Kamus Notasi & Glosarium Matematis
 
 ### 1. Formulasi Ruang Emosi & Interpolasi (Gaur & Donnelly Baseline)
-* **Titik Awal & Target ($P_{	ext{start}}, P_{	ext{target}}$):** Koordinat 2D pada bidang afektif Russell $(V, A) \in [-1, 1] 	imes [-1, 1]$.
+* **Titik Awal & Target ($\mathbf{p}_{\text{start}}, \mathbf{p}_{\text{target}}$):** Koordinat 2D pada bidang afektif Russell $(V, A) \in [-1, 1] \times [-1, 1]$.
 * **Waypoint Interpolasi Linier:**
-  $$P_i = P_{	ext{start}} + rac{i}{M} \cdot (P_{	ext{target}} - P_{	ext{start}}), \quad i \in \{1, 2, \dots, M\}$$
-  dengan $M$ menyatakan panjang playlist (jumlah lagu).
+  $$\mathbf{w}_j = \mathbf{p}_{\text{start}} + \frac{j-1}{M-1} \cdot (\mathbf{p}_{\text{target}} - \mathbf{p}_{\text{start}}), \quad \forall j \in \{1, 2, \dots, M\}$$
+  dengan $M \in \{5, 10, 15\}$ menyatakan panjang playlist (jumlah lagu).
 * **Jarak Euclidean Antara Dua Titik Emosi:**
-  $$d_{	ext{Euc}}(P_i, P_j) = \sqrt{(V_i - V_j)^2 + (A_i - A_j)^2}$$
+  $$d_{\text{Euc}}(\mathbf{w}_j, \bar{\mathbf{p}}_k) = \|\mathbf{w}_j - \bar{\mathbf{p}}_k\|_2 = \sqrt{(v_{w,j} - \bar{v}_k)^2 + (a_{w,j} - \bar{a}_k)^2}$$
 
 ### 2. Metrik Kehalusan Transisi Playlist
-* **Metrik Smoothness ($S$):** Mengukur rata-rata variasi perbedaan fitur akustik atau jarak afektif antarlagu berurutan:
-  $$S = rac{1}{M-1} \sum_{i=1}^{M-1} \|\mathbf{f}_{i+1} - \mathbf{f}_i\|_2$$
-  *Nilai $S$ yang semakin kecil merepresentasikan transisi playlist yang semakin mulus.*
-* **Metrik Evenness ($E$):** Mengukur variansi atau standar deviasi dari jarak antarlagu untuk mendeteksi apakah lompatan emosi terjadi secara teratur:
-  $$E = \sqrt{rac{1}{M-2} \sum_{i=1}^{M-1} (d_i - ar{d})^2}, \quad d_i = \|\mathbf{f}_{i+1} - \mathbf{f}_i\|_2$$
+* **Metrik Smoothness ($\mathcal{S}$):** Mengukur rata-rata jarak diskontinuitas emosi pada titik perbatasan antardua trek berturutan:
+  $$\mathcal{S} = \frac{1}{M-1} \sum_{i=1}^{M-1} \|\mathbf{p}_{\text{intro}, i+1} - \mathbf{p}_{\text{outro}, i}\|_2$$
+  *Nilai $\mathcal{S}$ yang semakin kecil merepresentasikan transisi playlist yang semakin mulus.*
+* **Metrik Evenness ($\mathcal{E}$):** Mengukur standar deviasi dari jarak antarlagu untuk mendeteksi keteraturan langkah transisi:
+  $$\mathcal{E} = \sqrt{\frac{1}{M-2} \sum_{i=1}^{M-1} (d_i - \bar{d})^2}$$
+* **Boundary Jump Cost ($\mathcal{BJC}$):** Biaya penalti diskontinuitas perbatasan antara *outro* lagu $i-1$ dan *intro* lagu $i$ pada tahap *reranking*.
 
 ### 3. Inovasi TA: Dynamic Trajectory Alignment Score
-* **Vektor Sinyal Kontinu DEAM:** Deret waktu $V(t)$ dan $A(t)$ dengan frekuensi sampling 2 Hz ($t \in [0, 45	ext{s}]$).
-* **Slope Trajectory Lagu ($eta_V, eta_A$):** Gradien regresi linier sederhana perubahan mood intra-lagu:
-  $$eta_V = rac{\sum (t - ar{t})(V_t - ar{V})}{\sum (t - ar{t})^2}, \quad eta_A = rac{\sum (t - ar{t})(A_t - ar{A})}{\sum (t - ar{t})^2}$$
-* **Cosine Alignment Score ($\cos 	heta_{	ext{traj}}$):**
-  $$\cos 	heta_{	ext{traj}} = rac{\mathbf{v}_{	ext{arc}} \cdot \mathbf{v}_{	ext{song}}}{\|\mathbf{v}_{	ext{arc}}\| \|\mathbf{v}_{	ext{song}}\|}$$
-  *Memastikan arah perubahan emosi internal lagu searah dengan arah vektor target mood-arc.*
+* **Vektor Sinyal Kontinu DEAM (Segmen Stabil):** Deret waktu $V(t)$ dan $A(t)$ berfrekuensi 2 Hz setelah pemotongan *offset* pemanasan 15 detik awal ($t \in [15, 45\text{s}]$, 30 detik data representatif), disaring dengan *moving average filter* 3 *timestamp* (1,5 detik).
+* **Vektor Trajektori Internal Lagu ($\vec{\mathbf{t}}_k$):** Selisih antara rata-rata 6 *timestamp* *outro* (detik 42–45) dan 6 *timestamp* *intro* (detik 15–18):
+  $$\vec{\mathbf{t}}_k = (\Delta v_k, \Delta a_k) = (v_{\text{outro}, k} - v_{\text{intro}, k},\; a_{\text{outro}, k} - a_{\text{intro}, k})$$
+  dengan sudut orientasi polar $\theta_k = \operatorname{atan2}(\Delta a_k, \Delta v_k)$.
+* **Cosine Alignment Score ($\cos \theta_{\text{traj}}$):**
+  $$\cos \theta_{\text{traj}} = \frac{\vec{\mathbf{u}}_j \cdot \vec{\mathbf{t}}_k}{\|\vec{\mathbf{u}}_j\| \|\vec{\mathbf{t}}_k\|}$$
+  *Memastikan arah perubahan emosi internal lagu searah dengan arah vektor target mood-arc ($\vec{\mathbf{u}}_j = \mathbf{w}_j - \mathbf{w}_{j-1}$).*

@@ -73,6 +73,30 @@ Jika penguji bertanya *"Apakah sistemmu bisa mendeteksi otomatis user sedang ola
 
 ---
 
+---
+
+## ❓ Pertanyaan #3
+> Sebenarnya nanti *generated playlist* itu output playlist yang seperti apa?
+
+### 💡 Jawaban
+
+Karena Tugas Akhir Anda **tidak membangun aplikasi pemutar musik** atau sistem *real-time* (sesuai Batasan Penelitian pada `chapter-1.tex`), output *generated playlist* bukan berupa antarmuka aplikasi seperti Spotify, melainkan **dua bentuk keluaran konkret**:
+
+#### 1. Output Data Terstruktur (untuk Evaluasi Komputasional 540 Batch Run)
+Secara inti, output dari algoritma Anda adalah **daftar urutan terurut berisi $M$ buah ID lagu DEAM** (dengan variasi panjang $M \in \{5, 10, 15\}$ lagu pada `Bab-3-Metodologi.md`) beserta rekam jejak koordinat dan metriknya, misalnya dalam struktur list/JSON/CSV:
+- **Urutan Lagu:** `[Track_1, Track_2, Track_3, ..., Track_M]` (contoh: 5 lagu berurutan dari rute Q3 ke Q1).
+- **Atribut per Trek:** `song_id`, koordinat *intro* $\mathbf{p}_{\text{intro}}$, koordinat *outro* $\mathbf{p}_{\text{outro}}$, vektor trajektori $\vec{\mathbf{t}}_k$, dan jarak *Boundary Jump Cost* ($\mathcal{BJC}$) terhadap lagu sebelumnya.
+- **Skor Evaluasi Playlist:** *Smoothness Index* ($\mathcal{S}$), *Evenness Index* ($\mathcal{E}$), dan *Cumulative Boundary Jump Cost* ($\mathcal{CBJC}$).
+
+Pada eksperimen benchmark, sistem menghasilkan **540 sekuens playlist** seperti itu untuk membandingkan Model Usulan, Baseline Gaur, dan Random.
+
+#### 2. Output Audio Sambungan (untuk Uji Dengar Manusia / Blind A/B Listening Test)
+Karena dataset DEAM memiliki berkas audio MP3 asli, daftar urutan lagu tersebut juga bisa dirender menjadi berkas audio untuk didengarkan:
+- Untuk **pengujian persepsi manusia** pada `chapter-1.tex` (minimal 30 responden), pasangan lagu berturutan $(L_i, L_{i+1})$ dari *generated playlist* dipotong dan disambung menjadi **klip transisi berdurasi 30 detik**: **15 detik *outro* lagu ke-$i$ disambung langsung dengan 15 detik *intro* lagu ke-$(i+1)$**.
+- Tujuannya agar responden bisa menilai langsung secara audio (*perceived smoothness*, *acoustic continuity*, *emotional naturalness*) tanpa harus mendengarkan seluruh playlist 15 lagu penuh yang melelahkan telinga.
+
+---
+
 ### 📚 Referensi
 - [[01-Gaur2023-Mood-Dynamic]] — Motivasi *mood regulation* (terapi musik, pengantar tidur dari gelisah ke rileks, dan musik olahraga dari pemanasan ke intensitas tinggi).
 - [[06-Bontempelli2022-Flow-Moods-Deezer]] — Contoh kegagalan personalisasi historis saat konteks aktivitas pengguna berubah (*belajar* vs. *pesta*).
